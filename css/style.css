@@ -193,3 +193,22 @@ body { font-family: var(--font); background: var(--dark); color: var(--white); l
 .signup-input { padding: 14px 20px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: #fff; font-size: 15px; width: 300px; outline: none; }
 .signup-input::placeholder { color: rgba(255,255,255,0.35); }
 .signup-input:focus { border-color: #BD212F; }
+
+/* HANGAR WAITLIST */
+.hangar-waitlist { background: #111; padding: 80px 0; text-align: center; }
+.hangar-waitlist h2 { font-size: 36px; font-weight: 800; color: #fff; margin: 12px 0 16px; }
+.hangar-waitlist p { color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 36px; }
+.waitlist-form { max-width: 640px; margin: 0 auto; text-align: left; }
+.waitlist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.waitlist-field { display: flex; flex-direction: column; gap: 6px; }
+.waitlist-field--full { margin-bottom: 24px; }
+.waitlist-field label { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.05em; }
+.waitlist-field input, .waitlist-field textarea { padding: 12px 16px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); color: #fff; font-size: 15px; outline: none; font-family: inherit; resize: vertical; }
+.waitlist-field input::placeholder, .waitlist-field textarea::placeholder { color: rgba(255,255,255,0.3); }
+.waitlist-field input:focus, .waitlist-field textarea:focus { border-color: #BD212F; }
+.req { color: #BD212F; }
+.opt { color: rgba(255,255,255,0.35); font-weight: 400; text-transform: none; letter-spacing: 0; }
+.waitlist-msg { margin-top: 16px; font-size: 15px; text-align: center; min-height: 24px; }
+.waitlist-msg--success { color: #4ade80; }
+.waitlist-msg--error { color: #f87171; }
+@media (max-width: 620px) { .waitlist-grid { grid-template-columns: 1fr; } }
