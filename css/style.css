@@ -100,6 +100,8 @@ body { font-family: var(--font); background: var(--dark); color: var(--white); l
 .event-cards { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .event-card { display: flex; align-items: center; gap: 20px; background: rgba(255,255,255,0.04); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 22px 32px; text-align: left; transition: background 0.2s, border-color 0.2s; }
 .event-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.14); }
+.event-card--featured { border-color: rgba(189,33,47,0.6); background: rgba(189,33,47,0.1); }
+.event-card--featured:hover { background: rgba(189,33,47,0.18); border-color: rgba(189,33,47,0.8); }
 .event-icon { font-size: 32px; flex-shrink: 0; }
 .event-name { font-size: 16px; font-weight: 700; color: #fff; }
 .event-detail { font-size: 12px; color: var(--gray); margin-top: 3px; line-height: 1.5; }
