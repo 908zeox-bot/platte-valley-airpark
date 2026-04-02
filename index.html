@@ -102,6 +102,7 @@
     <li><a href="#fly-in">Fly In</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#events">Events</a></li>
+    <li><a href="#field-notes">Field Notes</a></li>
     <li><a href="#fly-in" class="nav-cta">Plan Visit</a></li>
   </ul>
   <div class="nav-toggle" aria-label="Menu">
@@ -313,6 +314,42 @@
   <a href="mailto:info@plattevalleyairpark.com" class="btn-white">Get in Touch</a>
 </div>
 
+<!-- FIELD NOTES -->
+<section class="field-notes" id="field-notes">
+  <div class="container">
+    <span class="tag">Field Notes</span>
+    <h2>From the Ramp</h2>
+    <p>What's happening at 18V — conditions, events, and Front Range aviation intel. Updated weekly.</p>
+    <div class="notes-grid" id="notesGrid">
+      <div class="note-loading">Loading field notes...</div>
+    </div>
+  </div>
+</section>
+
+<script>
+fetch('/data/field-notes.json')
+  .then(r => r.json())
+  .then(notes => {
+    const grid = document.getElementById('notesGrid');
+    grid.innerHTML = notes.slice(0, 3).map(n => {
+      const d = new Date(n.date + 'T12:00:00');
+      const dateStr = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      return `
+        <div class="note-card">
+          <div class="note-meta">
+            <span class="note-tag">${n.tag}</span>
+            <span class="note-date">${dateStr}</span>
+          </div>
+          <div class="note-title">${n.title}</div>
+          <div class="note-body">${n.body}</div>
+        </div>`;
+    }).join('');
+  })
+  .catch(() => {
+    document.getElementById('notesGrid').innerHTML = '';
+  });
+</script>
+
 <!-- EMAIL SIGNUP -->
 <section class="signup" id="signup">
   <div class="container">
@@ -414,6 +451,7 @@ document.getElementById('waitlistForm').addEventListener('submit', async functio
       <ul class="footer-links">
         <li><a href="#about">About the Field</a></li>
         <li><a href="#events">Events</a></li>
+        <li><a href="#field-notes">Field Notes</a></li>
         <li><a href="#fly-in">Plan a Fly-In</a></li>
         <li><a href="mailto:info@plattevalleyairpark.com">Contact Us</a></li>
       </ul>
