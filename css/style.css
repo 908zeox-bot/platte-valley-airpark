@@ -226,4 +226,22 @@ body { font-family: var(--font); background: var(--dark); color: var(--white); l
 .note-title { font-size: 16px; font-weight: 700; color: #fff; line-height: 1.4; }
 .note-body { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; }
 .note-loading { color: rgba(255,255,255,0.3); font-size: 14px; }
+.notes-load-more { text-align: center; margin-top: 40px; }
+.btn-load-more {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.7);
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.btn-load-more:hover {
+  border-color: #E8212A;
+  color: #fff;
+  background: rgba(232,33,42,0.08);
+}
 @media (max-width: 860px) { .notes-grid { grid-template-columns: 1fr; } }

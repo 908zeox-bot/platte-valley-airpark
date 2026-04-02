@@ -323,6 +323,7 @@
     <div class="notes-grid" id="notesGrid">
       <div class="note-loading">Loading field notes...</div>
     </div>
+    <div class="notes-load-more" id="notesLoadMore"></div>
   </div>
 </section>
 
@@ -331,7 +332,11 @@ fetch('/data/field-notes.json')
   .then(r => r.json())
   .then(notes => {
     const grid = document.getElementById('notesGrid');
-    grid.innerHTML = notes.slice(0, 3).map(n => {
+    const btnWrap = document.getElementById('notesLoadMore');
+    const INITIAL = 3;
+    let showing = INITIAL;
+
+    function renderCard(n) {
       const d = new Date(n.date + 'T12:00:00');
       const dateStr = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
       return `
@@ -343,7 +348,22 @@ fetch('/data/field-notes.json')
           <div class="note-title">${n.title}</div>
           <div class="note-body">${n.body}</div>
         </div>`;
-    }).join('');
+    }
+
+    function render() {
+      grid.innerHTML = notes.slice(0, showing).map(renderCard).join('');
+      if (showing >= notes.length) {
+        btnWrap.innerHTML = '';
+      } else {
+        btnWrap.innerHTML = `<button class="btn-load-more" id="loadMoreBtn">View All Field Notes (${notes.length - showing} more)</button>`;
+        document.getElementById('loadMoreBtn').addEventListener('click', () => {
+          showing = notes.length;
+          render();
+        });
+      }
+    }
+
+    render();
   })
   .catch(() => {
     document.getElementById('notesGrid').innerHTML = '';
