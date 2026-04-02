@@ -329,6 +329,79 @@
   </div>
 </section>
 
+<!-- HANGAR WAITLIST -->
+<section class="hangar-waitlist" id="hangar-waitlist">
+  <div class="container">
+    <span class="tag">Hangar Availability</span>
+    <h2>Join the Hangar Waitlist</h2>
+    <p>Hangar space at 18V goes fast. Add your name to the list and we'll reach out when something opens up.</p>
+    <form class="waitlist-form" id="waitlistForm">
+      <div class="waitlist-grid">
+        <div class="waitlist-field">
+          <label for="wl-name">Full Name <span class="req">*</span></label>
+          <input type="text" id="wl-name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="waitlist-field">
+          <label for="wl-email">Email <span class="req">*</span></label>
+          <input type="email" id="wl-email" name="email" placeholder="jane@example.com" required />
+        </div>
+        <div class="waitlist-field">
+          <label for="wl-phone">Phone <span class="opt">(optional)</span></label>
+          <input type="tel" id="wl-phone" name="phone" placeholder="(303) 555-0100" />
+        </div>
+        <div class="waitlist-field">
+          <label for="wl-aircraft">Aircraft Type <span class="opt">(optional)</span></label>
+          <input type="text" id="wl-aircraft" name="aircraft" placeholder="e.g. Cessna 172, RV-7" />
+        </div>
+      </div>
+      <div class="waitlist-field waitlist-field--full">
+        <label for="wl-notes">Anything else we should know? <span class="opt">(optional)</span></label>
+        <textarea id="wl-notes" name="notes" rows="3" placeholder="Hangar size preference, timeline, etc."></textarea>
+      </div>
+      <button type="submit" class="btn-red" id="waitlistSubmit">Add Me to the List</button>
+      <p class="waitlist-msg" id="waitlistMsg"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+document.getElementById('waitlistForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('waitlistSubmit');
+  const msg = document.getElementById('waitlistMsg');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  msg.textContent = '';
+  const data = {
+    name: document.getElementById('wl-name').value,
+    email: document.getElementById('wl-email').value,
+    phone: document.getElementById('wl-phone').value,
+    aircraft: document.getElementById('wl-aircraft').value,
+    notes: document.getElementById('wl-notes').value
+  };
+  try {
+    const res = await fetch('/.netlify/functions/hangar-waitlist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const result = await res.json();
+    if (result.success) {
+      msg.textContent = "✅ You're on the list! We'll be in touch when a hangar opens up.";
+      msg.className = 'waitlist-msg waitlist-msg--success';
+      e.target.reset();
+    } else {
+      throw new Error(result.error || 'Unknown error');
+    }
+  } catch(err) {
+    msg.textContent = '❌ Something went wrong. Please email us at info@plattevalleyairpark.com';
+    msg.className = 'waitlist-msg waitlist-msg--error';
+  }
+  btn.disabled = false;
+  btn.textContent = 'Add Me to the List';
+});
+</script>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-top container">
