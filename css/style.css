@@ -171,3 +171,25 @@ body { font-family: var(--font); background: var(--dark); color: var(--white); l
   .footer { padding: 48px 24px 32px; }
   .cta-band { padding: 56px 24px; }
 }
+
+/* EVENT BANNER */
+.event-banner { background: #BD212F; padding: 28px 0; }
+.event-banner-inner { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.event-banner-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.75); white-space: nowrap; }
+.event-banner-title { font-size: 20px; font-weight: 700; color: #fff; }
+.event-banner-detail { font-size: 14px; color: rgba(255,255,255,0.85); flex: 1; }
+@media (max-width: 620px) { .event-banner-inner { flex-direction: column; align-items: flex-start; gap: 10px; } }
+
+/* EVENT CARD LINK */
+.event-card--link { text-decoration: none; cursor: pointer; }
+.event-cta { color: #BD212F; font-weight: 600; }
+.event-card--link .event-cta { color: rgba(255,255,255,0.6); }
+
+/* EMAIL SIGNUP */
+.signup { background: #0d0d0d; padding: 80px 0; text-align: center; }
+.signup h2 { font-size: 36px; font-weight: 800; color: #fff; margin: 12px 0 16px; }
+.signup p { color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 32px; }
+.signup-form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.signup-input { padding: 14px 20px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: #fff; font-size: 15px; width: 300px; outline: none; }
+.signup-input::placeholder { color: rgba(255,255,255,0.35); }
+.signup-input:focus { border-color: #BD212F; }
