@@ -3,12 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Platte Valley Airpark — 18V | Fort Lupton, Colorado</title>
-  <meta name="description" content="Colorado's Front Range community airport. 100+ based aircraft, $6.15/gal 100LL self-serve 24/7, paved and grass runways. Fly in to 18V near Denver." />
-  <meta property="og:title" content="Platte Valley Airpark — 18V" />
-  <meta property="og:description" content="Your home field on the Front Range. Best fuel prices near Denver. Real GA community." />
-  <meta property="og:image" content="images/hero.jpg" />
+  <title>Platte Valley Airpark (18V) | Community GA Airport near Denver, CO</title>
+  <meta name="description" content="Platte Valley Airpark (18V) — Fort Lupton, CO. Self-serve 100LL at $6.15/gal, 24/7. 4,100 ft paved + 2,500 ft grass runway. Colorado's friendliest GA community airport, north of Denver on the Front Range." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.plattevalleyairpark.com/" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.plattevalleyairpark.com/" />
+  <meta property="og:title" content="Platte Valley Airpark (18V) | GA Airport near Denver, CO" />
+  <meta property="og:description" content="Self-serve 100LL at $6.15/gal, 24/7. 4,100 ft paved + 2,500 ft grass strip. Community airport north of Denver on Colorado's Front Range. 100+ based aircraft, 60+ years of GA history." />
+  <meta property="og:image" content="https://www.plattevalleyairpark.com/images/hero.jpg" />
+  <meta property="og:site_name" content="Platte Valley Airpark" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Platte Valley Airpark (18V) | GA Airport near Denver, CO" />
+  <meta name="twitter:description" content="Self-serve 100LL at $6.15/gal, 24/7. Colorado's friendliest community airport, north of Denver." />
+  <meta name="twitter:image" content="https://www.plattevalleyairpark.com/images/hero.jpg" />
+
+  <!-- Geo meta -->
+  <meta name="geo.region" content="US-CO" />
+  <meta name="geo.placename" content="Fort Lupton, Colorado" />
+  <meta name="geo.position" content="40.0772;-104.7941" />
+  <meta name="ICBM" content="40.0772, -104.7941" />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="18V, Platte Valley Airpark, Fort Lupton airport, GA airport Denver, 100LL fuel Colorado, general aviation Front Range, fly-in Colorado, tailwheel airport Denver, grass strip Colorado, based aircraft Denver" />
+
+  <!-- Structured Data: Airport + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Airport",
+        "name": "Platte Valley Airpark",
+        "iataCode": "18V",
+        "description": "Community general aviation airport on Colorado's Front Range. Self-serve 100LL fuel, paved and grass runways, 100+ based aircraft.",
+        "url": "https://www.plattevalleyairpark.com",
+        "telephone": "",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7507 County Road 39",
+          "addressLocality": "Fort Lupton",
+          "addressRegion": "CO",
+          "postalCode": "80621",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.0772,
+          "longitude": -104.7941
+        },
+        "openingHours": "Mo-Su 00:00-23:59"
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Platte Valley Airpark",
+        "description": "Colorado's friendliest community GA airport. Self-serve 100LL at $6.15/gal, 24/7. 60+ years of aviation history north of Denver.",
+        "url": "https://www.plattevalleyairpark.com",
+        "email": "info@plattevalleyairpark.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7507 County Road 39",
+          "addressLocality": "Fort Lupton",
+          "addressRegion": "CO",
+          "postalCode": "80621",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.0772,
+          "longitude": -104.7941
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
@@ -147,16 +224,26 @@
           <div class="event-detail">First Friday of every month<br>All pilots welcome · Ramp side</div>
         </div>
       </div>
-      <div class="event-card">
+      <a href="#signup" class="event-card event-card--link">
         <div class="event-icon">✈️</div>
         <div>
           <div class="event-name">Fly-Ins &amp; Socials</div>
-          <div class="event-detail">Regular events throughout the year<br>All aircraft types welcome</div>
+          <div class="event-detail">Regular events throughout the year<br>All aircraft types welcome · <span class="event-cta">Get notified →</span></div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
+
+<!-- EVENT BANNER -->
+<div class="event-banner" id="next-event">
+  <div class="event-banner-inner container">
+    <div class="event-banner-label">🥞 Upcoming Event</div>
+    <div class="event-banner-title">Pancake Breakfast Fly-In — April 11</div>
+    <div class="event-banner-detail">Saturday · 8:00–10:00 AM · Platte Valley Airpark (18V) · $10 suggested · Kids free</div>
+    <a href="#signup" class="btn-red">Stay in the Loop</a>
+  </div>
+</div>
 
 <!-- GALLERY STRIP -->
 <div class="gallery">
@@ -225,6 +312,22 @@
   <p>Best fuel prices on the Front Range. Friendly community. Colorado skies.</p>
   <a href="mailto:info@plattevalleyairpark.com" class="btn-white">Get in Touch</a>
 </div>
+
+<!-- EMAIL SIGNUP -->
+<section class="signup" id="signup">
+  <div class="container">
+    <span class="tag">Stay in the Loop</span>
+    <h2>Never Miss an Event</h2>
+    <p>Fuel price updates, fly-ins, community news — straight to your inbox. No spam. Just airpark.</p>
+    <form action="https://plattevalleyairpark.us18.list-manage.com/subscribe/post?u=a1e8b622805331a4d6ccabc5b&amp;id=278d3a6390" method="post" target="_blank" class="signup-form" novalidate>
+      <input type="email" name="EMAIL" placeholder="your@email.com" required class="signup-input" />
+      <div style="position:absolute;left:-5000px" aria-hidden="true">
+        <input type="text" name="b_a1e8b622805331a4d6ccabc5b_278d3a6390" tabindex="-1" value="" />
+      </div>
+      <button type="submit" class="btn-red">Join the Community</button>
+    </form>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="footer">
