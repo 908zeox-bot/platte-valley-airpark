@@ -13,49 +13,91 @@
     "date": "February 2026",
     "category": "From LinkedIn",
     "headline": "There's Something About a Grass Strip That Just Gets in Your Blood.",
-    "body": "Platte Valley Airpark (18V) sits just north of Denver — close enough to be convenient, far enough to feel like an escape. Our 2,500 ft grass runway is your invitation to sharpen those off-road flying skills: soft-field technique, crosswind awareness, density altitude respect. Taildraggers, experimentals, Cubs — all welcome. Honestly, everyone's welcome. Whether you're building backcountry skills or just looking for a fun hop away from the busy Class B, 18V is your Front Range playground.",
-    "tag": "#BackcountryFlying #GeneralAviation #GrassStrip",
+    "body": "Platte Valley Airpark (18V) sits just north of Denver — close enough to be convenient, far enough to feel like an escape. Our 2,500 ft grass runway is your invitation to sharpen those off-road flying skills: soft-field technique, crosswind awareness, density altitude respect. Taildraggers, experimentals, Cubs — all welcome. Honestly, everyone's welcome. Whether you're building backcountry skills or just looking for a fun hop away from the busy Class B, 18V is your Front Range playground. 100LL self-serve fuel on the field. Come fly with us.",
+    "tag": "#BackcountryFlying #GeneralAviation #GrassStrip #TailwheelFlying #ColoradoFlying #18V",
     "source": "linkedin"
   },
   {
-    "id": "density-alt-warning-2026-04",
+    "id": "linkedin-gama-adsb-2026-02",
+    "date": "February 2026",
+    "category": "Aviation News",
+    "headline": "GA's Best Financial Year Ever — and a Senate Bill That Could Change Small Airports",
+    "body": "GAMA's 2025 report: $35.7B in billings, the highest ever. Jet deliveries up 11.8% to 854 aircraft. But leaders flag a bottleneck — not enough A&P mechanics to sustain it. A bipartisan bill would put ADS-B displays at 90+ contract towers relying on visual observation alone. Controllers would finally see what pilots see on ForeFlight. Aviation Real Estate Magazine's Top 100 Airparks list highlights communities like Platte Valley Airpark (18V) — runway living keeping GA growing from the ground up. Growing the fleet or the workforce — which matters more?",
+    "tag": "#GeneralAviation #PrivateAirports #AviationNews #FlyInCommunity #AviationEconomy",
+    "source": "linkedin"
+  },
+  {
+    "id": "field-density-season-2026-04",
     "date": "April 2026",
     "category": "Field Conditions",
-    "headline": "Density Altitude Season is Here",
-    "body": "Think you know Colorado density altitude? Think again. Even seasoned pilots get humbled on a warm Front Range afternoon. At 18V we're sitting at 4,934 ft MSL — add a 75°F day and you're performing at over 8,000 ft density altitude before you've left the pattern. Lean aggressively, rotate with patience, and give yourself the whole runway. We've got 4,100 ft of paved and 2,500 ft of grass. Use it.",
-    "tag": "#DensityAltitude #FrontRange #18V"
+    "headline": "Density Altitude Season Is Here — Know Your Numbers",
+    "body": "18V sits at 4,934 ft MSL. Add a 75°F April afternoon and you're performing at over 8,000 ft density altitude before you've left the pattern. The math is simple: lean aggressively, rotate with patience, and give yourself the whole runway. We've got 4,100 ft of paved and 2,500 ft of grass — use every foot of it. Summer's coming. Know your airplane's numbers cold before July gets here.",
+    "tag": "#DensityAltitude #SummerFlying #FrontRange #18V"
   },
   {
-    "id": "grass-strip-etiquette-2026",
-    "date": "March 2026",
-    "category": "Pilot Tips",
-    "headline": "Grass Strip Etiquette — The Unwritten Rules",
-    "body": "There's something about a grass strip that just gets in your blood. 14/32 at Platte Valley is 2,500 ft of soft-field character-building. A few things seasoned regulars know: inspect first, especially after rain. Soft-field technique isn't optional — it's respect for the surface. And if you're in a heavy nosedragger, let the taildraggers and Cubs go first. They earned it.",
-    "tag": "#GrassStrip #TailwheelLife #BackcountryFlying"
-  },
-  {
-    "id": "sunrise-departure-2026",
-    "date": "February 2026",
-    "category": "Community",
-    "headline": "Why Sunrise Departures Matter at 18V",
-    "body": "There's a reason the regulars are out on the ramp by 6:30 AM. The air is smooth, the winds are calm, and the Rockies are lit up in alpenglow. Summer thermals at noon are a different conversation — but that early morning slot? That's what this field is really about. Come fly with us.",
-    "tag": "#MorningFlying #ColoradoAviation #GeneralAviation"
-  },
-  {
-    "id": "aopa-small-airports-2026",
-    "date": "March 2026",
-    "category": "Aviation News",
-    "headline": "AOPA: Small Airports Are the Backbone of GA",
-    "body": "AOPA's latest advocacy push is highlighting what pilots at fields like 18V already know: small community airports are irreplaceable. They're where flight training happens, where first solos are celebrated, where the real GA culture lives. Platte Valley has been doing this for 60+ years — and we're not going anywhere.",
-    "tag": "#AOPA #GeneralAviation #SmallAirports",
-    "link": "https://www.aopa.org/advocacy/airports"
-  },
-  {
-    "id": "mountain-wave-winter-2026",
+    "id": "field-mountain-wave-2026-01",
     "date": "January 2026",
     "category": "Pilot Tips",
     "headline": "Mountain Wave Season — Respect the Rotor",
-    "body": "Winter on the Front Range means mountain wave. If you're departing 18V westbound when the winds are howling off the peaks, know what you're getting into. The rotor zone below the wave can be violent. Stay east of the foothills until you have altitude, file IFR if in doubt, and never underestimate the lee side. Beautiful flying country — if you know the rules.",
-    "tag": "#MountainFlying #ColoradoWeather #FrontRange"
+    "body": "Winter on the Front Range means mountain wave. If you're departing 18V westbound when the winds are howling off the peaks, know what you're getting into. The rotor zone below the wave can be violent and unpredictable. Stay east of the foothills until you have altitude, file IFR if in doubt, and never underestimate the lee side. Beautiful flying country — if you know the rules. The regulars here have stories. Ask them on the ramp.",
+    "tag": "#MountainFlying #ColoradoWeather #FrontRange #WinterFlying"
+  },
+  {
+    "id": "field-sunrise-departures-2026-02",
+    "date": "February 2026",
+    "category": "Community",
+    "headline": "Why the Regulars Are Out at 6:30 AM",
+    "body": "There's a reason the regulars are on the ramp before sunrise. The air is smooth, the winds are calm, and the Rockies are lit up in alpenglow. By noon in summer you're fighting thermals and density altitude. But that early morning slot — that's what this field is really about. If you've never launched east from 18V into a Colorado sunrise with the mountains in your mirror, put it on the list. We'll be the ones already fueled up and taxiing.",
+    "tag": "#MorningFlying #ColoradoAviation #FrontRange #SunriseFlying"
+  },
+  {
+    "id": "field-grass-etiquette-2026-03",
+    "date": "March 2026",
+    "category": "Pilot Tips",
+    "headline": "Grass Strip Etiquette — The Unwritten Rules at 18V",
+    "body": "14/32 at Platte Valley is 2,500 ft of soft-field character-building. A few things the regulars know: inspect first, especially after rain — we get freeze-thaw cycles that can surprise you. Soft-field technique isn't optional, it's respect for the surface and the pilots behind you. If you're in a heavy nosedragger, let the taildraggers and Cubs go first. They earned it. And if you nail a three-pointer in a crosswind? The guys on the ramp will notice.",
+    "tag": "#GrassStrip #TailwheelLife #SoftField #18V"
+  },
+  {
+    "id": "news-aopa-small-airports-2026-03",
+    "date": "March 2026",
+    "category": "Aviation News",
+    "headline": "AOPA: Small Airports Are the Backbone of GA",
+    "body": "AOPA's latest advocacy push highlights what pilots at fields like 18V already know: small community airports are irreplaceable. They're where flight training happens, first solos get celebrated, and the real GA culture lives. Over 5,000 public-use airports in the US, and the ones that matter most to the community are rarely the ones with the big towers. Platte Valley has been doing this for 60+ years. We're not going anywhere.",
+    "tag": "#AOPA #GeneralAviation #SmallAirports #GAAdvocacy",
+    "link": "https://www.aopa.org/advocacy/airports"
+  },
+  {
+    "id": "news-airpark-community-60yrs",
+    "date": "January 2026",
+    "category": "Our Story",
+    "headline": "60+ Years on the Front Range — What That Actually Means",
+    "body": "Platte Valley Airpark has been here since 1966. That's six decades of first solos, hangar friendships, fly-in breakfasts, and the kind of community that forms when pilots spend enough time together. New management under Delta Zulu is investing in the field — better fuel pricing, events, and a renewed focus on making 18V the best community airport on the Front Range. The soul of the place hasn't changed. It's still about showing up, flying airplanes, and knowing your neighbor's name.",
+    "tag": "#PlattValleyAirpark #18V #GA #CommunityAirport #ColoradoFlying"
+  },
+  {
+    "id": "news-pancake-2026-04",
+    "date": "April 2026",
+    "category": "Event",
+    "headline": "Pancake Breakfast Fly-In — April 11",
+    "body": "The griddle is coming out. Saturday, April 11 from 8 to 11 AM on the ramp at 18V. Fly in, drive in, or wander over from your hangar. $10 donation suggested, kids free. CTAF 122.9, no landing fee, 4,100 ft of paved runway and 2,500 ft of grass waiting for you. This is what community airports are for.",
+    "tag": "#FlyIn #PancakeBreakfast #18V #FrontRangeFlying",
+    "link": "/pancake_breakfast_fly_in.html"
+  },
+  {
+    "id": "news-fuel-price-2026-03",
+    "date": "March 2026",
+    "category": "Field Update",
+    "headline": "100LL at $6.15/gal — Still the Best Deal Near Denver",
+    "body": "Self-serve 100LL at Platte Valley Airpark is $6.15/gal, 24/7, credit card. Compare that to KBJC, KAPA, or KGXY on your next trip to the Denver area and you'll see why transient traffic keeps coming back. We're not trying to win on amenities — we win on community, value, and a ramp culture that makes you want to linger. Stop in on your next cross-country. We'll be here.",
+    "tag": "#100LL #AvGas #FuelPrice #FrontRange #18V"
+  },
+  {
+    "id": "news-warbird-welcome",
+    "date": "February 2026",
+    "category": "Community",
+    "headline": "All Aircraft Welcome — And We Mean It",
+    "body": "Cubs. CubCrafters. Experimentals. Classics. Warbirds. Ultralights. If it has wings and a prop (or a rotor — we don't judge), 18V has a place for you. The grass strip is especially popular with the tailwheel crowd, but the paved runway handles everything from Cessna 150s to the occasional turbine. No attitude. No FBO pretension. Just pilots and airplanes doing what they were built for.",
+    "tag": "#AllAircraftWelcome #TailwheelFlying #GrassStrip #Warbirds #CubCrafters"
   }
 ]
