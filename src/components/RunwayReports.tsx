@@ -6,6 +6,7 @@ interface Report {
   body: string
   tag: string
   link?: string
+  source?: string
 }
 
 interface RunwayReportsProps {
@@ -31,9 +32,14 @@ export default function RunwayReports({ reports }: RunwayReportsProps) {
             <div key={report.id} className="bg-white/10 rounded-lg p-6 flex flex-col">
               {/* Category + Date */}
               <div className="flex justify-between items-center mb-3">
-                <span className="text-[#BD212F] text-xs font-bold uppercase tracking-wider">
-                  {report.category}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-[#BD212F] text-xs font-bold uppercase tracking-wider">
+                    {report.category}
+                  </span>
+                  {report.source === 'linkedin' && (
+                    <span className="text-xs bg-[#0A66C2] text-white px-1.5 py-0.5 rounded font-bold">in</span>
+                  )}
+                </div>
                 <span className="text-gray-500 text-xs">{report.date}</span>
               </div>
 
