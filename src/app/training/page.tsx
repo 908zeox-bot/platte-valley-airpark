@@ -60,6 +60,7 @@ export default function TrainingPage() {
             <p className="text-xl md:text-2xl mb-6 font-light">Conversational study sessions for pilots preparing for the FAA Commercial Pilot checkride.</p>
             <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">Each episode is a dialogue between Alex, a student pilot, and Jordan, an experienced CFI — covering SR22T systems, commercial maneuvers, regulations, weather, and emergency procedures. Built for technically advanced aircraft. No filler, just the knowledge you need.</p>
             <p className="text-xs text-gray-400">Produced by Altitude Z Aviation | Hosted at Platte Valley Airpark (18V)</p>
+            <p className="text-xs text-gray-500 mt-3 max-w-xl mx-auto">⚠️ This content is produced with the assistance of AI. It is intended as a study aid and does not replace official FAA publications, approved training materials, or the guidance of a certified flight instructor.</p>
           </div>
         </section>
 
