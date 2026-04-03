@@ -20,6 +20,7 @@ const Nav = () => {
           <Link href="#fly-in" className="text-dark-charcoal hover:text-airpark-red">Fly In</Link>
           <Link href="#gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
           <Link href="#events" className="text-dark-charcoal hover:text-airpark-red">Events</Link>
+          <Link href="/training" className="text-dark-charcoal hover:text-airpark-red">Training</Link>
           <Link href="#contact" className="text-dark-charcoal hover:text-airpark-red">Contact</Link>
         </div>
 
@@ -41,6 +42,7 @@ const Nav = () => {
             <Link href="#fly-in" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fly In</Link>
             <Link href="#gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
             <Link href="#events" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Events</Link>
+            <Link href="/training" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Training</Link>
             <Link href="#contact" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
         </div>
