@@ -14,35 +14,35 @@ const episodes = [
     episode: 1,
     title: 'SR22T Systems Deep Dive',
     duration: '25:34',
-    audioUrl: 'https://anchor.fm/s/110ff330c/podcast/play/117916842/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-3%2Faa51c58f-6f56-bc63-6038-05c22cdf2d6a.mp3',
+    audioUrl: 'https://cleared-for-commercial.netlify.app/ep1.mp3',
     description: 'Cirrus SR22T systems from the ground up — engine, fuel, avionics, pressurization, CAPS, and the questions every DPE will ask.',
   },
   {
     episode: 2,
     title: 'Commercial Maneuvers Mastery',
     duration: '25:20',
-    audioUrl: 'https://anchor.fm/s/110ff330c/podcast/play/117916882/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-3%2F98a3a3e5-db3d-c24f-7a97-91c28e85da3c.mp3',
+    audioUrl: 'https://cleared-for-commercial.netlify.app/ep2.mp3',
     description: 'Chandelles, lazy eights, steep turns, eights on pylons, power-off 180s — the mechanics, the standards, and how to fly them in the SR22T.',
   },
   {
     episode: 3,
     title: 'Regulations Oral Exam Prep',
     duration: '25:08',
-    audioUrl: 'https://anchor.fm/s/110ff330c/podcast/play/117917421/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-3%2F7c4b02e7-0a83-0683-052b-b089a044d2db.mp3',
+    audioUrl: 'https://cleared-for-commercial.netlify.app/ep3.mp3',
     description: 'Full mock oral exam — Jordan as the DPE, Alex in the hot seat. Certificate requirements, endorsements, ARROW documents, airworthiness directives, maintenance, and flight operations rules.',
   },
   {
     episode: 4,
     title: 'Weather and Aerodynamics',
     duration: '26:16',
-    audioUrl: 'https://anchor.fm/s/110ff330c/podcast/play/117917421/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-3%2F7c4b02e7-0a83-0683-052b-b089a044d2db.mp3',
+    audioUrl: 'https://cleared-for-commercial.netlify.app/ep4.mp3',
     description: 'Pressure systems, fronts, icing, thunderstorms, lift, drag, load factor, stall speed in turns — thinking like an engineer, not just a pilot.',
   },
   {
     episode: 5,
     title: 'Emergency Procedures and Human Factors',
     duration: '25:32',
-    audioUrl: 'https://anchor.fm/s/110ff330c/podcast/play/117917439/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-3%2F5e8bf7c2-8b7b-3aca-82f3-ce3e7ae98071.mp3',
+    audioUrl: 'https://cleared-for-commercial.netlify.app/ep5.mp3',
     description: 'Engine failures, electrical emergencies, CAPS decisions, IMSAFE, DECIDE model, hypoxia, spatial disorientation, and a rapid-fire V-speeds and limitations close.',
   },
 ];
@@ -84,6 +84,29 @@ export default function TrainingPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Flashcards Section */}
+        <section className="bg-gray-100 py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold mb-2 text-airpark-red uppercase tracking-wider">Study Tool</p>
+              <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-4">Checkride Flashcards</h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">The companion study guide to the podcast. 100+ flashcards covering systems, regulations, maneuvers, weather, and emergency procedures — built for the SR22T commercial checkride.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
+              <iframe
+                src="https://cpl-checkride.netlify.app/checkride-flashcards.html"
+                className="w-full"
+                style={{height: '600px', border: 'none'}}
+                title="Altitude Z Aviation Commercial Checkride Flashcards"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-center mt-6">
+              <Link href="https://cpl-checkride.netlify.app" target="_blank" rel="noopener noreferrer" className="text-airpark-red hover:underline font-semibold">Open full flashcard app →</Link>
+            </p>
           </div>
         </section>
 
