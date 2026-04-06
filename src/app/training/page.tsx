@@ -5,45 +5,40 @@ import Footer from '@/components/Footer';
 import siteData from '../../../data/site.json';
 
 export const metadata: Metadata = {
-  title: 'Training — Cleared for Commercial | Platte Valley Airpark',
-  description: 'Conversational study sessions for pilots preparing for the FAA Commercial Pilot checkride, covering SR22T systems, commercial maneuvers, regulations, weather, and emergency procedures.',
+  title: 'Pilot Resources | Platte Valley Airpark',
+  description: 'A few training resources we\'ve found useful at 18V — podcast episodes, study tools, and links to great aviation content.',
 };
 
 const episodes = [
   {
     episode: 1,
-    title: 'SR22T Systems Deep Dive',
-    duration: '25:34',
+    title: 'SR22T Systems',
     audioUrl: 'https://cleared-for-commercial.netlify.app/ep1.mp3',
-    description: 'Cirrus SR22T systems from the ground up — engine, fuel, avionics, pressurization, CAPS, and the questions every DPE will ask.',
+    description: 'Engine, fuel, avionics, pressurization, and CAPS.',
   },
   {
     episode: 2,
-    title: 'Commercial Maneuvers Mastery',
-    duration: '25:20',
+    title: 'Commercial Maneuvers',
     audioUrl: 'https://cleared-for-commercial.netlify.app/ep2.mp3',
-    description: 'Chandelles, lazy eights, steep turns, eights on pylons, power-off 180s — the mechanics, the standards, and how to fly them in the SR22T.',
+    description: 'Chandelles, lazy eights, steep turns, eights on pylons, power-off 180s.',
   },
   {
     episode: 3,
-    title: 'Regulations Oral Exam Prep',
-    duration: '25:08',
+    title: 'Regulations',
     audioUrl: 'https://cleared-for-commercial.netlify.app/ep3.mp3',
-    description: 'Full mock oral exam — Jordan as the DPE, Alex in the hot seat. Certificate requirements, endorsements, ARROW documents, airworthiness directives, maintenance, and flight operations rules.',
+    description: 'Certificate requirements, ARROW documents, airworthiness directives, and flight rules.',
   },
   {
     episode: 4,
     title: 'Weather and Aerodynamics',
-    duration: '26:16',
     audioUrl: 'https://cleared-for-commercial.netlify.app/ep4.mp3',
-    description: 'Pressure systems, fronts, icing, thunderstorms, lift, drag, load factor, stall speed in turns — thinking like an engineer, not just a pilot.',
+    description: 'Pressure systems, fronts, icing, lift, drag, and load factor.',
   },
   {
     episode: 5,
-    title: 'Emergency Procedures and Human Factors',
-    duration: '25:32',
+    title: 'Emergency Procedures',
     audioUrl: 'https://cleared-for-commercial.netlify.app/ep5.mp3',
-    description: 'Engine failures, electrical emergencies, CAPS decisions, IMSAFE, DECIDE model, hypoxia, spatial disorientation, and a rapid-fire V-speeds and limitations close.',
+    description: 'Engine failures, CAPS decisions, IMSAFE, DECIDE model, and human factors.',
   },
 ];
 
@@ -52,73 +47,76 @@ export default function TrainingPage() {
     <div className="flex min-h-screen flex-col bg-white">
       <Nav />
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero */}
         <section className="bg-dark-charcoal text-white py-20 px-4 pt-32 md:pt-40">
-          <div className="container mx-auto max-w-4xl text-center">
-            <p className="text-sm font-semibold mb-2 text-airpark-red uppercase tracking-wider">FROM THE FLIGHT DECK</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 leading-tight">Cleared for Commercial</h1>
-            <p className="text-xl md:text-2xl mb-6 font-light">Conversational study sessions for pilots preparing for the FAA Commercial Pilot checkride.</p>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">Each episode is a dialogue between Alex, a student pilot, and Jordan, an experienced CFI — covering SR22T systems, commercial maneuvers, regulations, weather, and emergency procedures. Built for technically advanced aircraft. No filler, just the knowledge you need.</p>
-            <p className="text-xs text-gray-400">Produced by Altitude Z Aviation | Hosted at Platte Valley Airpark (18V)</p>
-            <p className="text-xs text-gray-500 mt-3 max-w-xl mx-auto">⚠️ This content is produced with the assistance of AI. It is intended as a study aid and does not replace official FAA publications, approved training materials, or the guidance of a certified flight instructor.</p>
+          <div className="container mx-auto max-w-3xl text-center">
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">Pilot Resources</h1>
+            <p className="text-lg text-gray-300 max-w-xl mx-auto">A few things we&apos;ve found useful in our own training. Take what helps, ignore what doesn&apos;t.</p>
           </div>
         </section>
 
-        {/* Episodes Section */}
+        {/* Podcast Section */}
         <section className="bg-white py-16 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold text-dark-charcoal text-center mb-12">Episodes</h2>
-            <div className="grid gap-8 md:grid-cols-1">
-              {episodes.slice().reverse().map((ep) => ( // Reverse order for newest first display
-                <div key={ep.episode} className="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto w-full">
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="bg-airpark-red text-white text-xs font-bold px-3 py-1 rounded-full">EP {ep.episode}</span>
-                    <span className="text-gray-500 text-sm">{ep.duration}</span>
+          <div className="container mx-auto max-w-3xl">
+            <h2 className="text-3xl font-serif font-bold text-dark-charcoal mb-2">Cleared for Commercial</h2>
+            <p className="text-gray-600 mb-2">Conversational checkride prep — a student and CFI working through SR22T systems, maneuvers, regs, weather, and emergencies. Produced by Altitude Z Aviation.</p>
+            <p className="text-xs text-gray-400 mb-8 italic">AI-assisted content. Use as a study aid alongside official FAA materials and your CFI.</p>
+            <div className="space-y-6">
+              {episodes.map((ep) => (
+                <div key={ep.episode} className="border border-gray-200 rounded-lg p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="bg-airpark-red text-white text-xs font-bold px-2.5 py-1 rounded-full">EP {ep.episode}</span>
+                    <h3 className="text-lg font-serif font-bold text-dark-charcoal">{ep.title}</h3>
                   </div>
-                  <h3 className="text-2xl font-serif font-bold text-dark-charcoal mb-2">{ep.title}</h3>
-                  <p className="text-gray-700 text-sm mb-4">{ep.description}</p>
-                  <audio controls className="w-full mt-3">
+                  <p className="text-gray-600 text-sm mb-3">{ep.description}</p>
+                  <audio controls className="w-full">
                     <source src={ep.audioUrl} type="audio/mpeg" />
                     Your browser does not support the audio element.
                   </audio>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Flashcards Section */}
-        <section className="bg-gray-100 py-16 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <div className="text-center mb-10">
-              <p className="text-sm font-semibold mb-2 text-airpark-red uppercase tracking-wider">Study Tool</p>
-              <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-4">Checkride Flashcards</h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">The companion study guide to the podcast. 100+ flashcards covering systems, regulations, maneuvers, weather, and emergency procedures — built for the SR22T commercial checkride.</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
-              <iframe
-                src="https://cpl-checkride.netlify.app/checkride-flashcards.html"
-                className="w-full"
-                style={{height: '600px', border: 'none'}}
-                title="Altitude Z Aviation Commercial Checkride Flashcards"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-center mt-6">
-              <Link href="https://cpl-checkride.netlify.app" target="_blank" rel="noopener noreferrer" className="text-airpark-red hover:underline font-semibold">Open full flashcard app →</Link>
+            <p className="mt-8 text-center">
+              <Link href="https://cleared-for-commercial.netlify.app" target="_blank" rel="noopener noreferrer" className="text-airpark-red hover:underline text-sm">Full podcast site →</Link>
             </p>
           </div>
         </section>
 
-        {/* Subscribe Section */}
-        <section className="bg-dark-charcoal text-white py-16 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl font-serif font-bold mb-6">Listen Everywhere</h2>
-            <p className="text-lg mb-8">Cleared for Commercial is available on all major podcast platforms.</p>
-            <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 text-airpark-red text-lg">
-              <Link href="https://anchor.fm/altitudezaviation" target="_blank" rel="noopener noreferrer" className="hover:underline">Spotify</Link>
-              <Link href="https://anchor.fm/altitudezaviation" target="_blank" rel="noopener noreferrer" className="hover:underline">Apple Podcasts</Link>
-              <Link href="https://anchor.fm/s/110ff330c/podcast/rss" target="_blank" rel="noopener noreferrer" className="hover:underline">RSS Feed</Link>
+        {/* Flashcards Section */}
+        <section className="bg-gray-50 py-16 px-4 border-t border-gray-200">
+          <div className="container mx-auto max-w-3xl">
+            <h2 className="text-3xl font-serif font-bold text-dark-charcoal mb-2">Checkride Flashcards</h2>
+            <p className="text-gray-600 mb-8">A companion study deck covering systems, regs, maneuvers, weather, and emergencies for the SR22T commercial checkride.</p>
+            <div className="rounded-lg overflow-hidden shadow-sm border border-gray-200">
+              <iframe
+                src="https://cpl-checkride.netlify.app/checkride-flashcards.html"
+                className="w-full"
+                style={{height: '580px', border: 'none'}}
+                title="Commercial Checkride Flashcards"
+                loading="lazy"
+              />
+            </div>
+            <p className="mt-4 text-center">
+              <Link href="https://cpl-checkride.netlify.app" target="_blank" rel="noopener noreferrer" className="text-airpark-red hover:underline text-sm">Open full flashcard app →</Link>
+            </p>
+          </div>
+        </section>
+
+        {/* External Resources */}
+        <section className="bg-white py-16 px-4 border-t border-gray-200">
+          <div className="container mx-auto max-w-3xl">
+            <h2 className="text-3xl font-serif font-bold text-dark-charcoal mb-2">Worth Bookmarking</h2>
+            <p className="text-gray-600 mb-8">Other resources that have been genuinely useful.</p>
+            <div className="space-y-6">
+              <div className="border border-gray-200 rounded-lg p-5">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-lg font-serif font-bold text-dark-charcoal mb-1">Bold Method — Direct To Podcast</h3>
+                    <p className="text-gray-600 text-sm">Real aviation stories, training topics, and conversations from the field. One of the better GA podcasts out there.</p>
+                  </div>
+                </div>
+                <Link href="https://www.boldmethod.com/podcasts/direct-to/" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-airpark-red hover:underline text-sm font-medium">boldmethod.com/podcasts/direct-to/ →</Link>
+              </div>
             </div>
           </div>
         </section>
