@@ -58,10 +58,38 @@ const Footer = ({ site }: FooterProps) => {
         </div>
 
         <div>
-          <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
-          <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V or joining the hangar waitlist?</p>
-          <a href={`mailto:${site.email}?subject=Hangar Waitlist Inquiry`} className="inline-block bg-airpark-red hover:bg-red-700 text-white text-sm font-bold py-2 px-4 rounded mb-6 transition duration-300">Hangar Waitlist</a>
-          <h3 className="text-xl font-bold mb-4">Connect</h3>
+          <h3 className="text-xl font-bold mb-4">Stay in the Loop</h3>
+          <p className="mb-3 text-sm text-gray-400">Fuel prices, events, and community news.</p>
+          <form
+            action="https://plattevalleyairpark.us18.list-manage.com/subscribe/post?u=a1e8b622805331a4d6ccabc5b&id=278d3a6390"
+            method="post"
+            target="_blank"
+            noValidate
+            className="mb-4"
+          >
+            <div className="flex gap-2">
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Your email"
+                required
+                className="flex-1 px-3 py-2 rounded text-dark-charcoal text-sm focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="bg-airpark-red hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition duration-300 whitespace-nowrap"
+              >
+                Sign Up
+              </button>
+            </div>
+            {/* Anti-bot honeypot */}
+            <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+              <input type="text" name="b_a1e8b622805331a4d6ccabc5b_278d3a6390" tabIndex={-1} defaultValue="" />
+            </div>
+          </form>
+          <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V?</p>
+          <a href={`mailto:${site.email}?subject=Hangar Waitlist Inquiry`} className="inline-block text-airpark-red hover:underline text-sm font-medium">Join the hangar waitlist →</a>
+          <h3 className="text-xl font-bold mb-4 mt-6">Connect</h3>
           <div className="flex justify-center md:justify-start space-x-4">
             {site.facebook && (
               <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-2xl">
