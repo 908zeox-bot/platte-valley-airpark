@@ -48,15 +48,19 @@ const Footer = ({ site }: FooterProps) => {
           <h3 className="text-xl font-bold mb-4">Navigation</h3>
           <ul>
             <li className="mb-2"><Link href="/" className="hover:text-airpark-red">Home</Link></li>
-            <li className="mb-2"><Link href="#about" className="hover:text-airpark-red">About</Link></li>
-            <li className="mb-2"><Link href="#fuel-services" className="hover:text-airpark-red">Fuel & Services</Link></li>
-            <li className="mb-2"><Link href="#fly-in" className="hover:text-airpark-red">Fly In</Link></li>
-            <li className="mb-2"><Link href="#gallery" className="hover:text-airpark-red">Gallery</Link></li>
-            <li className="mb-2"><Link href="#events" className="hover:text-airpark-red">Events</Link></li>
+            <li className="mb-2"><Link href="/#about" className="hover:text-airpark-red">About</Link></li>
+            <li className="mb-2"><Link href="/#fuel-services" className="hover:text-airpark-red">Fuel & Services</Link></li>
+            <li className="mb-2"><Link href="/#fly-in" className="hover:text-airpark-red">Fly In</Link></li>
+            <li className="mb-2"><Link href="/#gallery" className="hover:text-airpark-red">Gallery</Link></li>
+            <li className="mb-2"><Link href="/#events" className="hover:text-airpark-red">Events</Link></li>
+            <li className="mb-2"><Link href="/training" className="hover:text-airpark-red">Training</Link></li>
           </ul>
         </div>
 
         <div>
+          <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
+          <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V or joining the hangar waitlist?</p>
+          <a href={`mailto:${site.email}?subject=Hangar Waitlist Inquiry`} className="inline-block bg-airpark-red hover:bg-red-700 text-white text-sm font-bold py-2 px-4 rounded mb-6 transition duration-300">Hangar Waitlist</a>
           <h3 className="text-xl font-bold mb-4">Connect</h3>
           <div className="flex justify-center md:justify-start space-x-4">
             {site.facebook && (

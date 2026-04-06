@@ -15,13 +15,13 @@ const Nav = () => {
 
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="text-dark-charcoal hover:text-airpark-red">Home</Link>
-          <Link href="#about" className="text-dark-charcoal hover:text-airpark-red">About</Link>
-          <Link href="#fuel-services" className="text-dark-charcoal hover:text-airpark-red">Fuel & Services</Link>
-          <Link href="#fly-in" className="text-dark-charcoal hover:text-airpark-red">Fly In</Link>
-          <Link href="#gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
-          <Link href="#events" className="text-dark-charcoal hover:text-airpark-red">Events</Link>
+          <Link href="/#about" className="text-dark-charcoal hover:text-airpark-red">About</Link>
+          <Link href="/#fuel-services" className="text-dark-charcoal hover:text-airpark-red">Fuel & Services</Link>
+          <Link href="/#fly-in" className="text-dark-charcoal hover:text-airpark-red">Fly In</Link>
+          <Link href="/#gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
+          <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red">Events</Link>
           <Link href="/training" className="text-dark-charcoal hover:text-airpark-red">Training</Link>
-          <Link href="#contact" className="text-dark-charcoal hover:text-airpark-red">Contact</Link>
+          <Link href="/#contact" className="text-dark-charcoal hover:text-airpark-red">Contact</Link>
         </div>
 
         <div className="md:hidden">
@@ -37,13 +37,13 @@ const Nav = () => {
         <div className="md:hidden bg-white shadow-lg pb-4">
           <div className="flex flex-col items-center space-y-2">
             <Link href="/" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="#about" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="#fuel-services" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fuel & Services</Link>
-            <Link href="#fly-in" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fly In</Link>
-            <Link href="#gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
-            <Link href="#events" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Events</Link>
+            <Link href="/#about" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/#fuel-services" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fuel & Services</Link>
+            <Link href="/#fly-in" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fly In</Link>
+            <Link href="/#gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
+            <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Events</Link>
             <Link href="/training" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Training</Link>
-            <Link href="#contact" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link href="/#contact" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
         </div>
       )}
