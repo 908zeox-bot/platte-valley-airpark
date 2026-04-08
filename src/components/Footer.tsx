@@ -88,7 +88,7 @@ const Footer = ({ site }: FooterProps) => {
             </div>
           </form>
           <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V?</p>
-          <a href={`mailto:${site.email}?subject=Hangar Waitlist Inquiry`} className="inline-block text-airpark-red hover:underline text-sm font-medium">Join the hangar waitlist →</a>
+          <a href="/hangars" className="inline-block text-airpark-red hover:underline text-sm font-medium">Join the hangar waitlist →</a>
           <h3 className="text-xl font-bold mb-4 mt-6">Connect</h3>
           <div className="flex justify-center md:justify-start space-x-4">
             {site.facebook && (
