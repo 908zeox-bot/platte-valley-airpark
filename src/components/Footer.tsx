@@ -63,10 +63,12 @@ const Footer = ({ site }: FooterProps) => {
           <form
             action="https://plattevalleyairpark.us18.list-manage.com/subscribe/post?u=a1e8b622805331a4d6ccabc5b&id=278d3a6390"
             method="post"
-            target="_blank"
+            target="_self"
             noValidate
             className="mb-4"
           >
+            {/* Redirect to /thanks so GA4 conversion event fires */}
+            <input type="hidden" name="REDIRECT" value="https://www.plattevalleyairpark.com/thanks" />
             <div className="flex gap-2">
               <input
                 type="email"

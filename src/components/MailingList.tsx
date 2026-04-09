@@ -1,5 +1,6 @@
 const MailingList = () => {
-  const mailchimpUrl = "https://plattevalleyairpark.us18.list-manage.com/subscribe/post?u=YOUR_U&id=278d3a6390"
+  // Mailchimp form with redirect to /thanks for GA4 conversion tracking
+  const mailchimpUrl = "https://plattevalleyairpark.us18.list-manage.com/subscribe/post?u=a1e8b622805331a4d6ccabc5b&id=278d3a6390"
 
   return (
     <section className="bg-dark-charcoal py-16 text-white text-center">
@@ -8,7 +9,17 @@ const MailingList = () => {
         <p className="text-lg mb-8">
           Fuel prices, events, and community news — straight to your inbox.
         </p>
-        <form action={mailchimpUrl} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+        <form
+          action={mailchimpUrl}
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          className="validate"
+          target="_self"
+          noValidate
+        >
+          {/* Redirect to /thanks so GA4 conversion event fires */}
+          <input type="hidden" name="REDIRECT" value="https://www.plattevalleyairpark.com/thanks" />
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <input
               type="email"
@@ -28,7 +39,7 @@ const MailingList = () => {
             </button>
           </div>
           <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-            <input type="text" name="b_YOUR_U_278d3a6390" tabIndex={-1} value="" readOnly />
+            <input type="text" name="b_a1e8b622805331a4d6ccabc5b_278d3a6390" tabIndex={-1} value="" readOnly />
           </div>
         </form>
       </div>
