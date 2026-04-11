@@ -15,8 +15,8 @@
     "payment": "credit card"
   },
   "runways": [
-    { "id": "09/27", "length": "4,100 ft", "surface": "paved", "lighted": true },
-    { "id": "14/32", "length": "2,500 ft", "surface": "grass", "tailwheel": true }
+    { "id": "15/33", "length": "4,100 ft", "surface": "paved", "lighted": true },
+    { "id": "9/27", "length": "2,500 ft", "surface": "grass", "tailwheel": true }
   ],
   "basedAircraft": "100+",
   "landingFee": false,
