@@ -53,7 +53,6 @@ const Footer = ({ site }: FooterProps) => {
             <li className="mb-2"><Link href="/#fly-in" className="hover:text-airpark-red">Fly In</Link></li>
             <li className="mb-2"><Link href="/#gallery" className="hover:text-airpark-red">Gallery</Link></li>
             <li className="mb-2"><Link href="/#events" className="hover:text-airpark-red">Events</Link></li>
-            <li className="mb-2"><Link href="/training" className="hover:text-airpark-red">Training</Link></li>
           </ul>
         </div>
 
