@@ -90,18 +90,22 @@ const Footer = ({ site }: FooterProps) => {
           </form>
           <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V?</p>
           <a href="/hangars" className="inline-block text-airpark-red hover:underline text-sm font-medium">Join the hangar waitlist →</a>
-          <h3 className="text-xl font-bold mb-4 mt-6">Connect</h3>
-          <div className="flex justify-center md:justify-start space-x-4">
+          <h3 className="text-xl font-bold mb-4 mt-6">Follow Us</h3>
+          <p className="text-sm text-gray-400 mb-3">Stay connected with 18V for field updates, fly-ins, and community news.</p>
+          <div className="flex justify-center md:justify-start space-x-4 flex-wrap gap-y-2">
             {site.facebook && (
-              <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-2xl">
-                Facebook
+              <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-sm font-medium border border-gray-600 px-3 py-1 rounded">
+                📘 Facebook
               </a>
             )}
             {site.instagram && (
-              <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-2xl">
-                Instagram
+              <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-sm font-medium border border-gray-600 px-3 py-1 rounded">
+                📸 Instagram
               </a>
             )}
+            <a href="https://www.linkedin.com/company/platte-valley-airpark" target="_blank" rel="noopener noreferrer" className="text-white hover:text-airpark-red text-sm font-medium border border-gray-600 px-3 py-1 rounded">
+              💼 LinkedIn
+            </a>
           </div>
         </div>
       </div>
