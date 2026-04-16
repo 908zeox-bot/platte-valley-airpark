@@ -1,13 +1,12 @@
 {
   "updated": "2026-04-16",
-  "week": 1,
+  "active_week": 1,
   "credit_zachery": "\u00a9 ZDS",
-  "credit_airpark": "Photo: Dave Shull",
+  "credit_erin": "Photo: ES",
   "sets": [
     {
       "week": 1,
       "label": "Pancake Breakfast Fly-In \u00b7 April 2026",
-      "active_week": 1,
       "photos": [
         {
           "src": "/images/z-wwi-biplane-mountains.jpg",
@@ -15,9 +14,9 @@
           "credit": "zachery"
         },
         {
-          "src": "/images/z-community-ramp.jpg",
-          "alt": "Community on the ramp at the Pancake Breakfast Fly-In",
-          "credit": "zachery"
+          "src": "/images/e-friends-posing.jpg",
+          "alt": "Friends at the Pancake Breakfast Fly-In at 18V",
+          "credit": "erin"
         },
         {
           "src": "/images/z-biplane-landing.jpg",
@@ -25,9 +24,29 @@
           "credit": "zachery"
         },
         {
+          "src": "/images/e-kids-firetruck.jpg",
+          "alt": "Kids in the fire truck at 18V fly-in",
+          "credit": "erin"
+        },
+        {
+          "src": "/images/z-community-ramp.jpg",
+          "alt": "Community gathering on the ramp at 18V",
+          "credit": "zachery"
+        },
+        {
+          "src": "/images/e-woman-dog.jpg",
+          "alt": "Community members enjoying the fly-in at 18V",
+          "credit": "erin"
+        },
+        {
           "src": "/images/z-grass-strip.jpg",
           "alt": "Aircraft on the grass strip (9/27) at 18V",
           "credit": "zachery"
+        },
+        {
+          "src": "/images/e-wwi-biplane.jpg",
+          "alt": "WWI biplane replica at the Pancake Breakfast",
+          "credit": "erin"
         },
         {
           "src": "/images/z-golden-hour-ramp.jpg",
@@ -38,19 +57,8 @@
           "src": "/images/z-ramp-scene.jpg",
           "alt": "Ramp scene at 18V fly-in",
           "credit": "zachery"
-        },
-        {
-          "src": "/images/z-aircraft-taxiing.jpg",
-          "alt": "Aircraft taxiing at 18V",
-          "credit": "zachery"
-        },
-        {
-          "src": "/images/z-field-wide.jpg",
-          "alt": "Wide view of Platte Valley Airpark",
-          "credit": "zachery"
         }
       ]
     }
-  ],
-  "active_week": 1
+  ]
 }
