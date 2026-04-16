@@ -88,6 +88,8 @@ const Footer = ({ site }: FooterProps) => {
               <input type="text" name="b_a1e8b622805331a4d6ccabc5b_278d3a6390" tabIndex={-1} defaultValue="" />
             </div>
           </form>
+          <p className="mb-2 text-sm text-gray-400">Questions? Email the GM directly:</p>
+          <a href="mailto:dave@plattevalleyairpark.com" className="inline-block text-airpark-red hover:underline text-sm font-medium mb-4">dave@plattevalleyairpark.com</a>
           <p className="mb-3 text-sm text-gray-400">Interested in basing at 18V?</p>
           <a href="/hangars" className="inline-block text-airpark-red hover:underline text-sm font-medium">Join the hangar waitlist →</a>
           <h3 className="text-xl font-bold mb-4 mt-6">Follow Us</h3>
