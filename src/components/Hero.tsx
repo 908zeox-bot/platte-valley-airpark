@@ -37,7 +37,7 @@ const Hero = ({ site }: HeroProps) => {
   return (
     <section
       className="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
-      style={{ backgroundImage: 'url(/images/DSC_0051.jpg)' }}
+      style={{ backgroundImage: 'url(/images/66.jpg)' }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 text-white p-4 max-w-4xl mx-auto">

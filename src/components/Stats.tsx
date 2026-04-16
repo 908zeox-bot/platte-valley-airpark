@@ -42,7 +42,7 @@ const Stats = ({ site }: StatsProps) => {
   return (
     <section className="bg-dark-charcoal py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
           {stats.map((stat, index) => (
             <div key={index} className="text-white">
               <p className="text-3xl md:text-4xl font-bold text-airpark-red mb-1">{stat.split(' ')[0]}</p>

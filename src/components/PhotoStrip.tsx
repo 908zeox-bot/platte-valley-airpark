@@ -1,10 +1,10 @@
 export default function PhotoStrip() {
   const photos = [
-    { src: '/images/DSC_0052.jpg', alt: 'Aircraft on the ramp at Platte Valley Airpark' },
-    { src: '/images/DSC_0080.jpg', alt: 'Hangars and Colorado sky at 18V' },
-    { src: '/images/DSC_0093.jpg', alt: 'Ramp operations at Platte Valley Airpark' },
-    { src: '/images/DSC_0110.jpg', alt: 'Colorado Front Range scenery from 18V' },
-    { src: '/images/DSC_0112.jpg', alt: 'General aviation aircraft at Fort Lupton airport' },
+    { src: '/images/64.jpg', alt: 'Aircraft on the ramp at Platte Valley Airpark' },
+    { src: '/images/58.jpg', alt: 'Hangars and Colorado sky at 18V' },
+    { src: '/images/55.jpg', alt: 'Ramp operations at Platte Valley Airpark' },
+    { src: '/images/50.jpg', alt: 'Colorado Front Range scenery from 18V' },
+    { src: '/images/51.jpg', alt: 'General aviation aircraft at Fort Lupton airport' },
   ]
 
   return (
