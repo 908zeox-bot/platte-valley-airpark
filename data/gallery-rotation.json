@@ -1,0 +1,81 @@
+{
+  "updated": "2026-04-16",
+  "week": 1,
+  "credit_zachery": "© Zachery [LAST NAME TBD] Photography",
+  "credit_airpark": "© Platte Valley Airpark",
+  "sets": [
+    {
+      "week": 1,
+      "label": "The Fly-In & The Field",
+      "photos": [
+        { "src": "/images/10.jpg", "alt": "WWI biplane at the Pancake Breakfast Fly-In, 18V", "credit": "zachery" },
+        { "src": "/images/68.jpg", "alt": "Aircraft on the ramp at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/4.jpg",  "alt": "On short final to 18V", "credit": "zachery" },
+        { "src": "/images/60.jpg", "alt": "Aerial overview of Platte Valley Airpark runways", "credit": "airpark" },
+        { "src": "/images/22.jpg", "alt": "Aircraft landing at the Pancake Breakfast Fly-In", "credit": "zachery" },
+        { "src": "/images/66.jpg", "alt": "Ramp operations at 18V Fort Lupton", "credit": "airpark" },
+        { "src": "/images/8.jpg",  "alt": "Fly-in crowd on the ramp at 18V", "credit": "zachery" },
+        { "src": "/images/58.jpg", "alt": "T-hangars under Colorado blue sky at 18V", "credit": "airpark" },
+        { "src": "/images/17.jpg", "alt": "Biplane on short final at Platte Valley Airpark", "credit": "zachery" },
+        { "src": "/images/67.jpg", "alt": "Aerial view of 18V from above", "credit": "airpark" },
+        { "src": "/images/31.jpg", "alt": "Aircraft detail at the Pancake Breakfast Fly-In", "credit": "zachery" },
+        { "src": "/images/55.jpg", "alt": "Ramp operations with Rocky Mountain backdrop", "credit": "airpark" }
+      ]
+    },
+    {
+      "week": 2,
+      "label": "Warbirds & Grass",
+      "photos": [
+        { "src": "/images/1.jpg",  "alt": "WWI biplane taxiing at 18V", "credit": "zachery" },
+        { "src": "/images/57.jpg", "alt": "Mountain aerial view looking west from 18V", "credit": "airpark" },
+        { "src": "/images/14.jpg", "alt": "Pilots and warbirds at the Pancake Breakfast Fly-In", "credit": "zachery" },
+        { "src": "/images/63.jpg", "alt": "Pilots gathering at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/23.jpg", "alt": "Aircraft on the grass strip at 18V", "credit": "zachery" },
+        { "src": "/images/47.jpg", "alt": "Light aircraft on the grass at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/9.jpg",  "alt": "Fly-in action at 18V", "credit": "zachery" },
+        { "src": "/images/77.jpg", "alt": "CubCrafters NXCub at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/19.jpg", "alt": "Community ramp scene at the fly-in", "credit": "zachery" },
+        { "src": "/images/69.jpg", "alt": "Aircraft parked at 18V hangar row", "credit": "airpark" },
+        { "src": "/images/6.jpg",  "alt": "Warbird close-up at 18V", "credit": "zachery" },
+        { "src": "/images/64.jpg", "alt": "Ramp atmosphere at Platte Valley Airpark", "credit": "airpark" }
+      ]
+    },
+    {
+      "week": 3,
+      "label": "Golden Hour & Community",
+      "photos": [
+        { "src": "/images/20.jpg", "alt": "Golden hour over the ramp at 18V", "credit": "zachery" },
+        { "src": "/images/52.jpg", "alt": "Aircraft lineup on the ramp at 18V", "credit": "airpark" },
+        { "src": "/images/12.jpg", "alt": "Community gathering at the Pancake Breakfast", "credit": "zachery" },
+        { "src": "/images/80.jpg", "alt": "Flying scene at 18V Colorado", "credit": "airpark" },
+        { "src": "/images/25.jpg", "alt": "Tailwheel aircraft on the grass strip", "credit": "zachery" },
+        { "src": "/images/50.jpg", "alt": "Colorado plains and mountains from Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/7.jpg",  "alt": "Ramp scene at 18V during the fly-in", "credit": "zachery" },
+        { "src": "/images/78.jpg", "alt": "Aircraft detail at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/30.jpg", "alt": "Aircraft on final approach at 18V", "credit": "zachery" },
+        { "src": "/images/62.jpg", "alt": "Colorado Front Range flying from 18V", "credit": "airpark" },
+        { "src": "/images/11.jpg", "alt": "Grass strip action at 18V", "credit": "zachery" },
+        { "src": "/images/45.jpg", "alt": "Prop aircraft at 18V community airport", "credit": "airpark" }
+      ]
+    },
+    {
+      "week": 4,
+      "label": "The Front Range & The Ramp",
+      "photos": [
+        { "src": "/images/5.jpg",  "alt": "Aircraft departing 18V over the Front Range", "credit": "zachery" },
+        { "src": "/images/70.jpg", "alt": "Ramp scene at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/26.jpg", "alt": "Fly-in crowds on the ramp at 18V", "credit": "zachery" },
+        { "src": "/images/53.jpg", "alt": "Platte Valley Airpark ramp with Colorado skies", "credit": "airpark" },
+        { "src": "/images/16.jpg", "alt": "Short final at 18V grass strip", "credit": "zachery" },
+        { "src": "/images/73.jpg", "alt": "Community event at Platte Valley Airpark 18V", "credit": "airpark" },
+        { "src": "/images/3.jpg",  "alt": "Aircraft at the Pancake Breakfast Fly-In", "credit": "zachery" },
+        { "src": "/images/56.jpg", "alt": "Aircraft taxiing at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/21.jpg", "alt": "Action shot at 18V fly-in", "credit": "zachery" },
+        { "src": "/images/79.jpg", "alt": "General aviation community at Platte Valley Airpark", "credit": "airpark" },
+        { "src": "/images/13.jpg", "alt": "Warbird detail at the Pancake Breakfast Fly-In", "credit": "zachery" },
+        { "src": "/images/54.jpg", "alt": "Light aircraft at Fort Lupton general aviation airport", "credit": "airpark" }
+      ]
+    }
+  ],
+  "active_week": 1
+}
