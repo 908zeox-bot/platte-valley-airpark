@@ -36,7 +36,7 @@ const FlyIn = ({ site }: FlyInProps) => {
     <section
       id="fly-in"
       className="relative py-24 bg-cover bg-center text-white text-center"
-      style={{ backgroundImage: 'url(/images/DSC_0092.jpg)' }}
+      style={{ backgroundImage: 'url(/images/57.jpg)' }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 container mx-auto px-4">
