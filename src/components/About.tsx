@@ -4,7 +4,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img src="/images/67.jpg" alt="Aerial overview of Platte Valley Airpark" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
+            <img src="/images/z-wwi-biplane-mountains.jpg" alt="WWI biplane at Platte Valley Airpark with Rocky Mountains" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-6">
@@ -16,7 +16,7 @@ const About = () => {
             <blockquote className="border-l-4 border-airpark-red pl-4 italic text-gray-600 mb-6">
               "Whether you're flying in for the first time or you've been based here for decades — you're family."
             </blockquote>
-            <img src="/images/60.jpg" alt="Comprehensive aerial view of Platte Valley Airpark" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
+            <img src="/images/z-community-ramp.jpg" alt="Community gathering on the ramp at 18V Pancake Breakfast" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
           </div>
         </div>
       </div>
