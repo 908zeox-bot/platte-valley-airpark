@@ -41,25 +41,36 @@ const FlyIn = ({ site }: FlyInProps) => {
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 container mx-auto px-4">
         <h2 className="text-5xl font-serif font-bold mb-12">Come Fly In</h2>
-        <div className="bg-white text-dark-charcoal p-8 md:p-12 rounded-lg shadow-xl max-w-2xl mx-auto">
-          <p className="text-xl mb-4">
-            <span className="font-bold">📍</span> {site.address}
-          </p>
-          <p className="text-xl mb-4">
-            <span className="font-bold">📻 CTAF:</span> {site.ctaf}
-          </p>
-          <p className="text-xl mb-4">
-            <span className="font-bold">✈️ Pattern Altitude:</span> {site.patternAltitude}
-          </p>
-          <p className="text-xl mb-4">
-            <span className="font-bold">🛬 Runways:</span> {site.runways[0].id} ({site.runways[0].length} {site.runways[0].surface}) · {site.runways[1].id} ({site.runways[1].length} {site.runways[1].surface})
-          </p>
-          <p className="text-xl mb-4">
-            <span className="font-bold">💰 No landing fee</span>
-          </p>
-          <p className="text-xl">
-            <span className="font-bold">🌐 Coordinates:</span> {site.coordinates}
-          </p>
+        <div className="bg-white text-dark-charcoal p-8 md:p-12 rounded-lg shadow-xl max-w-2xl mx-auto text-left">
+          <dl className="divide-y divide-gray-100">
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">Address</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">{site.address}</dd>
+            </div>
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">CTAF</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">{site.ctaf}</dd>
+            </div>
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">Pattern Alt</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">{site.patternAltitude}</dd>
+            </div>
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">Runways</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">
+                {site.runways[0].id} — {site.runways[0].length} {site.runways[0].surface}<br />
+                {site.runways[1].id} — {site.runways[1].length} {site.runways[1].surface}
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">Landing Fee</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">None</dd>
+            </div>
+            <div className="flex flex-col sm:flex-row py-3">
+              <dt className="w-40 shrink-0 font-semibold text-gray-500 text-sm uppercase tracking-wide">Coordinates</dt>
+              <dd className="text-dark-charcoal mt-1 sm:mt-0">{site.coordinates}</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
