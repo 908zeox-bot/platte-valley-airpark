@@ -43,9 +43,9 @@ const Footer = ({ site }: FooterProps) => {
             <Image
               src="/images/logo-dark.png"
               alt="Platte Valley Airpark (18V)"
-              width={80}
-              height={80}
-              className="h-20 w-auto"
+              width={120}
+              height={120}
+              className="h-28 w-auto"
             />
           </div>
           <h3 className="text-xl font-bold mb-4">Platte Valley Airpark</h3>

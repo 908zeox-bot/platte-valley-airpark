@@ -9,16 +9,20 @@ const Nav = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/logo.png"
             alt="Platte Valley Airpark (18V)"
-            width={48}
-            height={48}
-            className="h-12 w-auto"
+            width={72}
+            height={72}
+            className="h-16 w-auto"
             priority
           />
+          <span className="hidden lg:block text-dark-charcoal font-bold text-lg leading-tight">
+            Platte Valley Airpark
+            <span className="block text-sm font-normal text-gray-500">18V · Fort Lupton, CO</span>
+          </span>
         </Link>
 
         <div className="hidden md:flex space-x-6">
