@@ -41,11 +41,11 @@ const Footer = ({ site }: FooterProps) => {
         <div>
           <div className="mb-4">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-dark.png"
               alt="Platte Valley Airpark (18V)"
               width={80}
               height={80}
-              className="h-20 w-auto bg-white rounded p-1"
+              className="h-20 w-auto"
             />
           </div>
           <h3 className="text-xl font-bold mb-4">Platte Valley Airpark</h3>
