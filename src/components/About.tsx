@@ -42,7 +42,7 @@ const About = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <span className="font-semibold text-gray-500 text-sm uppercase tracking-wide w-36 shrink-0 pt-0.5">Runways</span>
-              <span className="text-dark-charcoal">15/33 — 4,100 ft paved, lighted<br />9/27 — 2,500 ft grass</span>
+              <span className="text-dark-charcoal">15/33 — 4,100 ft paved<br />9/27 — 2,500 ft grass</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <span className="font-semibold text-gray-500 text-sm uppercase tracking-wide w-36 shrink-0 pt-0.5">Coordinates</span>
