@@ -41,7 +41,7 @@ const FuelServices = ({ site }: FuelServicesProps) => {
     {
       icon: '🛬',
       title: 'Paved Runway',
-      description: '4,100 ft lighted · 15/33',
+      description: '4,100 ft paved · 15/33',
     },
     {
       icon: '🌿',
