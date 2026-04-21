@@ -53,8 +53,12 @@ const Events = ({ events }: EventsProps) => {
               <div key={event.id} className="bg-white p-6 rounded-lg shadow-md text-left">
                 <h3 className="text-2xl font-serif font-bold text-dark-charcoal mb-2">{event.title}</h3>
                 <p className="text-airpark-red mb-1"><strong>Date:</strong> {event.date}</p>
-                <p className="text-gray-700 mb-3"><strong>Time:</strong> {event.time}</p>
-                <p className="text-gray-700">{event.description}</p>
+                {event.time && <p className="text-gray-700 mb-3"><strong>Time:</strong> {event.time}</p>}
+                <p className="text-gray-700 mb-3">{event.description}</p>
+                {event.cost && <p className="text-gray-500 text-sm"><strong>Cost:</strong> {event.cost}</p>}
+                {event.link && (
+                  <a href={event.link} className="text-airpark-red hover:underline text-sm font-semibold mt-2 inline-block">Details →</a>
+                )}
               </div>
             ))}
           </div>

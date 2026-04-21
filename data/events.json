@@ -1,24 +1,24 @@
 [
   {
-    "id": "pancake-2026-04",
-    "title": "Pancake Breakfast Fly-In",
-    "date": "Saturday, April 11, 2026",
-    "time": "8:00 AM – 11:00 AM",
-    "description": "Fire up the griddle and roll out the red carpet — the ramp is open, the pancakes are hot, and everyone's welcome. Fly in, drive in, or just wander over from your hangar.",
-    "cost": "$10 donation suggested · kids free",
-    "image": "/images/IMG_0301.jpg",
-    "link": "/pancake_breakfast_fly_in.html",
-    "featured": true
-  },
-  {
     "id": "coffee-donuts-monthly",
     "title": "Coffee & Donuts",
     "date": "First Friday of every month",
-    "time": "Morning",
-    "description": "The classic 18V tradition. Show up, grab a coffee, swap a story on the ramp. No agenda. Just community.",
+    "time": "Morning — ramp side",
+    "description": "The classic 18V tradition. Show up, grab a coffee, swap a story on the ramp. No agenda. Just community. Free and open to all.",
     "cost": "Free",
-    "image": null,
+    "image": "/images/z-community-ramp.jpg",
     "link": null,
+    "featured": true
+  },
+  {
+    "id": "pancake-2026-recap",
+    "title": "Pancake Breakfast — Great Turnout!",
+    "date": "April 11, 2026 (past event)",
+    "time": "8:00 AM – 11:00 AM",
+    "description": "Over 100 people showed up for our first Pancake Breakfast Fly-In of 2026. Thank you to everyone who flew in or drove out. Stay tuned for the next one.",
+    "cost": "",
+    "image": null,
+    "link": "/pancake_breakfast_fly_in.html",
     "featured": false
   }
 ]
