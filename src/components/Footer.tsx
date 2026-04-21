@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Site {
   name: string;
@@ -38,6 +39,15 @@ const Footer = ({ site }: FooterProps) => {
     <footer id="contact" className="bg-dark-charcoal text-white py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
+          <div className="mb-4">
+            <Image
+              src="/images/logo.png"
+              alt="Platte Valley Airpark (18V)"
+              width={80}
+              height={80}
+              className="h-20 w-auto bg-white rounded p-1"
+            />
+          </div>
           <h3 className="text-xl font-bold mb-4">Platte Valley Airpark</h3>
           <p className="mb-2">{site.address}</p>
           <p className="mb-2">CTAF: {site.ctaf}</p>

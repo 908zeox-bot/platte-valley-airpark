@@ -3,6 +3,6 @@
   "/page": "app/page.js",
   "/thanks/page": "app/thanks/page.js",
   "/hangars/page": "app/hangars/page.js",
-  "/gm/page": "app/gm/page.js",
-  "/training/page": "app/training/page.js"
+  "/training/page": "app/training/page.js",
+  "/gm/page": "app/gm/page.js"
 }

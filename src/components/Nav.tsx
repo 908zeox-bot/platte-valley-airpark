@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const Nav = () => {
@@ -9,8 +10,15 @@ const Nav = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-dark-charcoal">
-          Platte Valley Airpark
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Platte Valley Airpark (18V)"
+            width={48}
+            height={48}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex space-x-6">
