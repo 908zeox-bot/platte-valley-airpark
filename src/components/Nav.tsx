@@ -14,9 +14,9 @@ const Nav = () => {
           <Image
             src="/images/logo.png"
             alt="Platte Valley Airpark (18V)"
-            width={72}
-            height={72}
-            className="h-16 w-auto"
+            width={100}
+            height={100}
+            className="h-24 w-auto"
             priority
           />
           <span className="hidden lg:block text-dark-charcoal font-bold text-lg leading-tight">
