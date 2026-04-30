@@ -4,6 +4,7 @@ import Stats from '@/components/Stats'
 import PhotoStrip from '@/components/PhotoStrip'
 import About from '@/components/About'
 import FuelServices from '@/components/FuelServices'
+import FlyIn from '@/components/FlyIn'
 import Gallery from '@/components/Gallery'
 import RunwayReports from '@/components/RunwayReports'
 import Events from '@/components/Events'
@@ -22,6 +23,7 @@ export default function Home() {
       <PhotoStrip />
       <About />
       <FuelServices site={siteData} />
+      <FlyIn site={siteData} />
       <Gallery />
       <RunwayReports reports={runwayReportsData} />
       <Events events={eventsData} />
