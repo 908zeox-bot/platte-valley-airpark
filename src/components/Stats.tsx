@@ -33,7 +33,7 @@ interface StatsProps {
 
 const Stats = ({ site }: StatsProps) => {
   const stats = [
-    { value: '$6.35/gal', label: '100LL Self-Serve' },
+    { value: '$6.38/gal', label: '100LL Self-Serve' },
     { value: '4,100 ft', label: 'Paved Runway' },
     { value: '2,500 ft', label: 'Grass Strip' },
     { value: '100+', label: 'Based Aircraft' },
