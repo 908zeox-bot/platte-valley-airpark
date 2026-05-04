@@ -30,7 +30,7 @@ export default function HangarsPage() {
               <div className="p-4">
                 <div className="text-3xl mb-2">⛽</div>
                 <h3 className="font-serif font-bold text-dark-charcoal mb-1">Best Fuel Price Near Denver</h3>
-                <p className="text-gray-600 text-sm">Self-serve 100LL at $6.35/gal, 24/7 credit card. Consistently lower than KBJC, KAPA, and KGXY.</p>
+                <p className="text-gray-600 text-sm">Self-serve 100LL at $6.38/gal, 24/7 credit card. Consistently lower than KBJC, KAPA, and KGXY.</p>
               </div>
               <div className="p-4">
                 <div className="text-3xl mb-2">🛬</div>
