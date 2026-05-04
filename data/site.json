@@ -9,7 +9,7 @@
   "patternAltitude": "5,500 ft MSL",
   "fuel": {
     "type": "100LL",
-    "price": "$6.15",
+    "price": "$6.35",
     "unit": "gal",
     "hours": "24/7",
     "payment": "credit card"
