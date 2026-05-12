@@ -226,7 +226,7 @@
       <div class="ins"><span class="ic">✈️</span><span class="tx"><b>Aircraft arrivals holding at 300 in April</b> (+0.7% MoM vs March 298). No YoY comparison — FA tracking started May 2025.</span></div>
       <div class="ins"><span class="ic">📧</span><span class="tx"><b>Email open rate 58.6%</b> — well above industry average (~20%). 174 active subscribers. Pancake Fly-In reminder drove 67% opens.</span></div>
       <div class="ins"><span class="ic">📘</span><span class="tx"><b>Facebook boost live</b> — $100 Pancake Fly-In campaign running May 12–19. Token refreshed 2026-05-12 (non-expiring).</span></div>
-      <div class="ins"><span class="ic">⚠️</span><span class="tx"><b>GA4 re-auth required</b> — 503 error on last pull. Last-known data shown from May 4–10 window. Run <code style="background:rgba(251,191,36,.15);padding:1px 5px;border-radius:4px;font-family:monospace;font-size:11px;">gcloud auth application-default login</code> to restore.</span></div>
+      <div class="ins"><span class="ic">✅</span><span class="tx"><b>GA4 live</b> — 4,951 sessions last 28 days. Week of Apr 28–May 4 spike: 2,015 sessions. Top channel: Paid Social (4,531 sessions last 56 days — investigate source).</span></div>
       <div class="ins"><span class="ic">⚠️</span><span class="tx"><b>May–Aug 2025 QB revenue gap</b> — ZeoX pulling historical data. Chart shows Sep 2025 onward only.</span></div>
     </div>
 
@@ -363,26 +363,29 @@
     <!-- ── SECTION 3: TRAFFIC / ARRIVALS ── -->
     <div class="sl sl-s3">Website Traffic &amp; Aircraft Arrivals</div>
 
-    <!-- GA4 Re-Auth Banner -->
-    <div class="banner-warn">
-      <span class="bw-icon">⚠️</span>
-      <div class="bw-body">
-        <strong>GA4 Re-Auth Required</strong> — 503 error on last pull. Data below is last-known (May 4–10, 2026 window).
-        To restore: <code>gcloud auth application-default login</code>
-        &nbsp;·&nbsp; GA4 Property: <code>G-DZNGNKV4CJ</code>
+    <!-- GA4 Live -->
+    <div class="banner-ok" style="background:rgba(52,211,153,.08);border:1.5px solid rgba(52,211,153,.3);border-radius:10px;padding:10px 16px;margin-bottom:14px;display:flex;gap:10px;align-items:center">
+      <span style="font-size:16px">✅</span>
+      <div style="font-size:12px;color:#d1d5db">
+        <strong style="color:#34d399">GA4 Live</strong> — authenticated 2026-05-12 · Property: <code style="font-size:11px">G-DZNGNKV4CJ</code>
       </div>
     </div>
 
     <div class="grid-2">
       <div class="card">
-        <div class="ct">Website Traffic <span class="badge warn">GA4 stale — re-auth needed</span></div>
-        <div class="cv-sm yellow">Last known: May 4–10</div>
-        <div class="cs">GA4 data unavailable until re-auth. Showing last successful pull window only.</div>
+        <div class="ct">Website Traffic <span class="badge" style="background:rgba(52,211,153,.15);color:#34d399;border:1px solid rgba(52,211,153,.3);padding:2px 8px;border-radius:8px;font-size:10px;font-weight:700">GA4 Live ✅</span></div>
+        <div class="cv-sm green">4,951 sessions</div>
+        <div class="cs">Last 28 days · Live data as of 2026-05-12</div>
         <div class="divider"></div>
-        <div class="row"><span class="lbl">Sessions (May 4–10)</span><span class="val gray">— stale</span></div>
-        <div class="row"><span class="lbl">Users (May 4–10)</span><span class="val gray">— stale</span></div>
-        <div class="row"><span class="lbl">Bounce Rate</span><span class="val gray">— stale</span></div>
-        <div class="data-warn"><span class="dw-ic">⚠️</span><span>GA4 503 error confirmed. Run <code style="background:rgba(251,191,36,.15);padding:1px 4px;border-radius:3px;font-family:monospace;">gcloud auth application-default login</code> to restore data.</span></div>
+        <div class="row"><span class="lbl">W20 (May 12, MTD)</span><span class="val" style="color:#34d399">900 sessions</span></div>
+        <div class="row"><span class="lbl">W19 (May 5–11)</span><span class="val">1,576 <span class="ttag dn" style="font-size:10px">WoW −21.8%</span></span></div>
+        <div class="row"><span class="lbl">W18 (Apr 28–May 4)</span><span class="val" style="color:#34d399">2,015 📈 peak</span></div>
+        <div class="row"><span class="lbl">W17 (Apr 21–27)</span><span class="val">354</span></div>
+        <div style="margin-top:10px;font-size:11px;color:#6b7280;font-weight:700;letter-spacing:.5px;text-transform:uppercase">By Channel (56 days)</div>
+        <div class="row"><span class="lbl">Paid Social</span><span class="val" style="color:#fbbf24">4,531 ⚠️</span></div>
+        <div class="row"><span class="lbl">Direct</span><span class="val">482</span></div>
+        <div class="row"><span class="lbl">Organic Search</span><span class="val">223</span></div>
+        <div class="row"><span class="lbl">Organic Social</span><span class="val">151</span></div>
       </div>
 
       <div class="card">
@@ -577,7 +580,7 @@
           </tr>
           <tr>
             <td>GA4 (Google Analytics)</td>
-            <td style="color:#ef4444;text-align:left">❌ 503 Error</td>
+            <td style="color:#34d399;text-align:left">✅ Live (auth 2026-05-12)</td>
             <td style="text-align:left;color:#6b7280">Re-auth required: gcloud auth application-default login</td>
           </tr>
           <tr>
@@ -622,7 +625,7 @@
     <!-- FOOTER -->
     <div class="footer">
       Marketing Dashboard · Platte Valley Airpark (18V) · Fort Lupton, CO<br>
-      Data sources: Facebook Graph API · Mailchimp API · FlightAware AeroAPI (Enterprise) · QuickBooks via Notion · GA4 (re-auth pending)<br>
+      Data sources: Facebook Graph API · Mailchimp API · FlightAware AeroAPI (Enterprise) · QuickBooks via Notion · GA4 ✅ Live<br>
       Historical data persisted in Notion QB DB (ID: 3567a350-2270-8176-a980-ebe5a9458481) and dashboard/18v_dashboard.xlsx<br>
       FB token refreshed 2026-05-12 (non-expiring) · Dashboard generated by FlyZ ✈️<br>
       <span style="color:#374151;">Passcode protected · Internal use only</span>
