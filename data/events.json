@@ -1,16 +1,5 @@
 [
   {
-    "id": "coffee-donuts-monthly",
-    "title": "Coffee & Donuts",
-    "date": "First Friday of every month",
-    "time": "Morning — ramp side",
-    "description": "The classic 18V tradition. Show up, grab a coffee, swap a story on the ramp. No agenda. Just community. Free and open to all.",
-    "cost": "Free",
-    "image": "/images/z-community-ramp.jpg",
-    "link": null,
-    "featured": true
-  },
-  {
     "id": "pancake-flyIn-may30-2026",
     "title": "Pancake Fly-In",
     "date": "Friday, May 30, 2026",
@@ -20,6 +9,17 @@
     "image": "/images/pancake-flyIn-may30.png",
     "link": null,
     "featured": true
+  },
+  {
+    "id": "coffee-donuts-monthly",
+    "title": "Coffee & Donuts",
+    "date": "First Friday of every month",
+    "time": "Morning — ramp side",
+    "description": "The classic 18V tradition. Show up, grab a coffee, swap a story on the ramp. No agenda. Just community. Free and open to all.",
+    "cost": "Free",
+    "image": "/images/z-community-ramp.jpg",
+    "link": null,
+    "featured": false
   },
   {
     "id": "pancake-2026-recap",
