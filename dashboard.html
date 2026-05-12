@@ -222,8 +222,8 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
   <div class="ins"><span class="ic">🟢</span><span class="tx"><b>Hangars 100% occupied, $6,672/mo</b> — Undisputed AR: <b>$705</b>. Lakes Aviation $10,500 is legal dispute — excluded from calculations.</span></div>
   <div class="ins"><span class="ic">🟢</span><span class="tx"><b>Email open rate 58.6%</b> — 172 subscribers. Industry avg ~21%. List grew from 1 (Mar) → 155 (Apr) → 172 (May).</span></div>
   <div class="ins"><span class="ic">🟡</span><span class="tx"><b>GA4 auth expired</b> — needs re-authentication before website traffic data refreshes. Showing last known data (May 4–10).</span></div>
-  <div class="ins"><span class="ic">🟡</span><span class="tx"><b>4-week arrival trend unavailable</b> — FlightAware API limits historical queries to last 10 days. Building local weekly log going forward.</span></div>
-  <div class="ins"><span class="ic">🟡</span><span class="tx"><b>Facebook token expires ~June 8</b> — renew before that date.</span></div>
+  <div class="ins"><span class="ic">🟢</span><span class="tx"><b>12-month arrival trend now available</b> — Historical FlightAware data loaded (May 2025–Apr 2026). MoM + YoY comparisons active in Stage 3.</span></div>
+  <div class="ins"><span class="ic">🔴</span><span class="tx"><b>Facebook access token expired May 8</b> — social metrics unavailable until token is refreshed. Action: Dave to renew via Facebook Business Manager.</span></div>
   <div class="ins"><span class="ic">🔴</span><span class="tx"><b>No fuel transaction volume data</b> — FuelMaster manual until QT Pod. Erin pulls volumes each Monday.</span></div>
 </div>
 
@@ -278,6 +278,55 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
   <div class="cs" style="margin-top:6px">YoY: List started Mar 2026 — no prior year baseline</div>
 </div>
 
+<!-- SOCIAL MEDIA -->
+<div class="sl sl-s1">📱 Social Media <span class="pill">Awareness</span> — Reach & Followers</div>
+<div class="data-warn">⚠️ Facebook access token expired May 8, 2026 — live follower/reach data unavailable. Accounts are connected via Publer (last sync: May 12, 07:09 MDT). Action required: Dave to refresh token via Facebook Business Manager → Settings → Advanced Access → Generate New Token.</div>
+
+<div class="grid-3" style="margin-top:12px">
+  <div class="card">
+    <div class="ct">Facebook — Fly18V</div>
+    <div class="cv-sm" style="color:#6b7280">—</div>
+    <div class="cs">Page ID: 107804756…<br><span style="color:#ef4444">Token expired May 8</span><br>Publer last sync: May 12</div>
+  </div>
+  <div class="card">
+    <div class="ct">Instagram — @fly18v</div>
+    <div class="cv-sm" style="color:#6b7280">—</div>
+    <div class="cs">IG ID: 17841480…<br><span style="color:#ef4444">Token expired May 8</span><br>Publer last sync: May 12</div>
+  </div>
+  <div class="card">
+    <div class="ct">LinkedIn — Platte Valley</div>
+    <div class="cv-sm" style="color:#6b7280">—</div>
+    <div class="cs">Org: urn:li:org:111185006<br><span style="color:#6b7280">No analytics token</span><br>Publer last sync: May 12</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="ct">Social Platform Status</div>
+  <table class="tt">
+    <tr><th>Platform</th><th>Account</th><th>Posting</th><th>Analytics</th><th>Last Post</th></tr>
+    <tr>
+      <td>Facebook</td><td>Fly18V (Page)</td>
+      <td><span class="badge ok">Active via Publer</span></td>
+      <td><span class="badge warn">Token expired</span></td>
+      <td class="na">Check Publer</td>
+    </tr>
+    <tr>
+      <td>Instagram</td><td>@fly18v</td>
+      <td><span class="badge ok">Active via Publer</span></td>
+      <td><span class="badge warn">Token expired</span></td>
+      <td class="na">Check Publer</td>
+    </tr>
+    <tr>
+      <td>LinkedIn</td><td>Platte Valley Airpark</td>
+      <td><span class="badge ok">Active via Publer</span></td>
+      <td><span class="badge info">No token configured</span></td>
+      <td class="na">Check Publer</td>
+    </tr>
+  </table>
+  <div class="cs" style="margin-top:8px">⚡ Action: Refresh FB token to restore reach, impressions, and follower count to dashboard. Dave: Business Manager → Page → Settings → New Token (long-lived).</div>
+</div>
+
+
 <!-- STAGE 2 -->
 <div class="sl sl-s2">📧 Stage 2 <span class="pill">Interest</span> — Are people engaging?</div>
 <div class="grid-2">
@@ -309,66 +358,148 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
 
 <!-- STAGE 3 -->
 <div class="sl sl-s3">🛬 Stage 3 <span class="pill">Arrival</span> — Are pilots flying in?</div>
-<p class="section-note">Data: FlightAware AeroAPI Enterprise · General Aviation filter · K18V · Last 10-day API window</p>
+<p class="section-note">Data: FlightAware AeroAPI Enterprise · General Aviation filter · K18V · 12-month history (May 2025–May 2026)</p>
 
 <div class="grid-3">
   <div class="card">
-    <div class="ct">7-Day Arrivals</div>
-    <div class="cv yellow">57</div>
-    <div class="cs">GA aircraft only</div>
+    <div class="ct">Apr 2026 Arrivals</div>
+    <div class="cv yellow">300</div>
+    <div class="cs">Best month on record · +0.7% vs Mar</div>
   </div>
   <div class="card">
-    <div class="ct">Unique Tails (7d)</div>
-    <div class="cv yellow">30</div>
-    <div class="cs">Distinct registrations</div>
+    <div class="ct">May 2026 (Partial)</div>
+    <div class="cv yellow">68 <span style="font-size:13px;color:#6b7280">/ 12d</span></div>
+    <div class="cs">Est. ~192 full month · 63% of May 2025 pace so far<br><span class="badge warn">Memorial Day May 24–26 not yet counted</span></div>
   </div>
   <div class="card">
-    <div class="ct">Peak Day</div>
-    <div class="cv-sm yellow">May 8</div>
-    <div class="cs">20 arrivals · 12 unique<br>Mother's Day Sat</div>
+    <div class="ct">12-Month Total</div>
+    <div class="cv-sm yellow">2,583</div>
+    <div class="cs">May 2025–Apr 2026<br>Avg 215/mo</div>
   </div>
 </div>
 
 <div class="card">
-  <div class="ct">Arrivals by Day — Last 7 Days (older → newer)</div>
-  <table class="tt" style="margin-top:8px">
-    <tr><th>Date</th><th>Thu May 7</th><th>Fri May 8</th><th>Sat May 9</th><th>Sun May 10</th><th>Mon May 11</th><th>WoW Δ</th></tr>
-    <tr><td>Arrivals</td><td>2</td><td class="up">20</td><td>5</td><td>18</td><td class="cur">12</td><td class="na">No prior wk data</td></tr>
-    <tr><td>Unique tails</td><td>1</td><td class="up">12</td><td>3</td><td>11</td><td class="cur">8</td><td class="na">—</td></tr>
+  <div class="ct">Monthly Arrivals — MoM &amp; YoY (May 2025 → May 2026)</div>
+  <table class="tt">
+    <tr><th>Month</th><th>Arrivals</th><th>MoM Δ</th><th>YoY Δ</th></tr>
+    <tr><td>May 2025</td><td>205</td><td><span class="na">—</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Jun 2025</td><td>220</td><td><span class="up">+7.3%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Jul 2025</td><td>200</td><td><span class="dn">-9.1%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Aug 2025</td><td>194</td><td><span class="dn">-3.0%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Sep 2025</td><td>234</td><td><span class="up">+20.6%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Oct 2025</td><td>246</td><td><span class="up">+5.1%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Nov 2025</td><td>231</td><td><span class="dn">-6.1%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Dec 2025</td><td>153</td><td><span class="dn">-33.8%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Jan 2026</td><td>218</td><td><span class="up">+42.5%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Feb 2026</td><td>222</td><td><span class="up">+1.8%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Mar 2026</td><td>298</td><td><span class="up">+34.2%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td>Apr 2026</td><td>300</td><td><span class="up">+0.7%</span></td><td><span class="na">No prior yr data</span></td></tr>
+<tr><td class="cur">May 2026</td><td class="cur">68 <span class="badge info">12d</span></td><td><span class="dn">-77.3%</span></td><td><span class="badge warn">est.</span> <span class="dn">-14.1%</span> vs May 2025 (176 est / 205 actual)</td></tr>
+
   </table>
-  <div class="cs" style="margin-top:8px">4-week trend: FlightAware API limits historical to last 10 days. FlyZ now logging weekly totals locally — trend builds over time.<br>YoY: Not available (no 2025 baseline captured).</div>
+  <div class="cs" style="margin-top:8px">
+    YoY: Only one calendar-year overlap available (May 2025 → May 2026). Full YoY comparisons available after May 2027.<br>
+    May 2026 pro-rata: <b>192 est.</b> (12d pace × 31d month) vs May 2025 actual <b>205</b> → on track within normal variance.<br>
+    Note: Memorial Day weekend (May 24–26) not yet counted — historically highest traffic days.
+  </div>
 </div>
 
 <div class="card">
-  <div class="ct">Daily Arrival Distribution</div>
+  <div class="ct">Seasonal Pattern — Monthly Arrival Bar Chart</div>
   <div style="margin-top:10px">
-    <div class="bar-row"><span class="bar-lbl">May 7</span><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div><span class="bar-val">2</span></div>
-    <div class="bar-row"><span class="bar-lbl">May 8</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">20</span></div>
-    <div class="bar-row"><span class="bar-lbl">May 9</span><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><span class="bar-val">5</span></div>
-    <div class="bar-row"><span class="bar-lbl">May 10</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><span class="bar-val">18</span></div>
-    <div class="bar-row"><span class="bar-lbl">May 11</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><span class="bar-val">12</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">May 25</span><div class="bar-track"><div class="bar-fill s" style="width:68%"></div></div><span class="bar-val">205</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Jun 25</span><div class="bar-track"><div class="bar-fill s" style="width:73%"></div></div><span class="bar-val">220</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Jul 25</span><div class="bar-track"><div class="bar-fill s" style="width:67%"></div></div><span class="bar-val">200</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Aug 25</span><div class="bar-track"><div class="bar-fill s" style="width:65%"></div></div><span class="bar-val">194</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Sep 25</span><div class="bar-track"><div class="bar-fill s" style="width:78%"></div></div><span class="bar-val">234</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Oct 25</span><div class="bar-track"><div class="bar-fill s" style="width:82%"></div></div><span class="bar-val">246</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Nov 25</span><div class="bar-track"><div class="bar-fill s" style="width:77%"></div></div><span class="bar-val">231</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Dec 25</span><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><span class="bar-val">153</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Jan 26</span><div class="bar-track"><div class="bar-fill s" style="width:73%"></div></div><span class="bar-val">218</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Feb 26</span><div class="bar-track"><div class="bar-fill s" style="width:74%"></div></div><span class="bar-val">222</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Mar 26</span><div class="bar-track"><div class="bar-fill s" style="width:99%"></div></div><span class="bar-val">298</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Apr 26</span><div class="bar-track"><div class="bar-fill s" style="width:100%"></div></div><span class="bar-val">300</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">May 26</span><div class="bar-track"><div class="bar-fill" style="width:23%"></div></div><span class="bar-val">68*</span></div>
   </div>
+  <div class="cs" style="margin-top:6px">Green bars = months with actual data. Red bars = partial. * May 2026 is 12 days elapsed.</div>
 </div>
 
 <!-- STAGE 4 -->
 <div class="sl sl-s4">⛽ Stage 4 <span class="pill">Transaction</span> — Are visitors buying?</div>
+<p class="section-note">Core revenue metric · Source: Syntech FuelMaster reports (Box) · Apr 2026 report pending</p>
 
+<!-- Fuel Revenue Hero -->
 <div class="conv">
-  <div class="conv-t">🎯 Weekly Fuel Revenue Target</div>
-  <div class="conv-v">$15,000 <span style="font-size:14px;color:#4a7fb5">/ week</span></div>
-  <div class="conv-s">Green threshold confirmed by Dave · Actual data manual (FuelMaster) until QT Pod installed</div>
+  <div class="conv-t">⛽ Last Complete Month — March 2026 Fuel Revenue</div>
+  <div class="conv-v" style="font-size:36px">$8,897</div>
+  <div class="conv-s">1,513 gallons · 77 transactions · $5.85/gal avg · <b style="color:#34d399">+51.0% vs Feb 2026</b></div>
+</div>
+
+<div class="grid-3">
+  <div class="card">
+    <div class="ct">Mar 2026 Fuel Revenue</div>
+    <div class="cv green">$8,897</div>
+    <div class="cs">MoM: <span class="up">+51.0%</span> vs Feb 2026 ($5,892)<br>77 transactions · 1,513 gal</div>
+  </div>
+  <div class="card">
+    <div class="ct">Q1 2026 Revenue (Jan–Mar)</div>
+    <div class="cv green">$22,935</div>
+    <div class="cs">YoY vs Q1 2025 (est.): <span class="up">+4.1%</span><br>Q1 2025 est. $22,038 (txn-based est.)</div>
+  </div>
+  <div class="card">
+    <div class="ct">2025 Full-Year Revenue</div>
+    <div class="cv-sm blue">$125,934</div>
+    <div class="cs">22,456 gallons · 985 stops<br>Source: Syntech 2025 Annual Report</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="ct">Fuel Revenue — Monthly History with MoM (Aug 2025 → Apr 2026)</div>
+  <table class="tt">
+    <tr><th>Month</th><th>Gallons</th><th>Revenue</th><th>Txns</th><th>Price/Gal</th><th>MoM Rev Δ</th><th>MoM Gal Δ</th></tr>
+    <tr ><td>Aug 2025</td><td>2,335</td><td>$13,241</td><td>80</td><td>$5.67</td><td><span class="na">—</span></td><td><span class="na">—</span></td></tr>
+<tr ><td>Sep 2025</td><td>2,202</td><td>$12,484</td><td>95</td><td>$5.67</td><td><span class="dn">-5.7%</span></td><td><span class="dn">-5.7%</span></td></tr>
+<tr ><td>Oct 2025</td><td>2,014</td><td>$11,422</td><td>92</td><td>$5.67</td><td><span class="dn">-8.5%</span></td><td><span class="dn">-8.5%</span></td></tr>
+<tr ><td>Nov 2025</td><td>1,680</td><td>$9,526</td><td>81</td><td>$5.67</td><td><span class="dn">-16.6%</span></td><td><span class="dn">-16.6%</span></td></tr>
+<tr ><td>Dec 2025</td><td>1,096</td><td>$6,217</td><td>58</td><td>$5.67</td><td><span class="dn">-34.7%</span></td><td><span class="dn">-34.7%</span></td></tr>
+<tr ><td>Jan 2026</td><td>1,437</td><td>$8,146</td><td>67</td><td>$5.67</td><td><span class="up">+31.0%</span></td><td><span class="up">+31.0%</span></td></tr>
+<tr ><td>Feb 2026</td><td>1,029</td><td>$5,892</td><td>56</td><td>$5.73</td><td><span class="dn">-27.7%</span></td><td><span class="dn">-28.4%</span></td></tr>
+<tr class="cur"><td>Mar 2026</td><td>1,513</td><td>$8,897</td><td>77</td><td>$5.85</td><td><span class="up">+51.0%</span></td><td><span class="up">+47.1%</span></td></tr>
+<tr class="cur"><td>Apr 2026</td><td>—</td><td>—</td><td>—</td><td>$6.15</td><td class="na"><span class="badge warn">Pending Syntech report</span></td><td class="na">—</td></tr>
+
+  </table>
+  <div class="cs" style="margin-top:8px">
+    <b>YoY:</b> Jan–Jul 2025 data = transaction counts only (no gallon/revenue detail). YoY revenue comparison requires Aug 2024–Jul 2025 Syntech reports (not yet in system).<br>
+    <b>Q1 2026 vs Q1 2025 YoY:</b> Q1 2025 estimated from txn counts (180 txns × 22.8 avg gal/txn × $5.37 avg price = ~$22,038 est). Q1 2026 actual = $22,935. YoY: <span class="up">+4.1%</span> <span class="badge warn">est.</span><br>
+    <b>Apr 2026:</b> Syntech report not yet received — pending. $6.15/gal price effective.
+  </div>
+</div>
+
+<div class="card">
+  <div class="ct">Fuel Revenue — Monthly Bar Chart (Aug 2025–Mar 2026)</div>
+  <div style="margin-top:10px">
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Aug 25</span><div class="bar-track"><div class="bar-fill s" style="width:100%"></div></div><span class="bar-val">$13.2k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Sep 25</span><div class="bar-track"><div class="bar-fill s" style="width:94%"></div></div><span class="bar-val">$12.5k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Oct 25</span><div class="bar-track"><div class="bar-fill s" style="width:86%"></div></div><span class="bar-val">$11.4k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Nov 25</span><div class="bar-track"><div class="bar-fill s" style="width:72%"></div></div><span class="bar-val">$9.5k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Dec 25</span><div class="bar-track"><div class="bar-fill" style="width:47%"></div></div><span class="bar-val">$6.2k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Jan 26</span><div class="bar-track"><div class="bar-fill s" style="width:62%"></div></div><span class="bar-val">$8.1k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Feb 26</span><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div><span class="bar-val">$5.9k</span></div>
+    <div class="bar-row"><span class="bar-lbl" style="width:60px">Mar 26</span><div class="bar-track"><div class="bar-fill s" style="width:67%"></div></div><span class="bar-val">$8.9k</span></div>
+  </div>
+  <div class="cs" style="margin-top:6px">Green = above $7k/mo · Red = below $7k/mo · Peak: Aug 2025 ($13,241)</div>
 </div>
 
 <div class="grid-2">
   <div class="card">
-    <div class="ct">Fuel Revenue (weekly)</div>
-    <div class="cv yellow">Manual</div>
-    <div class="cs">Erin pulls from FuelMaster each Monday<br>Target: $15k/wk</div>
-  </div>
-  <div class="card">
     <div class="ct">Hangar Revenue (monthly)</div>
     <div class="cv blue">$6,672</div>
     <div class="cs">32 active leases · Notion cached<br>ZeoX direct QB pull pending</div>
+  </div>
+  <div class="card">
+    <div class="ct">Combined Monthly Revenue (est.)</div>
+    <div class="cv-sm green">$15,569</div>
+    <div class="cs">Mar 2026 fuel $8,897 + hangar $6,672<br>Excludes Lakes Aviation (disputed)</div>
   </div>
 </div>
 
@@ -376,24 +507,24 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
   <div class="ct">100LL Competitive Position — Fuel Prices</div>
   <div class="fuel-row">
     <span class="fn us">✓ 18V — Platte Valley (us)</span>
-    <div class="fr"><span class="fp" style="color:#34d399">$6.38</span><span class="fd">Lowest in area · GM 15.03%</span></div>
+    <div class="fr"><span class="fp" style="color:#34d399">$6.15</span><span class="fd">Updated May 2026 · GM ~13.4% @ current COGS</span></div>
   </div>
   <div class="fuel-row">
     <span class="fn">KEIK — Erie Municipal</span>
-    <div class="fr"><span class="fp" style="color:#9ca3af">$6.40</span><span class="fd">We're $0.02 cheaper</span></div>
+    <div class="fr"><span class="fp" style="color:#9ca3af">$6.40</span><span class="fd">We're $0.25 cheaper</span></div>
   </div>
   <div class="fuel-row">
     <span class="fn">KLMO — Longmont Vance Brand</span>
-    <div class="fr"><span class="fp" style="color:#9ca3af">$6.58</span><span class="fd">We're $0.20 cheaper</span></div>
+    <div class="fr"><span class="fp" style="color:#9ca3af">$6.58</span><span class="fd">We're $0.43 cheaper</span></div>
   </div>
   <div class="fuel-row">
     <span class="fn">KGXY — Greeley-Weld County</span>
-    <div class="fr"><span class="fp" style="color:#ef4444">$5.85</span><span class="fd">They're $0.53 cheaper</span></div>
+    <div class="fr"><span class="fp" style="color:#ef4444">$5.85</span><span class="fd">They're $0.30 cheaper</span></div>
   </div>
   <div class="divider"></div>
-  <div class="row"><span class="lbl">Current GM @ $6.38</span><span class="val yellow">15.03%</span></div>
-  <div class="row"><span class="lbl">GM floor (15% rule)</span><span class="val">$6.378 min</span></div>
-  <div class="row"><span class="lbl">COGS (last load)</span><span class="val">$5.42/gal</span></div>
+  <div class="row"><span class="lbl">Current price (100LL)</span><span class="val yellow">$6.15/gal</span></div>
+  <div class="row"><span class="lbl">Avg gal/stop (2025 FuelMaster)</span><span class="val">22.8 gal</span></div>
+  <div class="row"><span class="lbl">Avg revenue/stop</span><span class="val green">$128/stop</span></div>
 </div>
 
 <!-- STAGE 5 -->
@@ -440,7 +571,7 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
   <div class="row"><span class="lbl">GA4 re-authentication needed</span><span class="val yellow">Action: FlyZ + Dave</span></div>
   <div class="row"><span class="lbl">Hangar map by unit — Erin to confirm rates</span><span class="val yellow">Action: Erin</span></div>
   <div class="row"><span class="lbl">Hangar waitlist — populate Notion</span><span class="val yellow">Action: Erin</span></div>
-  <div class="row"><span class="lbl">Facebook page token renewal (~June 8)</span><span class="val yellow">Action: Dave</span></div>
+  <div class="row"><span class="lbl">Facebook page token EXPIRED May 8 — refresh now</span><span class="val red">Action: Dave · Urgent</span></div>
   <div class="row"><span class="lbl">QB data gap Jan–Apr + hangar revenue pull</span><span class="val yellow">Action: ZeoX</span></div>
   <div class="row"><span class="lbl">FuelMaster → QT Pod replacement</span><span class="val yellow">Action: Dave</span></div>
   <div class="row"><span class="lbl">Local weekly arrival log — building now</span><span class="val" style="color:#34d399">FlyZ in progress</span></div>
@@ -448,8 +579,8 @@ if(sessionStorage.getItem('18v_auth')==='1') document.getElementById('gate').sty
 </div>
 
 <div class="footer">
-  FlyZ ✈️ · Platte Valley Airpark 18V · Tue May 12 2026<br>
-  FlightAware Enterprise · GA4 (auth expired — last known May 4–10) · Mailchimp · Notion
+  FlyZ ✈️ · Platte Valley Airpark 18V · Tue May 12 2026 · v4 (Dave's 3 mods)<br>
+  FlightAware Enterprise (12-mo history) · Syntech FuelMaster (Aug 2025–Mar 2026) · Mailchimp · Notion · Publer · GA4 (re-auth needed)
 </div>
 </div>
 </body>
