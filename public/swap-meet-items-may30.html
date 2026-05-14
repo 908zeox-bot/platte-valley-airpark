@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilot Swap Meet — May 30, 2026 | Platte Valley Airpark</title>
+  <style type="text/css">
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background-color: #f2f0eb;
+      font-family: Georgia, 'Times New Roman', serif;
+      -webkit-font-smoothing: antialiased;
+      color: #2a2a2a;
+    }
+    a { color: #BD212F; }
+    a:hover { color: #8a1520; }
+    .wrap { max-width: 700px; margin: 0 auto; padding: 24px 16px 48px; }
+
+    /* Header */
+    .header {
+      background-color: #1a1a1a;
+      padding: 20px 28px;
+      border-radius: 6px 6px 0 0;
+    }
+    .header-name { margin: 0; color: #fff; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; }
+    .header-sub  { margin: 4px 0 0; color: #aaa; font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+
+    /* Hero */
+    .hero { background-color: #BD212F; padding: 36px 32px 32px; }
+    .hero-eyebrow { margin: 0 0 8px; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; }
+    .hero-title { margin: 0 0 10px; color: #fff; font-size: 34px; line-height: 42px; font-weight: bold; }
+    .hero-subtitle { margin: 0; color: #ffe0e0; font-size: 18px; font-style: italic; }
+
+    /* Body */
+    .body-content { background: #fff; padding: 32px 32px 28px; }
+
+    .intro { margin: 0 0 24px; font-size: 16px; line-height: 27px; }
+
+    /* Info box */
+    .info-box { background: #f7f5f0; border-left: 4px solid #BD212F; border-radius: 0 4px 4px 0; padding: 18px 22px; margin: 0 0 28px; }
+    .info-box-label { margin: 0 0 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #BD212F; font-weight: bold; }
+    .info-row { display: flex; gap: 14px; padding: 4px 0; }
+    .info-dt { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; min-width: 60px; padding-top: 2px; }
+    .info-dd { font-size: 15px; font-weight: bold; margin: 0; }
+    .info-dd small { font-size: 13px; font-weight: normal; color: #555; }
+
+    /* Back link */
+    .back-link { display: inline-block; margin: 0 0 24px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; text-decoration: none; color: #BD212F; }
+    .back-link:hover { text-decoration: underline; }
+
+    /* Category heading */
+    .cat-heading {
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #BD212F;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #BD212F;
+    }
+
+    /* Item list */
+    .item-list { list-style: none; margin: 0 0 32px; padding: 0; }
+    .item-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid #ede9e2;
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .item-list li:last-child { border-bottom: none; }
+    .item-bullet { color: #BD212F; font-size: 18px; line-height: 22px; flex-shrink: 0; margin-top: 0; }
+    .item-note { font-size: 12px; color: #777; font-style: italic; display: block; margin-top: 2px; }
+
+    /* Engine spotlight */
+    .engine-box {
+      background: #1a1a1a;
+      color: #fff;
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin: 0 0 32px;
+    }
+    .engine-badge { display: inline-block; background: #BD212F; color: #fff; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 10px; }
+    .engine-title { margin: 0 0 8px; font-size: 22px; line-height: 30px; color: #fff; }
+    .engine-desc { margin: 0 0 14px; font-size: 14px; line-height: 22px; color: #ccc; font-style: italic; }
+    .engine-parts { list-style: none; padding: 0; margin: 0 0 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; }
+    .engine-parts li { font-size: 13px; color: #ddd; font-family: Arial, sans-serif; padding: 2px 0; }
+    .engine-parts li::before { content: "·"; color: #BD212F; margin-right: 6px; }
+    .engine-link { display: inline-block; padding: 10px 22px; background: #BD212F; color: #fff; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; border-radius: 4px; letter-spacing: 0.5px; }
+    .engine-link:hover { background: #a01a26; color: #fff; }
+
+    /* Note box */
+    .note-box { background: #fffbe6; border: 1px solid #f0d060; border-radius: 4px; padding: 14px 18px; margin: 0 0 28px; font-family: Arial, sans-serif; font-size: 13px; line-height: 20px; color: #555; }
+
+    /* Footer strip */
+    .footer-strip { background: #1a1a1a; padding: 20px 32px; }
+    .footer-strip table { width: 100%; border-collapse: collapse; }
+    .footer-strip td { text-align: center; padding: 8px 4px; vertical-align: top; }
+    .footer-strip td + td { border-left: 1px solid #333; }
+    .f-label { display: block; color: #BD212F; font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+    .f-value { display: block; color: #fff; font-size: 15px; font-weight: bold; }
+    .f-sub { display: block; color: #888; font-family: Arial, sans-serif; font-size: 10px; margin-top: 2px; }
+
+    /* Footer */
+    .footer { background: #f7f5f0; padding: 22px 32px; border-top: 1px solid #e0ddd6; border-radius: 0 0 6px 6px; text-align: center; }
+    .footer p { margin: 0 0 6px; color: #888; font-family: Arial, sans-serif; font-size: 12px; }
+    .footer a { color: #BD212F; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .body-content { padding: 24px 18px 20px; }
+      .hero { padding: 28px 20px 24px; }
+      .hero-title { font-size: 26px; line-height: 34px; }
+      .engine-parts { grid-template-columns: 1fr; }
+      .footer-strip { padding: 16px 18px; }
+      .info-row { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div style="border-radius:6px; overflow:hidden; border:1px solid #e0ddd6; background:#fff;">
+
+    <!-- Header -->
+    <div class="header">
+      <p class="header-name">PLATTE VALLEY AIRPARK</p>
+      <p class="header-sub">18V &bull; Fort Lupton, CO &bull; Front Range GA</p>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <p class="hero-eyebrow">Pancake Fly-In &mdash; May 30, 2026</p>
+      <h1 class="hero-title">Pilot Swap Meet<br>Items for Sale</h1>
+      <p class="hero-subtitle">Saturday, May 30 &bull; 8:00 AM &ndash; 10:00 AM</p>
+    </div>
+
+    <!-- Body -->
+    <div class="body-content">
+
+      <a href="/" class="back-link">← Back to plattevalleyairpark.com</a>
+
+      <p class="intro">
+        Looking to score some good GA gear? We've got a solid lineup of parts, avionics, and equipment up for grabs at the <strong>Pancake Fly-In Swap Meet on Saturday, May 30</strong>. Items are on a first-come, first-served basis — fly in early if something catches your eye.
+      </p>
+
+      <!-- Info box -->
+      <div class="info-box">
+        <p class="info-box-label">Event Details</p>
+        <div class="info-row">
+          <span class="info-dt">Date</span>
+          <p class="info-dd">Saturday, May 30, 2026</p>
+        </div>
+        <div class="info-row">
+          <span class="info-dt">Time</span>
+          <p class="info-dd">8:00 AM – 10:00 AM</p>
+        </div>
+        <div class="info-row">
+          <span class="info-dt">Where</span>
+          <p class="info-dd">Platte Valley Airpark (18V)<br><small>7507 County Road 39, Fort Lupton, CO 80621 &bull; CTAF 122.9</small></p>
+        </div>
+      </div>
+
+      <!-- Continental C-145 Engine SPOTLIGHT -->
+      <div class="engine-box">
+        <span class="engine-badge">⭐ Featured Item</span>
+        <h2 class="engine-title">Continental C-145 Engine (Disassembled)</h2>
+        <p class="engine-desc">Engine was running fine when removed. Great core or overhaul candidate.</p>
+        <ul class="engine-parts">
+          <li>Accessory case</li>
+          <li>Case halves</li>
+          <li>MA3SPA carburetor</li>
+          <li>60 amp alternator</li>
+          <li>Vintage Bendix Scintilla magnetos</li>
+          <li>Spinner &amp; back plate</li>
+          <li>Crankshaft (core)</li>
+          <li>Camshaft (core)</li>
+          <li>Engine mount brackets</li>
+          <li>Main oil screen</li>
+          <li>Connecting rods</li>
+          <li>Starter</li>
+          <li>Tappet body lifters</li>
+          <li>Oil pump drive gear</li>
+          <li>Pushrod tubes</li>
+        </ul>
+        <a href="https://www.ebay.com/itm/126068331856" target="_blank" rel="noopener" class="engine-link">View on eBay →</a>
+      </div>
+
+      <!-- Cessna 172 Parts -->
+      <p class="cat-heading">Cessna 172 Parts</p>
+      <ul class="item-list">
+        <li><span class="item-bullet">✈</span><span>Cessna 172D wing tips &mdash; very good condition</span></li>
+        <li><span class="item-bullet">✈</span><span>Cessna 172 strut fairing</span></li>
+        <li><span class="item-bullet">✈</span><span>Cessna 172 Skyhawk vertical fin decals</span></li>
+        <li><span class="item-bullet">✈</span><span>McFarland seat rails for C-172D &mdash; 4 each <span class="item-note">New</span></span></li>
+        <li><span class="item-bullet">✈</span><span>Sheepskin seat covers for C-172</span></li>
+        <li><span class="item-bullet">✈</span><span>Vortex Generators for Cessna 172D</span></li>
+        <li><span class="item-bullet">✈</span><span>Brackett Air Filter Assembly #BA5110</span></li>
+      </ul>
+
+      <!-- Engine / Prop Parts -->
+      <p class="cat-heading">Engine &amp; Prop Parts</p>
+      <ul class="item-list">
+        <li><span class="item-bullet">✈</span><span>Spinner and back plate &mdash; Continental 0-300</span></li>
+        <li><span class="item-bullet">✈</span><span>Non-TSO spinner for 0-200</span></li>
+      </ul>
+
+      <!-- Avionics -->
+      <p class="cat-heading">Avionics &amp; Electronics</p>
+      <ul class="item-list">
+        <li><span class="item-bullet">✈</span><span>Garmin GTR 225 radio w/ tray and connectors</span></li>
+        <li><span class="item-bullet">✈</span><span>ACK E-04 ELT &mdash; 406/121.5 MHz, FAA TSO <span class="item-note">New</span></span></li>
+        <li><span class="item-bullet">✈</span><span>Stratux ADS-B Receiver w/ GPS antenna, battery &amp; holder</span></li>
+        <li><span class="item-bullet">✈</span><span>PAI-700 Vertical card compass</span></li>
+        <li><span class="item-bullet">✈</span><span>FlightCom HSx voice-activated intercom</span></li>
+        <li><span class="item-bullet">✈</span><span>RG-25XC battery</span></li>
+      </ul>
+
+      <!-- Pilot Gear -->
+      <p class="cat-heading">Pilot Gear</p>
+      <ul class="item-list">
+        <li><span class="item-bullet">✈</span><span>David Clark H10-60 noise-attenuating headset</span></li>
+        <li><span class="item-bullet">✈</span><span>6 ft tow bar</span></li>
+      </ul>
+
+      <!-- Misc -->
+      <p class="cat-heading">Misc</p>
+      <ul class="item-list">
+        <li><span class="item-bullet">✈</span><span>Hardware (assorted)</span></li>
+        <li><span class="item-bullet">✈</span><span>Tools (assorted)</span></li>
+      </ul>
+
+      <div class="note-box">
+        📋 <strong>Note:</strong> All items are sold as-is. No prices listed here — come talk to the seller on the day. Swap meet runs alongside the pancake breakfast from 8–10 AM. Fly in early for first pick.
+      </div>
+
+    </div><!-- /body-content -->
+
+    <!-- Quick Facts Strip -->
+    <div class="footer-strip">
+      <table>
+        <tr>
+          <td>
+            <span class="f-label">Fuel</span>
+            <span class="f-value">$6.38/gal</span>
+            <span class="f-sub">100LL &bull; Self-Serve &bull; 24/7</span>
+          </td>
+          <td>
+            <span class="f-label">Runways</span>
+            <span class="f-value">4,100 + 2,500 ft</span>
+            <span class="f-sub">Paved + Grass Strip</span>
+          </td>
+          <td>
+            <span class="f-label">CTAF</span>
+            <span class="f-value">122.9</span>
+            <span class="f-sub">Platte Valley (18V)</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Platte Valley Airpark (18V) &bull; 7507 County Road 39, Fort Lupton, CO 80621</p>
+      <p><a href="https://www.plattevalleyairpark.com">plattevalleyairpark.com</a> &bull; <a href="tel:+17209143854">(720) 914-3854</a></p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
