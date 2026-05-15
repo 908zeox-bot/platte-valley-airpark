@@ -24,9 +24,9 @@ export default function Home() {
       <About />
       <FuelServices site={siteData} />
       <FlyIn site={siteData} />
+      <Events events={eventsData} />
       <Gallery />
       <RunwayReports reports={runwayReportsData} />
-      <Events events={eventsData} />
       <MailingList />
       <Footer site={siteData} />
     </main>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Activation Rate — 18V</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+       background:#111827;color:#e5e7eb;padding:24px 20px 48px;}
+  .header{display:flex;align-items:center;gap:14px;margin-bottom:28px;
+          border-bottom:3px solid #ef1100;padding-bottom:16px;}
+  .logo-wrap{background:#fff;border-radius:10px;padding:8px 10px;}
+  .logo-wrap img{height:52px;display:block;}
+  .header-text h1{font-size:20px;font-weight:700;color:#f9fafb;}
+  .header-text p{font-size:12px;color:#9ca3af;margin-top:3px;}
+  .content{max-width:960px;margin:0 auto;}
+  .insight-box{background:#1f2937;border:1.5px solid rgba(239,17,0,.45);
+               border-radius:14px;padding:18px 20px;margin-bottom:22px;}
+  .ins-title{font-size:11px;font-weight:700;color:#ef1100;
+             letter-spacing:1.2px;text-transform:uppercase;margin-bottom:12px;}
+  .ins-row{display:flex;gap:8px;align-items:flex-start;padding:6px 0;
+           border-bottom:1px solid #2d3748;font-size:13px;line-height:1.5;}
+  .ins-row:last-child{border-bottom:none;}
+  .ins-row .ic{flex-shrink:0;margin-top:1px;}
+  .ins-row .tx{color:#d1d5db;}
+  .chart-card{background:#1f2937;border:1.5px solid #374151;border-radius:14px;
+              padding:20px;margin-bottom:20px;}
+  .chart-title{font-size:13px;font-weight:700;color:#f9fafb;margin-bottom:4px;}
+  .chart-sub{font-size:11px;color:#6b7280;margin-bottom:16px;}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .stat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:22px;}
+  .stat-card{background:#1f2937;border:1.5px solid #374151;border-radius:12px;padding:14px 12px;}
+  .stat-month{font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;}
+  .stat-val{font-size:24px;font-weight:700;color:#ef1100;margin:4px 0 2px;}
+  .stat-label{font-size:11px;color:#9ca3af;}
+  .stat-sub{font-size:10px;color:#4b5563;margin-top:4px;}
+  .note{font-size:11px;color:#4b5563;margin-top:16px;line-height:1.6;padding-top:12px;
+        border-top:1px solid #2d3748;}
+  .badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:10px;font-weight:600;}
+  .badge.up{background:rgba(34,197,94,.15);color:#4ade80;}
+  .badge.down{background:rgba(239,68,68,.15);color:#f87171;}
+  .badge.warn{background:rgba(251,191,36,.15);color:#fbbf24;}
+  canvas{max-height:280px;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo-wrap"><img src="/images/logo.png" alt="Platte Valley Airpark"></div>
+  <div class="header-text">
+    <h1>⛽ Fuel Activation Rate</h1>
+    <p>Platte Valley Airpark (18V) · Nov 2025 – Mar 2026 · Source: FuelMaster (Syntech) + FlightAware AeroAPI</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- Key Insight Box -->
+  <div class="insight-box">
+    <div class="ins-title">📊 Key Findings</div>
+    <div class="ins-row"><span class="ic">🔴</span><span class="tx"><b>Per-landing activation rate declining:</b> 35% in Nov → 26% in Mar 2026 as arrival counts grew. More aircraft visiting, but proportionally fewer fueling per landing.</span></div>
+    <div class="ins-row"><span class="ic">🟡</span><span class="tx"><b>Unique tail activation strong in winter:</b> 94–107% of tracked unique arrivals also appear as unique fuelers in Nov/Dec — based aircraft fuel frequently. Rate softened to ~75–89% in Jan–Mar as transient traffic increased.</span></div>
+    <div class="ins-row"><span class="ic">🟢</span><span class="tx"><b>Peak gallons month: Nov 2025</b> — 1,680 gal / 81 transactions / ~$9,997 est. revenue. Lowest: Feb 2026 at 1,029 gal / 56 transactions.</span></div>
+    <div class="ins-row"><span class="ic">💡</span><span class="tx"><b>Opportunity:</b> March had the highest arrival count (298) but only 77 fuel transactions (26%). If activation rate recovered to the Nov level (35%), that would be ~104 transactions — roughly <b>27 additional fueling events per month</b>.</span></div>
+  </div>
+
+  <!-- Monthly stat cards -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-month">Nov 2025</div>
+      <div class="stat-val">35.4%</div>
+      <div class="stat-label">Txn / Arrival Rate</div>
+      <div class="stat-sub">81 txns · 229 arrivals<br>1,680 gal · $9,997</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-month">Dec 2025</div>
+      <div class="stat-val">37.9%</div>
+      <div class="stat-label">Txn / Arrival Rate</div>
+      <div class="stat-sub">58 txns · 153 arrivals<br>1,096 gal · $6,524</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-month">Jan 2026</div>
+      <div class="stat-val">30.7%</div>
+      <div class="stat-label">Txn / Arrival Rate</div>
+      <div class="stat-sub">67 txns · 218 arrivals<br>1,437 gal · $8,548</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-month">Feb 2026</div>
+      <div class="stat-val">25.2%</div>
+      <div class="stat-label">Txn / Arrival Rate</div>
+      <div class="stat-sub">56 txns · 222 arrivals<br>1,029 gal · $6,120</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-month">Mar 2026</div>
+      <div class="stat-val">25.8%</div>
+      <div class="stat-label">Txn / Arrival Rate</div>
+      <div class="stat-sub">77 txns · 298 arrivals<br>1,513 gal · $9,005</div>
+    </div>
+  </div>
+
+  <!-- Charts row 1 -->
+  <div class="grid-2">
+    <div class="chart-card">
+      <div class="chart-title">Fuel Activation Rate — Per Landing</div>
+      <div class="chart-sub">Fuel transactions ÷ FA-tracked arrivals (IFR/ADS-B)</div>
+      <canvas id="rateChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Arrivals vs Fuel Transactions</div>
+      <div class="chart-sub">Monthly volume comparison</div>
+      <canvas id="volumeChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Charts row 2 -->
+  <div class="grid-2" style="margin-top:16px;">
+    <div class="chart-card">
+      <div class="chart-title">Gallons Sold per Month</div>
+      <div class="chart-sub">Total 100LL volume from FuelMaster (Syntech)</div>
+      <canvas id="gallonsChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Unique Tail Activation Rate</div>
+      <div class="chart-sub">Unique fueling accounts ÷ unique tracked arrival tails</div>
+      <canvas id="tailRateChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Full data table -->
+  <div class="chart-card" style="margin-top:16px;">
+    <div class="chart-title">Full Data Table</div>
+    <div class="chart-sub">FuelMaster (Syntech) × FlightAware AeroAPI · Nov 2025 – Mar 2026</div>
+    <table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;">
+      <thead>
+        <tr style="color:#9ca3af;text-align:right;border-bottom:1px solid #374151;">
+          <th style="text-align:left;padding:6px 8px;">Month</th>
+          <th style="padding:6px 8px;">FA Arrivals</th>
+          <th style="padding:6px 8px;">FA Unique Tails</th>
+          <th style="padding:6px 8px;">Fuel Txns</th>
+          <th style="padding:6px 8px;">Unique Fuelers</th>
+          <th style="padding:6px 8px;">Gallons</th>
+          <th style="padding:6px 8px;">Est. Revenue</th>
+          <th style="padding:6px 8px;">Txn Rate</th>
+          <th style="padding:6px 8px;">Tail Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #1f2937;color:#d1d5db;">
+          <td style="padding:8px;font-weight:600;">Nov 2025</td>
+          <td style="text-align:right;padding:8px;">229</td>
+          <td style="text-align:right;padding:8px;">76</td>
+          <td style="text-align:right;padding:8px;">81</td>
+          <td style="text-align:right;padding:8px;">81</td>
+          <td style="text-align:right;padding:8px;">1,680</td>
+          <td style="text-align:right;padding:8px;">$9,997</td>
+          <td style="text-align:right;padding:8px;color:#4ade80;font-weight:700;">35.4%</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;">106.6%</td>
+        </tr>
+        <tr style="border-bottom:1px solid #1f2937;color:#d1d5db;">
+          <td style="padding:8px;font-weight:600;">Dec 2025</td>
+          <td style="text-align:right;padding:8px;">153</td>
+          <td style="text-align:right;padding:8px;">62</td>
+          <td style="text-align:right;padding:8px;">58</td>
+          <td style="text-align:right;padding:8px;">58</td>
+          <td style="text-align:right;padding:8px;">1,096</td>
+          <td style="text-align:right;padding:8px;">$6,524</td>
+          <td style="text-align:right;padding:8px;color:#4ade80;font-weight:700;">37.9%</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;">93.5%</td>
+        </tr>
+        <tr style="border-bottom:1px solid #1f2937;color:#d1d5db;">
+          <td style="padding:8px;font-weight:600;">Jan 2026</td>
+          <td style="text-align:right;padding:8px;">218</td>
+          <td style="text-align:right;padding:8px;">74</td>
+          <td style="text-align:right;padding:8px;">67</td>
+          <td style="text-align:right;padding:8px;">66</td>
+          <td style="text-align:right;padding:8px;">1,437</td>
+          <td style="text-align:right;padding:8px;">$8,548</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;font-weight:700;">30.7%</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;">89.2%</td>
+        </tr>
+        <tr style="border-bottom:1px solid #1f2937;color:#d1d5db;">
+          <td style="padding:8px;font-weight:600;">Feb 2026</td>
+          <td style="text-align:right;padding:8px;">222</td>
+          <td style="text-align:right;padding:8px;">75</td>
+          <td style="text-align:right;padding:8px;">56</td>
+          <td style="text-align:right;padding:8px;">56</td>
+          <td style="text-align:right;padding:8px;">1,029</td>
+          <td style="text-align:right;padding:8px;">$6,120</td>
+          <td style="text-align:right;padding:8px;color:#f87171;font-weight:700;">25.2%</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;">74.7%</td>
+        </tr>
+        <tr style="color:#d1d5db;">
+          <td style="padding:8px;font-weight:600;">Mar 2026</td>
+          <td style="text-align:right;padding:8px;">298</td>
+          <td style="text-align:right;padding:8px;">97</td>
+          <td style="text-align:right;padding:8px;">77</td>
+          <td style="text-align:right;padding:8px;">77</td>
+          <td style="text-align:right;padding:8px;">1,513</td>
+          <td style="text-align:right;padding:8px;">$9,005</td>
+          <td style="text-align:right;padding:8px;color:#f87171;font-weight:700;">25.8%</td>
+          <td style="text-align:right;padding:8px;color:#fbbf24;">79.4%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="color:#9ca3af;border-top:2px solid #374151;font-weight:700;">
+          <td style="padding:8px;">5-Mo Total</td>
+          <td style="text-align:right;padding:8px;">1,120</td>
+          <td style="text-align:right;padding:8px;">—</td>
+          <td style="text-align:right;padding:8px;">339</td>
+          <td style="text-align:right;padding:8px;">—</td>
+          <td style="text-align:right;padding:8px;">6,756</td>
+          <td style="text-align:right;padding:8px;">$40,194</td>
+          <td style="text-align:right;padding:8px;">30.3% avg</td>
+          <td style="text-align:right;padding:8px;">—</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="note">
+      ⚠️ <b>Methodology notes:</b> FA arrivals = IFR/ADS-B tracked landings only — likely undercounts total traffic at this VFR airport by 30–50%. FuelMaster unique codes include based aircraft who fuel without always appearing in FA arrival data (explains >100% tail rate in Nov). "Tail rate" should be interpreted as directional, not precise. Est. revenue uses blended price per available price at time of transaction. April 2026 fuel report not yet available in Box.<br><br>
+      For a cleaner transient-only activation rate, we'd need a list of based aircraft N-numbers to filter them from both datasets. Recommend Erin populate the based aircraft list in Notion.
+    </div>
+  </div>
+
+</div>
+
+<script>
+const months = ['Nov 2025','Dec 2025','Jan 2026','Feb 2026','Mar 2026'];
+const arrivals = [229,153,218,222,298];
+const fuelTxns = [81,58,67,56,77];
+const gallons = [1680,1096,1437,1029,1513];
+const txnRate = [35.4,37.9,30.7,25.2,25.8];
+const tailRate = [106.6,93.5,89.2,74.7,79.4];
+
+const colors = {
+  red:'#ef1100', redFade:'rgba(239,17,0,0.15)',
+  blue:'#3b82f6', blueFade:'rgba(59,130,246,0.15)',
+  green:'#22c55e', greenFade:'rgba(34,197,94,0.15)',
+  amber:'#f59e0b', amberFade:'rgba(245,158,11,0.15)',
+  grid:'#1f2937', text:'#9ca3af'
+};
+
+const baseOpts = {
+  responsive:true,
+  plugins:{legend:{labels:{color:colors.text,font:{size:11}}}},
+  scales:{
+    x:{ticks:{color:colors.text,font:{size:11}},grid:{color:'#1f2937'}},
+    y:{ticks:{color:colors.text,font:{size:11}},grid:{color:'#2d3748'}}
+  }
+};
+
+// Chart 1: Activation Rate (per landing)
+new Chart(document.getElementById('rateChart'),{
+  type:'line',
+  data:{
+    labels:months,
+    datasets:[{
+      label:'Txn / Arrival Rate (%)',
+      data:txnRate,
+      borderColor:colors.red,
+      backgroundColor:colors.redFade,
+      fill:true,
+      tension:0.35,
+      pointRadius:5,
+      pointBackgroundColor:colors.red,
+    }]
+  },
+  options:{...baseOpts,
+    plugins:{...baseOpts.plugins},
+    scales:{...baseOpts.scales,
+      y:{...baseOpts.scales.y,
+        ticks:{...baseOpts.scales.y.ticks,callback:v=>v+'%'},
+        min:0,max:50,
+      }
+    }
+  }
+});
+
+// Chart 2: Arrivals vs Fuel Txns
+new Chart(document.getElementById('volumeChart'),{
+  type:'bar',
+  data:{
+    labels:months,
+    datasets:[
+      {label:'FA Arrivals',data:arrivals,backgroundColor:colors.blueFade,borderColor:colors.blue,borderWidth:1.5},
+      {label:'Fuel Txns',data:fuelTxns,backgroundColor:colors.redFade,borderColor:colors.red,borderWidth:1.5},
+    ]
+  },
+  options:baseOpts
+});
+
+// Chart 3: Gallons
+new Chart(document.getElementById('gallonsChart'),{
+  type:'bar',
+  data:{
+    labels:months,
+    datasets:[{
+      label:'Gallons (100LL)',
+      data:gallons,
+      backgroundColor:colors.amberFade,
+      borderColor:colors.amber,
+      borderWidth:1.5,
+    }]
+  },
+  options:baseOpts
+});
+
+// Chart 4: Tail Rate
+new Chart(document.getElementById('tailRateChart'),{
+  type:'line',
+  data:{
+    labels:months,
+    datasets:[{
+      label:'Unique Fuelers / Unique FA Tails (%)',
+      data:tailRate,
+      borderColor:colors.green,
+      backgroundColor:colors.greenFade,
+      fill:true,
+      tension:0.35,
+      pointRadius:5,
+      pointBackgroundColor:colors.green,
+    }]
+  },
+  options:{...baseOpts,
+    plugins:{...baseOpts.plugins},
+    scales:{...baseOpts.scales,
+      y:{...baseOpts.scales.y,
+        ticks:{...baseOpts.scales.y.ticks,callback:v=>v+'%'},
+        min:0,max:120,
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
