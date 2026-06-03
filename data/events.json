@@ -1,16 +1,5 @@
 [
   {
-    "id": "pancake-flyIn-may30-2026",
-    "title": "Pancake Fly-In",
-    "date": "Saturday, May 30, 2026",
-    "time": "8:00 AM – 10:00 AM",
-    "description": "Everyone's welcome — pilots, families, and anyone who loves a good morning on the ramp. Join us for fresh pancakes and coffee on the 18V ramp, browse the Pilot Swap Meet (parts and gear for sale), and step inside the Vintage Aero Flying Museum while it's open. Fly in or drive in.",
-    "cost": "Donations welcome",
-    "image": "/images/pancake-flyIn-may30.png",
-    "link": "/swap-meet-items-may30.html",
-    "featured": true
-  },
-  {
     "id": "coffee-donuts-monthly",
     "title": "Coffee & Donuts",
     "date": "First Friday of every month",
