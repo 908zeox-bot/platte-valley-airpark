@@ -7,10 +7,12 @@ import FuelServices from '@/components/FuelServices'
 import Gallery from '@/components/Gallery'
 import RunwayReports from '@/components/RunwayReports'
 import Events from '@/components/Events'
+import RegionalEvents from '@/components/RegionalEvents'
 import MailingList from '@/components/MailingList'
 import Footer from '@/components/Footer'
 import siteData from '../../data/site.json'
 import eventsData from '../../data/events.json'
+import regionalEventsData from '../../data/regional-events.json'
 import runwayReportsData from '../../data/runway-reports.json'
 
 export default function Home() {
@@ -23,6 +25,7 @@ export default function Home() {
       <About />
       <FuelServices site={siteData} />
       <Events events={eventsData} />
+      <RegionalEvents events={regionalEventsData} />
       <Gallery />
       <RunwayReports reports={runwayReportsData} />
       <MailingList />
