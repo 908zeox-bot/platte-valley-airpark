@@ -23,7 +23,7 @@ const Events = ({ events }: EventsProps) => {
   return (
     <section id="events" className="bg-gray-100 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-12">Upcoming Events</h2>
+        <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-12">Events</h2>
 
         {featuredEvent && (
           <div className="bg-white rounded-lg shadow-md overflow-hidden lg:flex items-center mb-12">
