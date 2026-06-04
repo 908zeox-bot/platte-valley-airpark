@@ -9,6 +9,7 @@ const config: Config = {
       },
       fontFamily: {
         serif: ['Georgia', 'Times New Roman', 'serif'],
+        cursive: ['Dancing Script', 'cursive'],
       },
     },
   },
