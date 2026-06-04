@@ -60,6 +60,20 @@ export default function GalleryPage() {
               </Link>
             </div>
 
+            {/* Social tag + photo submission note */}
+            <div className="bg-gray-50 border border-gray-200 rounded-xl px-6 py-5 mb-10 text-center">
+              <p className="text-gray-800 font-semibold mb-1">📸 Share your 18V moments!</p>
+              <p className="text-gray-600 text-sm">
+                Tag us on{' '}
+                <a href="https://www.instagram.com/fly18v" target="_blank" rel="noopener noreferrer" className="text-airpark-red font-semibold hover:underline">@fly18v</a>
+                {' '}on Instagram or{' '}
+                <a href="https://www.facebook.com/profile.php?id=1078047562053650" target="_blank" rel="noopener noreferrer" className="text-airpark-red font-semibold hover:underline">Fly18V</a>
+                {' '}on Facebook — or send your photos to{' '}
+                <a href="mailto:erin@plattevalleyairpark.com" className="text-airpark-red font-semibold hover:underline">erin@plattevalleyairpark.com</a>
+                {' '}to be featured here.
+              </p>
+            </div>
+
             <div className="masonry-grid">
               {photos.map((photo, index) => {
                 const thumbSrc = photo.src.replace('/images/', '/images/thumbs/');
