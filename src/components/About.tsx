@@ -20,23 +20,17 @@ const About = () => {
           <h3 className="text-3xl font-serif font-bold text-dark-charcoal mb-10 text-center">Meet Our Team</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
             <div>
-              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">DS</span>
-              </div>
+              <img src="/images/team-dave.png" alt="Dave Shull" className="w-32 h-32 rounded-full object-cover mx-auto mb-3 shadow-md" />
               <h4 className="text-lg font-bold text-dark-charcoal">Dave Shull</h4>
               <p className="text-sm text-gray-500 uppercase tracking-wide">Owner</p>
             </div>
             <div>
-              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">ES</span>
-              </div>
+              <img src="/images/team-erin.jpeg" alt="Erin Shoffit" className="w-32 h-32 rounded-full object-cover mx-auto mb-3 shadow-md" />
               <h4 className="text-lg font-bold text-dark-charcoal">Erin Shoffit</h4>
               <p className="text-sm text-gray-500 uppercase tracking-wide">Airpark Manager</p>
             </div>
             <div>
-              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">RS</span>
-              </div>
+              <img src="/images/team-ryan.png" alt="Ryan Sander" className="w-32 h-32 rounded-full object-cover mx-auto mb-3 shadow-md" />
               <h4 className="text-lg font-bold text-dark-charcoal">Ryan Sander</h4>
               <p className="text-sm text-gray-500 uppercase tracking-wide">Facilities Lead</p>
             </div>
