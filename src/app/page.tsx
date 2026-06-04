@@ -24,9 +24,9 @@ export default function Home() {
       <PhotoStrip />
       <About />
       <FuelServices site={siteData} />
+      <Gallery />
       <Events events={eventsData} />
       <RegionalEvents events={regionalEventsData} />
-      <Gallery />
       <RunwayReports reports={runwayReportsData} />
       <MailingList />
       <Footer site={siteData} />
