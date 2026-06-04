@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'The story of Platte Valley Airpark — from a rancher\'s dream of trains and planes in 1966 to one of Colorado\'s most beloved GA communities.',
   openGraph: {
     title: 'The Story of 18V',
-    description: 'A train, a dream, and a field that\'s been flying for nearly 60 years.',
+    description: 'A train, a dream, and a field that\'s been flying for 60 years.',
     images: [{ url: 'https://deltazulullc.box.com/shared/static/yegw65a08twuzes3krjbe5csr5y9n8d4.jpg' }],
   },
 }
@@ -30,14 +30,19 @@ export default function HistoryPage() {
             </p>
           </div>
 
-          {/* Hero image */}
-          <div className="max-w-4xl mx-auto mb-12 rounded-xl overflow-hidden shadow-lg">
+          {/* Hero image — tower + aircraft */}
+          <div className="max-w-4xl mx-auto mb-4 rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://deltazulullc.box.com/shared/static/yegw65a08twuzes3krjbe5csr5y9n8d4.jpg"
-              alt="Platte Valley Airpark — runway at sunrise"
+              src="https://deltazulullc.box.com/shared/static/jetukg9u6msuzpijnxit9zcrquga9y95.jpg"
+              alt="The tower and aircraft on the ramp at Platte Valley Airpark"
               className="w-full h-auto"
               loading="eager"
             />
+          </div>
+          <div className="max-w-4xl mx-auto mb-12">
+            <p className="text-center text-sm text-gray-400 italic py-2">
+              The tower — built for trains, now a landmark for pilots.
+            </p>
           </div>
 
           {/* Letter */}
@@ -70,7 +75,7 @@ export default function HistoryPage() {
                 But here's the part that still gives me chills: <strong>that locomotive is still running.</strong> The Town of Breckenridge bought it at auction. History Colorado restored it. Today, IRCA #111 makes its rounds through the Rocky Mountain canyon at Georgetown Loop Railroad. You can go ride it.
               </p>
               <p>
-                We've been an aviation community for nearly 60 years. Over 100 aircraft call this field home. Pilots have learned to fly here, logged their first solos here, and built friendships here that have lasted decades. That's the living history — and it belongs to all of us.
+                We've been an aviation community for 60 years. Over 100 aircraft call this field home. Pilots have learned to fly here, logged their first solos here, and built friendships here that have lasted decades. That's the living history — and it belongs to all of us.
               </p>
               <p>
                 We're publishing what we've learned about this place. But the story doesn't end with what we know. It ends with what <em>you</em> know.
@@ -89,17 +94,14 @@ export default function HistoryPage() {
               <p className="text-sm text-gray-500 mt-1">General Manager, Platte Valley Airpark</p>
             </div>
 
-            {/* Tower photo */}
+            {/* Secondary image — runway sunrise */}
             <div className="mb-16 rounded-xl overflow-hidden shadow-md">
               <img
-                src="https://deltazulullc.box.com/shared/static/jetukg9u6msuzpijnxit9zcrquga9y95.jpg"
-                alt="The tower and aircraft on the ramp at Platte Valley Airpark"
+                src="https://deltazulullc.box.com/shared/static/yegw65a08twuzes3krjbe5csr5y9n8d4.jpg"
+                alt="Platte Valley Airpark — runway at sunrise"
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <p className="text-center text-sm text-gray-400 italic py-3 bg-gray-50">
-                The tower — built for trains, now a landmark for pilots.
-              </p>
             </div>
 
             {/* Divider */}
