@@ -84,33 +84,21 @@ export default function GalleryPage() {
               </Link>
             </div>
 
-            {GROUP_ORDER.map((groupCfg) => {
-              const groupPhotos = grouped[groupCfg.key];
-              if (!groupPhotos || groupPhotos.length === 0) return null;
-
-              return (
-                <div key={groupCfg.key} className="mb-16">
-                  <h3 className="font-serif text-2xl font-bold text-dark-charcoal mb-1">
-                    {groupCfg.label}
-                  </h3>
-                  {groupCfg.credit && (
-                    <p className="text-sm text-gray-400 italic mb-6">{groupCfg.credit}</p>
-                  )}
-                  {!groupCfg.credit && <div className="mb-6" />}
-                  <div className="masonry-grid">
-                    {groupPhotos.map((photo) => (
-                      <img
-                        key={photo.src}
-                        src={photo.src}
-                        alt={photo.alt}
-                        loading="lazy"
-                        className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
-                      />
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+            <div className="masonry-grid">
+              {GROUP_ORDER.flatMap((groupCfg) => {
+                const groupPhotos = grouped[groupCfg.key];
+                if (!groupPhotos || groupPhotos.length === 0) return [];
+                return groupPhotos.map((photo) => (
+                  <img
+                    key={photo.src}
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading="lazy"
+                    className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
+                  />
+                ));
+              })}
+            </div>
 
           </div>
         </section>
