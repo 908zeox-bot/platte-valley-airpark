@@ -12,6 +12,7 @@ type GalleryPhoto = {
   src: string;
   alt: string;
   group: string;
+  credit?: string;
 };
 
 export default function GalleryPage() {
@@ -81,14 +82,19 @@ export default function GalleryPage() {
               {photos.map((photo, index) => {
                 const thumbSrc = photo.src.replace('/images/', '/images/thumbs/');
                 return (
-                  <img
-                    key={photo.src}
-                    src={thumbSrc}
-                    alt={photo.alt}
-                    loading="lazy"
-                    onClick={() => openLightbox(index)}
-                    className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
-                  />
+                  <div key={photo.src} className="relative group cursor-zoom-in" onClick={() => openLightbox(index)}>
+                    <img
+                      src={thumbSrc}
+                      alt={photo.alt}
+                      loading="lazy"
+                      className="w-full hover:scale-[1.02] transition-transform duration-300 rounded-lg"
+                    />
+                    {photo.credit && (
+                      <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-xs px-2 py-1 rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-center">
+                        📷 {photo.credit}
+                      </div>
+                    )}
+                  </div>
                 );
               })}
             </div>
@@ -134,10 +140,13 @@ export default function GalleryPage() {
             aria-label="Close"
           >&times;</button>
 
-          {/* Counter */}
-          <p className="absolute bottom-4 text-gray-400 text-sm">
-            {lightboxIndex + 1} / {photos.length}
-          </p>
+          {/* Counter + credit */}
+          <div className="absolute bottom-4 flex flex-col items-center gap-1">
+            <p className="text-gray-400 text-sm">{lightboxIndex + 1} / {photos.length}</p>
+            {photos[lightboxIndex].credit && (
+              <p className="text-gray-400 text-xs">📷 {photos[lightboxIndex].credit}</p>
+            )}
+          </div>
         </div>
       )}
     </div>
