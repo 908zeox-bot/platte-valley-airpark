@@ -4,7 +4,7 @@ export default function PhotoStrip() {
     { src: '/images/58.jpg', alt: 'Hangars and Colorado sky at 18V' },
     { src: '/images/55.jpg', alt: 'Ramp operations at Platte Valley Airpark' },
     { src: '/images/50.jpg', alt: 'Colorado Front Range scenery from 18V' },
-    { src: '/images/51.jpg', alt: 'General aviation aircraft at Fort Lupton airport' },
+    { src: '/images/52.jpg', alt: 'General aviation aircraft at Fort Lupton airport' },
   ]
 
   return (
@@ -14,7 +14,7 @@ export default function PhotoStrip() {
         {photos.map((photo) => (
           <div key={photo.src} className="flex-1 overflow-hidden">
             <img
-              src={photo.src}
+              src={photo.src.replace('/images/', '/images/thumbs/')}
               alt={photo.alt}
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -27,7 +27,7 @@ export default function PhotoStrip() {
         {photos.map((photo) => (
           <div key={photo.src} className="overflow-hidden h-48">
             <img
-              src={photo.src}
+              src={photo.src.replace('/images/', '/images/thumbs/')}
               alt={photo.alt}
               loading="lazy"
               className="w-full h-full object-cover"
