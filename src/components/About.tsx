@@ -15,6 +15,34 @@ const About = () => {
           <img src="/images/z-community-ramp.jpg" alt="Community gathering on the ramp at 18V Pancake Breakfast" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
         </div>
 
+        {/* Meet Our Team */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-serif font-bold text-dark-charcoal mb-10 text-center">Meet Our Team</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
+            <div>
+              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
+                <span className="text-white text-xl font-bold">DS</span>
+              </div>
+              <h4 className="text-lg font-bold text-dark-charcoal">Dave Shull</h4>
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Owner</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
+                <span className="text-white text-xl font-bold">ES</span>
+              </div>
+              <h4 className="text-lg font-bold text-dark-charcoal">Erin Shoffit</h4>
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Airpark Manager</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 rounded-full bg-airpark-red flex items-center justify-center mx-auto mb-3">
+                <span className="text-white text-xl font-bold">RS</span>
+              </div>
+              <h4 className="text-lg font-bold text-dark-charcoal">Ryan Sander</h4>
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Facilities Lead</p>
+            </div>
+          </div>
+        </div>
+
         {/* Fly-In Info */}
         <div className="bg-gray-50 rounded-xl p-8 md:p-12">
           <h3 className="text-3xl font-serif font-bold text-dark-charcoal mb-8 text-center">Plan Your Visit</h3>
