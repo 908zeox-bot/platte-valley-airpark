@@ -10,7 +10,51 @@ export const metadata: Metadata = {
   description: 'Browse photos of life at Platte Valley Airpark (18V) — aircraft, fly-ins, community events, and the Colorado Front Range.',
 };
 
+type GalleryPhoto = {
+  src: string;
+  alt: string;
+  group: string;
+};
+
+type GroupConfig = {
+  key: string;
+  label: string;
+  credit: string;
+};
+
+const GROUP_ORDER: GroupConfig[] = [
+  {
+    key: 'may30-flyIn',
+    label: 'Pancake Fly-In — May 30, 2026',
+    credit: 'Photography: Erin Shoffit',
+  },
+  {
+    key: 'april-pancake',
+    label: 'Pancake Breakfast — April 2026',
+    credit: 'Photography: Zachery Shull · Edited by Erin Shoffit',
+  },
+  {
+    key: 'may02-morning',
+    label: 'Morning at 18V — May 2026',
+    credit: 'Photography: Dave Shull',
+  },
+  {
+    key: 'airpark-general',
+    label: 'Platte Valley Airpark',
+    credit: '',
+  },
+];
+
 export default function GalleryPage() {
+  const photos = galleryData as GalleryPhoto[];
+
+  // Group photos by their group key
+  const grouped: Record<string, GalleryPhoto[]> = {};
+  for (const photo of photos) {
+    if (!grouped[photo.group]) grouped[photo.group] = [];
+    grouped[photo.group].push(photo);
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <Nav />
@@ -27,11 +71,11 @@ export default function GalleryPage() {
           </div>
         </section>
 
-        {/* Back link + gallery */}
+        {/* Back link + gallery groups */}
         <section className="bg-white py-12 px-4">
           <div className="max-w-6xl mx-auto">
 
-            <div className="mb-8">
+            <div className="mb-10">
               <Link
                 href="/"
                 className="text-airpark-red font-semibold hover:underline text-sm"
@@ -40,17 +84,33 @@ export default function GalleryPage() {
               </Link>
             </div>
 
-            <div className="masonry-grid">
-              {galleryData.map((photo) => (
-                <img
-                  key={photo.src}
-                  src={photo.src}
-                  alt={photo.alt}
-                  loading="lazy"
-                  className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
-                />
-              ))}
-            </div>
+            {GROUP_ORDER.map((groupCfg) => {
+              const groupPhotos = grouped[groupCfg.key];
+              if (!groupPhotos || groupPhotos.length === 0) return null;
+
+              return (
+                <div key={groupCfg.key} className="mb-16">
+                  <h3 className="font-serif text-2xl font-bold text-dark-charcoal mb-1">
+                    {groupCfg.label}
+                  </h3>
+                  {groupCfg.credit && (
+                    <p className="text-sm text-gray-400 italic mb-6">{groupCfg.credit}</p>
+                  )}
+                  {!groupCfg.credit && <div className="mb-6" />}
+                  <div className="masonry-grid">
+                    {groupPhotos.map((photo) => (
+                      <img
+                        key={photo.src}
+                        src={photo.src}
+                        alt={photo.alt}
+                        loading="lazy"
+                        className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
 
           </div>
         </section>
