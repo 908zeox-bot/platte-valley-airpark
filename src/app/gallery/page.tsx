@@ -16,44 +16,8 @@ type GalleryPhoto = {
   group: string;
 };
 
-type GroupConfig = {
-  key: string;
-  label: string;
-  credit: string;
-};
-
-const GROUP_ORDER: GroupConfig[] = [
-  {
-    key: 'may30-flyIn',
-    label: 'Pancake Fly-In — May 30, 2026',
-    credit: 'Photography: Erin Shoffit',
-  },
-  {
-    key: 'april-pancake',
-    label: 'Pancake Breakfast — April 2026',
-    credit: 'Photography: Zachery Shull · Edited by Erin Shoffit',
-  },
-  {
-    key: 'may02-morning',
-    label: 'Morning at 18V — May 2026',
-    credit: 'Photography: Dave Shull',
-  },
-  {
-    key: 'airpark-general',
-    label: 'Platte Valley Airpark',
-    credit: '',
-  },
-];
-
 export default function GalleryPage() {
   const photos = galleryData as GalleryPhoto[];
-
-  // Group photos by their group key
-  const grouped: Record<string, GalleryPhoto[]> = {};
-  for (const photo of photos) {
-    if (!grouped[photo.group]) grouped[photo.group] = [];
-    grouped[photo.group].push(photo);
-  }
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -85,19 +49,15 @@ export default function GalleryPage() {
             </div>
 
             <div className="masonry-grid">
-              {GROUP_ORDER.flatMap((groupCfg) => {
-                const groupPhotos = grouped[groupCfg.key];
-                if (!groupPhotos || groupPhotos.length === 0) return [];
-                return groupPhotos.map((photo) => (
-                  <img
-                    key={photo.src}
-                    src={photo.src}
-                    alt={photo.alt}
-                    loading="lazy"
-                    className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
-                  />
-                ));
-              })}
+              {photos.map((photo) => (
+                <img
+                  key={photo.src}
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
+                />
+              ))}
             </div>
 
           </div>

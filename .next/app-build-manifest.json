@@ -22,7 +22,7 @@
       "static/chunks/main-app-9873711ec44b5658.js",
       "static/chunks/648-d75115ddd75ef680.js",
       "static/chunks/145-a2d216ae8ad3bbb4.js",
-      "static/chunks/app/page-3984bf3417939207.js"
+      "static/chunks/app/page-b2f48664e69198f2.js"
     ],
     "/thanks/page": [
       "static/chunks/webpack-616e068a201ad621.js",
@@ -39,7 +39,7 @@
       "static/chunks/main-app-9873711ec44b5658.js",
       "static/chunks/648-d75115ddd75ef680.js",
       "static/chunks/145-a2d216ae8ad3bbb4.js",
-      "static/chunks/app/gallery/page-edc493d3af3ddc48.js"
+      "static/chunks/app/gallery/page-f86f850c02960c40.js"
     ],
     "/hangars/page": [
       "static/chunks/webpack-616e068a201ad621.js",
@@ -48,16 +48,7 @@
       "static/chunks/main-app-9873711ec44b5658.js",
       "static/chunks/648-d75115ddd75ef680.js",
       "static/chunks/145-a2d216ae8ad3bbb4.js",
-      "static/chunks/app/hangars/page-cf3131133a5bc872.js"
-    ],
-    "/training/page": [
-      "static/chunks/webpack-616e068a201ad621.js",
-      "static/chunks/fd9d1056-9f91b5e418130764.js",
-      "static/chunks/117-9f405b486a2196ad.js",
-      "static/chunks/main-app-9873711ec44b5658.js",
-      "static/chunks/648-d75115ddd75ef680.js",
-      "static/chunks/145-a2d216ae8ad3bbb4.js",
-      "static/chunks/app/training/page-1a4b233bad4353ed.js"
+      "static/chunks/app/hangars/page-c7dbb01f2509fe73.js"
     ],
     "/gm/page": [
       "static/chunks/webpack-616e068a201ad621.js",
@@ -67,6 +58,15 @@
       "static/chunks/648-d75115ddd75ef680.js",
       "static/chunks/145-a2d216ae8ad3bbb4.js",
       "static/chunks/app/gm/page-ccd47d979133822c.js"
+    ],
+    "/training/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-9f91b5e418130764.js",
+      "static/chunks/117-9f405b486a2196ad.js",
+      "static/chunks/main-app-9873711ec44b5658.js",
+      "static/chunks/648-d75115ddd75ef680.js",
+      "static/chunks/145-a2d216ae8ad3bbb4.js",
+      "static/chunks/app/training/page-1a4b233bad4353ed.js"
     ]
   }
 }
