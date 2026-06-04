@@ -61,16 +61,19 @@ export default function GalleryPage() {
             </div>
 
             <div className="masonry-grid">
-              {photos.map((photo, index) => (
-                <img
-                  key={photo.src}
-                  src={photo.src}
-                  alt={photo.alt}
-                  loading="lazy"
-                  onClick={() => openLightbox(index)}
-                  className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
-                />
-              ))}
+              {photos.map((photo, index) => {
+                const thumbSrc = photo.src.replace('/images/', '/images/thumbs/');
+                return (
+                  <img
+                    key={photo.src}
+                    src={thumbSrc}
+                    alt={photo.alt}
+                    loading="lazy"
+                    onClick={() => openLightbox(index)}
+                    className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
+                  />
+                );
+              })}
             </div>
 
           </div>

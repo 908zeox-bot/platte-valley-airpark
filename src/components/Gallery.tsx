@@ -30,7 +30,7 @@ export default function Gallery() {
               {zacheryPhotos.map((photo) => (
                 <img
                   key={photo.src}
-                  src={photo.src}
+                  src={photo.src.replace('/images/', '/images/thumbs/')}
                   alt={photo.alt}
                   loading="lazy"
                   className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
@@ -51,7 +51,7 @@ export default function Gallery() {
               {airparkPhotos.map((photo) => (
                 <img
                   key={photo.src}
-                  src={photo.src}
+                  src={photo.src.replace('/images/', '/images/thumbs/')}
                   alt={photo.alt}
                   loading="lazy"
                   className="hover:scale-[1.02] transition-transform duration-300 cursor-zoom-in"
