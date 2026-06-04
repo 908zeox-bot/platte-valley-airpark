@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const About = () => {
   return (
     <section id="about" className="py-16 bg-white">
@@ -12,7 +14,13 @@ const About = () => {
           <blockquote className="border-l-4 border-airpark-red pl-4 italic text-gray-600 mb-6">
             "Whether you're flying in for the first time or you've been based here for decades — you're family."
           </blockquote>
-          <img src="/images/z-community-ramp.jpg" alt="Community gathering on the ramp at 18V Pancake Breakfast" className="rounded-lg shadow-lg w-full h-auto" loading="lazy" />
+          <img src="/images/z-community-ramp.jpg" alt="Community gathering on the ramp at 18V Pancake Breakfast" className="rounded-lg shadow-lg w-full h-auto mb-6" loading="lazy" />
+          <Link
+            href="/history"
+            className="inline-flex items-center gap-2 text-airpark-red font-semibold hover:underline text-base"
+          >
+            Read the story of 18V →
+          </Link>
         </div>
 
         {/* Meet Our Team */}
