@@ -48,7 +48,7 @@ const Hero = ({ site }: HeroProps) => {
           Platte Valley Airpark (18V) · Fort Lupton, CO · 40 minutes north of Denver
         </p>
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-          <Link href="#fly-in" className="bg-airpark-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+          <Link href="#about" className="bg-airpark-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
             Plan Your Flight
           </Link>
           <Link href="#gallery" className="bg-airpark-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
