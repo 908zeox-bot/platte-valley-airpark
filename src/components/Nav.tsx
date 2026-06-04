@@ -28,7 +28,7 @@ const Nav = () => {
         <div className="hidden md:flex space-x-6">
           <Link href="/#about" className="text-dark-charcoal hover:text-airpark-red">About</Link>
           <Link href="/#fuel-services" className="text-dark-charcoal hover:text-airpark-red">Fuel & Services</Link>
-          <Link href="/#gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
+          <Link href="/gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
           <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red">Events</Link>
           <Link href="/hangars" className="text-dark-charcoal hover:text-airpark-red">Hangars</Link>
           <Link href="/gm" className="text-dark-charcoal hover:text-airpark-red">From the GM</Link>
@@ -49,7 +49,7 @@ const Nav = () => {
           <div className="flex flex-col items-center space-y-2">
             <Link href="/#about" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>About</Link>
             <Link href="/#fuel-services" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Fuel & Services</Link>
-            <Link href="/#gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
+            <Link href="/gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
             <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Events</Link>
             <Link href="/hangars" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Hangars</Link>
             <Link href="/gm" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>From the GM</Link>

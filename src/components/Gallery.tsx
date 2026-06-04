@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import rotationData from '../../data/gallery-rotation.json'
 
 export default function Gallery() {
@@ -59,6 +60,16 @@ export default function Gallery() {
             </div>
           </div>
         )}
+
+        {/* View All Photos link */}
+        <div className="text-center mt-10">
+          <Link
+            href="/gallery"
+            className="text-airpark-red font-semibold hover:underline text-base"
+          >
+            View All Photos →
+          </Link>
+        </div>
 
       </div>
     </section>
