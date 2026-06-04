@@ -22,10 +22,15 @@ export default function PhotoStrip() {
           </div>
         ))}
       </div>
-      {/* Mobile: 2-col grid */}
+      {/* Mobile: 2-col grid, last photo full width if odd count */}
       <div className="grid grid-cols-2 md:hidden w-full">
-        {photos.map((photo) => (
-          <div key={photo.src} className="overflow-hidden h-48">
+        {photos.map((photo, i) => (
+          <div
+            key={photo.src}
+            className={`overflow-hidden h-48${
+              i === photos.length - 1 && photos.length % 2 !== 0 ? ' col-span-2' : ''
+            }`}
+          >
             <img
               src={photo.src.replace('/images/', '/images/thumbs/')}
               alt={photo.alt}
