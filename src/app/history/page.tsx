@@ -36,6 +36,7 @@ export default function HistoryPage() {
               src="https://deltazulullc.box.com/shared/static/jetukg9u6msuzpijnxit9zcrquga9y95.jpg"
               alt="The tower and aircraft on the ramp at Platte Valley Airpark"
               className="w-full h-auto"
+              style={{filter: 'brightness(1.3)'}}
               loading="eager"
             />
           </div>
@@ -100,6 +101,7 @@ export default function HistoryPage() {
                 src="https://deltazulullc.box.com/shared/static/yegw65a08twuzes3krjbe5csr5y9n8d4.jpg"
                 alt="Platte Valley Airpark — runway at sunrise"
                 className="w-full h-auto"
+                style={{filter: 'brightness(1.3)'}}
                 loading="lazy"
               />
             </div>
