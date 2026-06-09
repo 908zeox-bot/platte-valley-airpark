@@ -110,10 +110,14 @@ export default function HistoryPage() {
             <div className="border-t border-gray-200 mb-12"></div>
 
             {/* Community form */}
-            <div className="bg-gray-50 rounded-xl p-8 md:p-12">
+            <div id="share" className="bg-gray-50 rounded-xl p-8 md:p-12">
               <h2 className="text-2xl font-serif font-bold text-dark-charcoal mb-3">Share Your Story</h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Have a photo of the old ramp? A memory from your first flight in? A story about someone who shaped this community? We want to hear it. The history of 18V belongs to everyone who's ever landed here.
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                Stories we publish will appear on the{' '}
+                <a href="/stories" className="text-airpark-red hover:underline">Community Stories page</a>.
               </p>
               <form
                 name="history-stories"

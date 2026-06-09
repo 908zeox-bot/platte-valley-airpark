@@ -9,3 +9,14 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Form submission notifications — email Erin on every history story submission
+[[plugins]]
+  package = "@netlify/plugin-emails"
+
+[forms]
+  [forms."history-stories"]
+    # Notifications are configured in the Netlify dashboard:
+    # Site settings → Forms → Form notifications → Add notification → Email
+    # Send to: erin@plattevalleyairpark.com, dave@plattevalleyairpark.com
+    # This comment is a reminder to configure that in the dashboard if not already set.
