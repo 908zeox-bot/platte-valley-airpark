@@ -74,6 +74,18 @@ const About = () => {
               <span className="text-dark-charcoal">40°4.6'N / 104°47.6'W</span>
             </div>
           </div>
+
+          {/* Airport Diagram */}
+          <div className="mt-10 text-center">
+            <h4 className="text-xl font-serif font-bold text-dark-charcoal mb-4">Airport Diagram</h4>
+            <img
+              src="/images/airport-diagram.png"
+              alt="Platte Valley Airpark (18V) airport diagram showing runways 15/33 (4,100 ft paved) and 9/27 (2,500 ft grass)"
+              className="mx-auto rounded-lg shadow-md w-full max-w-xl h-auto"
+              loading="lazy"
+            />
+            <p className="text-xs text-gray-400 mt-2">Diagram courtesy of ForeFlight</p>
+          </div>
         </div>
       </div>
     </section>
