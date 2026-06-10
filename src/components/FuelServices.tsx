@@ -46,7 +46,7 @@ const FuelServices = ({ site }: FuelServicesProps) => {
     {
       icon: '🌿',
       title: 'Grass Strip',
-      description: '2,500 ft · tailwheel-friendly · 9/27',
+      description: '2,500 ft · tailwheel-friendly · 09/27',
     },
     {
       icon: '🅿️',
@@ -77,6 +77,18 @@ const FuelServices = ({ site }: FuelServicesProps) => {
               <p className="text-gray-700 text-center">{service.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* Airport Diagram */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-serif font-bold text-dark-charcoal mb-6">Airport Diagram</h3>
+          <img
+            src="/images/airport-diagram.png"
+            alt="Platte Valley Airpark (18V) airport diagram showing runways 15/33 (4,100 ft paved) and 09/27 (2,500 ft grass)"
+            className="mx-auto rounded-lg shadow-md w-full max-w-xl h-auto"
+            loading="lazy"
+          />
+          <p className="text-xs text-gray-400 mt-2">Diagram courtesy of ForeFlight</p>
         </div>
       </div>
     </section>
