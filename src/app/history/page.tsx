@@ -123,10 +123,12 @@ export default function HistoryPage() {
                 name="history-stories"
                 method="POST"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
                 action="/thanks"
                 className="space-y-5"
               >
                 <input type="hidden" name="form-name" value="history-stories" />
+                <input type="hidden" name="bot-field" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-semibold text-gray-600 mb-1" htmlFor="name">Your Name</label>
