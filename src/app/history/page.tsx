@@ -124,7 +124,7 @@ export default function HistoryPage() {
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                action="/thanks"
+                action="/thanks/"
                 className="space-y-5"
               >
                 <input type="hidden" name="form-name" value="history-stories" />
