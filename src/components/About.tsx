@@ -26,12 +26,7 @@ const About = () => {
         {/* Meet Our Team */}
         <div className="mb-16">
           <h3 className="text-4xl font-cursive text-airpark-red mb-10 text-center" style={{fontFamily: '"Dancing Script", cursive'}}>Meet Our Team</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
-            <div>
-              <img src="/images/team-dave.png" alt="Dave Shull" className="w-44 h-44 rounded-full object-cover mx-auto mb-3 shadow-md" />
-              <h4 className="text-lg font-bold text-dark-charcoal">Dave Shull</h4>
-              <p className="text-sm text-gray-500 uppercase tracking-wide">Owner</p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-xl mx-auto text-center">
             <div>
               <img src="/images/team-erin.jpeg" alt="Erin Shoffit" className="w-44 h-44 rounded-full object-cover mx-auto mb-3 shadow-md" />
               <h4 className="text-lg font-bold text-dark-charcoal">Erin Shoffit</h4>
