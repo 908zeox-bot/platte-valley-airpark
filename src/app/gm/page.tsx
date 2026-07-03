@@ -39,11 +39,25 @@ export default function GMPage() {
                       <span className="text-gray-400 text-sm font-sans">{letter.date}</span>
                     </div>
                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-dark-charcoal mb-6 leading-tight">{letter.headline}</h2>
-                    <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                      {letter.body.split('\n\n').map((para: string, i: number) => (
-                        <p key={i} className="mb-4">{para}</p>
-                      ))}
-                    </div>
+                    {letter.summary ? (
+                      <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                        <p className="mb-4">{letter.summary}</p>
+                        <details className="mt-2">
+                          <summary className="cursor-pointer text-airpark-red font-medium font-sans text-sm hover:underline mb-4">Read full letter</summary>
+                          <div className="mt-4 pt-4 border-t border-gray-100">
+                            {letter.body.split('\n\n').map((para: string, i: number) => (
+                              <p key={i} className="mb-4">{para}</p>
+                            ))}
+                          </div>
+                        </details>
+                      </div>
+                    ) : (
+                      <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                        {letter.body.split('\n\n').map((para: string, i: number) => (
+                          <p key={i} className="mb-4">{para}</p>
+                        ))}
+                      </div>
+                    )}
                     {letter.tag && (
                       <p className="mt-6 text-airpark-red font-serif italic text-lg">{letter.tag}</p>
                     )}
