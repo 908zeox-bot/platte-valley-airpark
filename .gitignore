@@ -1,2 +1,6 @@
 node_modules
 .next
+# Source/original images — originals stay in Box, only web-optimized copies in repo
+# Do not commit uncompressed originals (>2MB) to this repo
+# Run: sips -s format jpeg -s formatOptions 85 -Z 2048 <input> --out <output>
+public/images_originals/
