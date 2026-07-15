@@ -66,7 +66,7 @@ const About = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <span className="font-semibold text-gray-500 text-sm uppercase tracking-wide w-36 shrink-0 pt-0.5">Coordinates</span>
-              <span className="text-dark-charcoal">40°4.6'N / 104°47.6'W</span>
+              <span className="text-dark-charcoal">40°6.2'N / 104°42.1'W</span>
             </div>
           </div>
 
