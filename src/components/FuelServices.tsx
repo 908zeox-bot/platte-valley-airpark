@@ -82,16 +82,44 @@ const FuelServices = ({ site }: FuelServicesProps) => {
         {/* Airport Diagram */}
         <div className="mt-12">
           <h3 className="text-2xl font-serif font-bold text-dark-charcoal mb-6">Airport Diagram</h3>
-          <div className="mx-auto rounded-lg shadow-md overflow-hidden w-full max-w-xl" style={{ aspectRatio: '1 / 1' }}>
-            <iframe
-              src="https://skyvector.com/?ll=40.1027222,-104.7011944&chart=301&zoom=2"
-              title="Platte Valley Airpark (18V) airport diagram"
-              className="w-full h-full border-0"
-              loading="lazy"
-              allowFullScreen
-            />
+          <div className="mx-auto rounded-lg shadow-md bg-white w-full max-w-xl p-8">
+            <div className="grid grid-cols-2 gap-4 text-left mb-6">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Runway 15/33</p>
+                <p className="text-lg font-bold text-dark-charcoal">4,100 ft paved</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Runway 09/27</p>
+                <p className="text-lg font-bold text-dark-charcoal">2,500 ft grass</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Coordinates</p>
+                <p className="text-lg font-bold text-dark-charcoal">40°6.2'N 104°42.1'W</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Elevation</p>
+                <p className="text-lg font-bold text-dark-charcoal">4,934 ft MSL</p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href="https://skyvector.com/?ll=40.1027222,-104.7011944&chart=301&zoom=2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-airpark-red text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors text-center"
+              >
+                View on SkyVector →
+              </a>
+              <a
+                href="https://foreflight.com/airports/18V"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors text-center"
+              >
+                View on ForeFlight →
+              </a>
+            </div>
           </div>
-          <p className="text-xs text-gray-400 mt-2 text-center">Live chart courtesy of SkyVector · <a href="https://skyvector.com/?ll=40.1027222,-104.7011944&chart=301&zoom=2" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Open full screen</a></p>
         </div>
       </div>
     </section>
