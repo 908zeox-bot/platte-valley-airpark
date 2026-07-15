@@ -82,13 +82,16 @@ const FuelServices = ({ site }: FuelServicesProps) => {
         {/* Airport Diagram */}
         <div className="mt-12">
           <h3 className="text-2xl font-serif font-bold text-dark-charcoal mb-6">Airport Diagram</h3>
-          <img
-            src="/images/airport-diagram.png"
-            alt="Platte Valley Airpark (18V) airport diagram showing runways 15/33 (4,100 ft paved) and 09/27 (2,500 ft grass)"
-            className="mx-auto rounded-lg shadow-md w-full max-w-xl h-auto"
-            loading="lazy"
-          />
-          <p className="text-xs text-gray-400 mt-2">Diagram courtesy of ForeFlight</p>
+          <div className="mx-auto rounded-lg shadow-md overflow-hidden w-full max-w-xl" style={{ aspectRatio: '1 / 1' }}>
+            <iframe
+              src="https://skyvector.com/?ll=40.1027222,-104.7011944&chart=301&zoom=2"
+              title="Platte Valley Airpark (18V) airport diagram"
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
+          <p className="text-xs text-gray-400 mt-2 text-center">Live chart courtesy of SkyVector · <a href="https://skyvector.com/?ll=40.1027222,-104.7011944&chart=301&zoom=2" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Open full screen</a></p>
         </div>
       </div>
     </section>
