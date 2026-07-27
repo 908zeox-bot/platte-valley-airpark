@@ -36,7 +36,7 @@ const FuelServices = ({ site }: FuelServicesProps) => {
     {
       icon: '⛽',
       title: 'Self-Serve 100LL',
-      description: `$6.48/gal · 24/7 credit card`,
+      description: `$6.53/gal · 24/7 credit card`,
     },
     {
       icon: '🛬',
