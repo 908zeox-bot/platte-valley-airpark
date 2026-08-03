@@ -7,7 +7,7 @@ const MailingList = () => {
       <div className="container mx-auto px-4 max-w-2xl">
         <h2 className="text-4xl font-serif font-bold mb-4">Stay in the Loop</h2>
         <p className="text-lg mb-8">
-          Fuel prices, events, and community news — straight to your inbox.
+          Fuel prices, events, and community news. Straight to your inbox.
         </p>
         <form
           action={mailchimpUrl}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Community Stories | Platte Valley Airpark (18V)',
   description: 'Pilots share their memories, first solos, and stories from 60 years of flying at Platte Valley Airpark.',
   openGraph: {
-    title: 'Community Stories — 18V',
+    title: 'Community Stories | 18V',
     description: 'Sixty years of flight. A hundred stories. Here are ours.',
   },
 }
@@ -48,7 +48,7 @@ export default function StoriesPage() {
               <div className="bg-gray-50 rounded-xl p-12 text-center">
                 <p className="text-2xl mb-4">✈️</p>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  Stories are coming in. Check back soon — or be the first.
+                  Stories are coming in. Check back soon, or be the first.
                 </p>
                 <Link
                   href="/history#share"

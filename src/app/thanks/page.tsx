@@ -24,7 +24,7 @@ export default function ThanksPage() {
         </h1>
         <p className="text-lg text-gray-300 mb-8">
           Welcome to the Platte Valley Airpark community. You&apos;ll hear from us when
-          there&apos;s something worth knowing — fuel prices, events, field updates, and
+          there&apos;s something worth knowing: fuel prices, events, field updates, and
           the occasional sunrise departure story.
         </p>
         <Link

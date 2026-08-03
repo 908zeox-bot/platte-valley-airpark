@@ -6,7 +6,7 @@ import runwayReports from '../../../data/runway-reports.json';
 
 export const metadata: Metadata = {
   title: 'From the GM | Platte Valley Airpark (18V)',
-  description: 'Personal updates from Dave Shull, General Manager of Platte Valley Airpark. What\'s happening at 18V — straight from the field.',
+  description: 'Personal updates from Dave Shull, General Manager of Platte Valley Airpark. What\'s happening at 18V, straight from the field.',
 };
 
 const gmLetters = (runwayReports as any[]).filter((r: any) => r.category === 'From the GM');
@@ -22,7 +22,7 @@ export default function GMPage() {
             <p className="text-airpark-red text-sm font-bold uppercase tracking-widest mb-3 font-sans">Platte Valley Airpark · 18V</p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">From the GM</h1>
             <p className="text-lg text-gray-300 max-w-xl">
-              Personal updates from Dave Shull, General Manager. What&apos;s happening at 18V — straight from the field.
+              Personal updates from Dave Shull, General Manager. What&apos;s happening at 18V, straight from the field.
             </p>
           </div>
         </section>
@@ -65,7 +65,7 @@ export default function GMPage() {
                 ))}
               </div>
             ) : (
-              <p className="text-gray-500">No letters yet — check back soon.</p>
+              <p className="text-gray-500">No letters yet. Check back soon.</p>
             )}
 
             {/* Contact Dave */}

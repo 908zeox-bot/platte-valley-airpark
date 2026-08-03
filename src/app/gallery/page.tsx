@@ -46,7 +46,7 @@ export default function GalleryPage() {
             <p className="text-[#BD212F] text-sm font-bold tracking-widest uppercase mb-3">18V in Photos</p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">Photo Gallery</h1>
             <p className="text-lg text-gray-300 max-w-xl mx-auto">
-              Life at 18V — Platte Valley Airpark
+              Life at 18V, Platte Valley Airpark
             </p>
           </div>
         </section>

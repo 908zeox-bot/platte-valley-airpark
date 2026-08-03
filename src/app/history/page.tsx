@@ -6,7 +6,7 @@ import siteData from '../../../data/site.json'
 
 export const metadata: Metadata = {
   title: 'Our History | Platte Valley Airpark (18V)',
-  description: 'The story of Platte Valley Airpark — from a rancher\'s dream of trains and planes in 1966 to one of Colorado\'s most beloved GA communities.',
+  description: 'The story of Platte Valley Airpark: from a rancher\'s dream of trains and planes in 1966 to one of Colorado\'s most beloved GA communities.',
   openGraph: {
     title: 'The Story of 18V',
     description: 'A train, a dream, and a field that\'s been flying for 60 years.',
@@ -61,13 +61,13 @@ export default function HistoryPage() {
                 I want to tell you something about this place that most people don't know.
               </p>
               <p>
-                That three-story tower at the entrance — the one that's become part of the airpark's identity? It wasn't built for airplanes. It was built so a man could stand up high and watch his trains run.
+                That three-story tower at the entrance, the one that's become part of the airpark's identity? It wasn't built for airplanes. It was built so a man could stand up high and watch his trains run.
               </p>
               <p>
                 His name was Don Drawer. In the mid-1960s, he acquired 237 acres of Weld County farmland along the South Platte River and had a vision that went far beyond a runway. He called it the Flying D Ranch. He wanted a four-mile loop of narrow-gauge railroad track winding around the property, a replica old western town for visitors to explore, and yes — a place for planes to land too.
               </p>
               <p>
-                The FAA activated the airfield in March 1966. The railroad came later. In 1973, Drawer acquired a 1926 steam locomotive — IRCA #111, a Baldwin 2-8-0 that had worked the coffee plantations of El Salvador — and brought it here to anchor the Sundown &amp; Southern Railway. It sat on this property for 29 years. It never ran.
+                The FAA activated the airfield in March 1966. The railroad came later. In 1973, Drawer acquired a 1926 steam locomotive, IRCA #111, a Baldwin 2-8-0 that had worked the coffee plantations of El Salvador, and brought it here to anchor the Sundown &amp; Southern Railway. It sat on this property for 29 years. It never ran.
               </p>
               <p>
                 Life and finances have a way of changing plans. The western town never got built. The railroad never turned a wheel under steam here. Drawer passed away in 2000. Two years later, the estate was auctioned off.
@@ -76,13 +76,13 @@ export default function HistoryPage() {
                 But here's the part that still gives me chills: <strong>that locomotive is still running.</strong> The Town of Breckenridge bought it at auction. History Colorado restored it. Today, IRCA #111 makes its rounds through the Rocky Mountain canyon at Georgetown Loop Railroad. You can go ride it.
               </p>
               <p>
-                We've been an aviation community for 60 years. Over 100 aircraft call this field home. Pilots have learned to fly here, logged their first solos here, and built friendships here that have lasted decades. That's the living history — and it belongs to all of us.
+                We've been an aviation community for 60 years. Over 100 aircraft call this field home. Pilots have learned to fly here, logged their first solos here, and built friendships here that have lasted decades. That's the living history, and it belongs to all of us.
               </p>
               <p>
                 We're publishing what we've learned about this place. But the story doesn't end with what we know. It ends with what <em>you</em> know.
               </p>
               <p>
-                If you have an old photo of the ramp, a story about your first flight in and out of 18V, a memory of someone who shaped this community — we want it. Use the form below to share it. We'll build this history together.
+                If you have an old photo of the ramp, a story about your first flight in and out of 18V, a memory of someone who shaped this community: we want it. Use the form below to share it. We'll build this history together.
               </p>
               <p>
                 It's a hell of a place. Always has been.
@@ -99,7 +99,7 @@ export default function HistoryPage() {
             <div className="mb-16 rounded-xl overflow-hidden shadow-md">
               <img
                 src="https://deltazulullc.box.com/shared/static/yegw65a08twuzes3krjbe5csr5y9n8d4.jpg"
-                alt="Platte Valley Airpark — runway at sunrise"
+                alt="Platte Valley Airpark runway at sunrise"
                 className="w-full h-auto"
                 style={{filter: 'brightness(1.3)'}}
                 loading="lazy"
@@ -160,7 +160,7 @@ export default function HistoryPage() {
                     required
                     rows={6}
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-airpark-red resize-y"
-                    placeholder="Tell us about your connection to 18V — a first solo, a memorable flight, a person who made this place what it is..."
+                    placeholder="Tell us about your connection to 18V: a first solo, a memorable flight, a person who made this place what it is..."
                   ></textarea>
                 </div>
                 <div>

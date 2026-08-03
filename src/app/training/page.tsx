@@ -6,7 +6,7 @@ import siteData from '../../../data/site.json';
 
 export const metadata: Metadata = {
   title: 'Pilot Resources | Platte Valley Airpark',
-  description: 'A few training resources we\'ve found useful at 18V — podcast episodes, study tools, and links to great aviation content.',
+  description: 'A few training resources we\'ve found useful at 18V: podcast episodes, study tools, and links to great aviation content.',
 };
 
 const episodes = [
@@ -59,7 +59,7 @@ export default function TrainingPage() {
         <section className="bg-white py-16 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-3xl font-serif font-bold text-dark-charcoal mb-2">Cleared for Commercial</h2>
-            <p className="text-gray-600 mb-2">Conversational checkride prep — a student and CFI working through SR22T systems, maneuvers, regs, weather, and emergencies. Produced by Altitude Z Aviation.</p>
+            <p className="text-gray-600 mb-2">Conversational checkride prep. A student and CFI working through SR22T systems, maneuvers, regs, weather, and emergencies. Produced by Altitude Z Aviation.</p>
             <p className="text-xs text-gray-400 mb-8 italic">AI-assisted content. Use as a study aid alongside official FAA materials and your CFI.</p>
             <div className="space-y-6">
               {episodes.map((ep) => (
@@ -111,7 +111,7 @@ export default function TrainingPage() {
               <div className="border border-gray-200 rounded-lg p-5">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-lg font-serif font-bold text-dark-charcoal mb-1">Bold Method — Direct To Podcast</h3>
+                    <h3 className="text-lg font-serif font-bold text-dark-charcoal mb-1">Bold Method: Direct To Podcast</h3>
                     <p className="text-gray-600 text-sm">Real aviation stories, training topics, and conversations from the field. One of the better GA podcasts out there.</p>
                   </div>
                 </div>
