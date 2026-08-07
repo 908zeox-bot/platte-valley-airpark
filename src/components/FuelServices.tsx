@@ -61,7 +61,7 @@ const FuelServices = ({ site }: FuelServicesProps) => {
     {
       icon: '📍',
       title: 'Fort Lupton, CO',
-      description: '40 min north of Denver',
+      description: '40 Minutes North of Denver',
     },
   ]
 
