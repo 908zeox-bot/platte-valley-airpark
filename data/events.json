@@ -1,5 +1,16 @@
 [
   {
+    "id": "60th-anniversary-fly-in-2026",
+    "title": "60th Anniversary Fly-In",
+    "date": "August 15, 2026",
+    "time": "7:30 AM – 1:00 PM",
+    "description": "60 years on the Front Range and we're just getting started. Join us for our 60th Anniversary Fly-In at Platte Valley Airpark. Everyone is welcome — fly in or drive up. On tap: CAP early breakfast (donations welcome) + demonstrations, Blessed BBQ on the ramp, Vintage Aero Flying Museum open (vafm.org), and a cooling station with misters, bubbles, and squirt guns. Free to attend.",
+    "cost": "Free",
+    "image": "/images/60th-anniversary-flyer.png",
+    "link": null,
+    "featured": true
+  },
+  {
     "id": "coffee-donuts-monthly",
     "title": "Coffee & Donuts",
     "date": "First Friday of every month",
