@@ -31,6 +31,7 @@ const Nav = () => {
           <Link href="/gallery" className="text-dark-charcoal hover:text-airpark-red">Gallery</Link>
           <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red">Events</Link>
           <Link href="/hangars" className="text-dark-charcoal hover:text-airpark-red">Hangars</Link>
+          <Link href="/hangar-house" className="text-dark-charcoal hover:text-airpark-red">Hangar House</Link>
           <Link href="/gm" className="text-dark-charcoal hover:text-airpark-red">From the GM</Link>
           <Link href="/#contact" className="text-dark-charcoal hover:text-airpark-red">Contact</Link>
         </div>
@@ -52,6 +53,7 @@ const Nav = () => {
             <Link href="/gallery" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Gallery</Link>
             <Link href="/#events" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Events</Link>
             <Link href="/hangars" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Hangars</Link>
+            <Link href="/hangar-house" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Hangar House</Link>
             <Link href="/gm" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>From the GM</Link>
             <Link href="/#contact" className="text-dark-charcoal hover:text-airpark-red" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
