@@ -8,26 +8,45 @@ import Footer from '@/components/Footer'
 import siteData from '../../../data/site.json'
 
 const photos = [
+  // Exterior & field
+  { src: '/hangar-house/web_DSC_0267.jpg', thumb: '/hangar-house/thumbs/DSC_0267_thumb.jpg', alt: 'Exterior of The Hangar House at Platte Valley Airpark' },
+  { src: '/hangar-house/web_DSC_0276.jpg', thumb: '/hangar-house/thumbs/DSC_0276_thumb.jpg', alt: 'Airpark and surrounding Colorado countryside' },
+  { src: '/hangar-house/web_DSC_0319.jpg', thumb: '/hangar-house/thumbs/DSC_0319_thumb.jpg', alt: 'Front exterior of The Hangar House' },
+  { src: '/hangar-house/web_DSC_0320.jpg', thumb: '/hangar-house/thumbs/DSC_0320_thumb.jpg', alt: 'Side exterior and patio area' },
+  { src: '/hangar-house/web_DSC_0322.jpg', thumb: '/hangar-house/thumbs/DSC_0322_thumb.jpg', alt: 'Hangar House exterior, wide view' },
+  { src: '/hangar-house/web_DSC_0318.jpg', thumb: '/hangar-house/thumbs/DSC_0318_thumb.jpg', alt: 'Aircraft parked beside the hangar on the field' },
+  { src: '/hangar-house/web_IMG_5867.jpg', thumb: '/hangar-house/thumbs/IMG_5867_thumb.jpg', alt: 'Vintage biplane on the ramp at 18V' },
+  // Deck & outdoor
+  { src: '/hangar-house/web_DSC_0315.jpg', thumb: '/hangar-house/thumbs/DSC_0315_thumb.jpg', alt: 'Deck with red chairs and open farmland views' },
+  { src: '/hangar-house/web_DSC_0316.jpg', thumb: '/hangar-house/thumbs/DSC_0316_thumb.jpg', alt: 'Deck with bistro table and Colorado countryside' },
+  // Living room & common areas
   { src: '/hangar-house/web_DSC_0288.jpg', thumb: '/hangar-house/thumbs/DSC_0288_thumb.jpg', alt: 'Living room with stone fireplace and sectional sofa' },
   { src: '/hangar-house/web_DSC_0290.jpg', thumb: '/hangar-house/thumbs/DSC_0290_thumb.jpg', alt: 'Open-concept living room and kitchen' },
   { src: '/hangar-house/web_DSC_0292.jpg', thumb: '/hangar-house/thumbs/DSC_0292_thumb.jpg', alt: 'Dining area with large windows and living room beyond' },
+  // Kitchen
   { src: '/hangar-house/web_DSC_0293.jpg', thumb: '/hangar-house/thumbs/DSC_0293_thumb.jpg', alt: 'Kitchen with island, bar stools, and wood accents' },
-  { src: '/hangar-house/web_DSC_0294.jpg', thumb: '/hangar-house/thumbs/DSC_0294_thumb.jpg', alt: 'Kitchen cooktop island with stone fireplace visible' },
+  { src: '/hangar-house/web_DSC_0294.jpg', thumb: '/hangar-house/thumbs/DSC_0294_thumb.jpg', alt: 'Kitchen island with stone fireplace visible' },
+  { src: '/hangar-house/web_DSC_0305.jpg', thumb: '/hangar-house/thumbs/DSC_0305_thumb.jpg', alt: 'Kitchen detail and cabinetry' },
+  { src: '/hangar-house/web_DSC_0306.jpg', thumb: '/hangar-house/thumbs/DSC_0306_thumb.jpg', alt: 'Kitchen counter and appliances' },
+  // Bedrooms
   { src: '/hangar-house/web_DSC_0295.jpg', thumb: '/hangar-house/thumbs/DSC_0295_thumb.jpg', alt: 'King bedroom with natural light' },
   { src: '/hangar-house/web_DSC_0296.jpg', thumb: '/hangar-house/thumbs/DSC_0296_thumb.jpg', alt: 'King bedroom corner detail' },
   { src: '/hangar-house/web_DSC_0297.jpg', thumb: '/hangar-house/thumbs/DSC_0297_thumb.jpg', alt: 'King bedroom with ceiling fan and closet' },
-  { src: '/hangar-house/web_DSC_0298.jpg', thumb: '/hangar-house/thumbs/DSC_0298_thumb.jpg', alt: 'Bunk bedroom with twin-over-full bunk and desk' },
-  { src: '/hangar-house/web_DSC_0299.jpg', thumb: '/hangar-house/thumbs/DSC_0299_thumb.jpg', alt: 'Hallway bathroom with wood vanity' },
+  { src: '/hangar-house/web_DSC_0298.jpg', thumb: '/hangar-house/thumbs/DSC_0298_thumb.jpg', alt: 'Bunk bedroom with twin bunk and desk' },
+  { src: '/hangar-house/web_DSC_0307.jpg', thumb: '/hangar-house/thumbs/DSC_0307_thumb.jpg', alt: 'Bedroom detail' },
+  { src: '/hangar-house/web_DSC_0308.jpg', thumb: '/hangar-house/thumbs/DSC_0308_thumb.jpg', alt: 'Bedroom with natural light' },
+  { src: '/hangar-house/web_DSC_0309.jpg', thumb: '/hangar-house/thumbs/DSC_0309_thumb.jpg', alt: 'Bedroom corner and furnishings' },
+  // Bathrooms
+  { src: '/hangar-house/web_DSC_0299.jpg', thumb: '/hangar-house/thumbs/DSC_0299_thumb.jpg', alt: 'Bathroom with wood vanity' },
   { src: '/hangar-house/web_DSC_0300.jpg', thumb: '/hangar-house/thumbs/DSC_0300_thumb.jpg', alt: 'Walk-in tiled shower' },
   { src: '/hangar-house/web_DSC_0301.jpg', thumb: '/hangar-house/thumbs/DSC_0301_thumb.jpg', alt: 'Bathroom vanity with arched mirror' },
   { src: '/hangar-house/web_DSC_0302.jpg', thumb: '/hangar-house/thumbs/DSC_0302_thumb.jpg', alt: 'Half bath' },
   { src: '/hangar-house/web_DSC_0303.jpg', thumb: '/hangar-house/thumbs/DSC_0303_thumb.jpg', alt: 'Full bathroom with shower and vanity' },
-  { src: '/hangar-house/web_DSC_0315.jpg', thumb: '/hangar-house/thumbs/DSC_0315_thumb.jpg', alt: 'Deck with red chairs and open farmland views' },
-  { src: '/hangar-house/web_DSC_0316.jpg', thumb: '/hangar-house/thumbs/DSC_0316_thumb.jpg', alt: 'Deck with bistro table and Colorado countryside' },
-  { src: '/hangar-house/web_DSC_0318.jpg', thumb: '/hangar-house/thumbs/DSC_0318_thumb.jpg', alt: 'Aircraft parked beside the hangar on the field' },
-  { src: '/hangar-house/web_DSC_0319.jpg', thumb: '/hangar-house/thumbs/DSC_0319_thumb.jpg', alt: 'Front exterior of The Hangar House' },
-  { src: '/hangar-house/web_DSC_0320.jpg', thumb: '/hangar-house/thumbs/DSC_0320_thumb.jpg', alt: 'Side exterior with patio area' },
-  { src: '/hangar-house/web_IMG_5867.jpg', thumb: '/hangar-house/thumbs/IMG_5867_thumb.jpg', alt: 'Vintage biplane on the ramp at 18V' },
+  // Additional rooms & details
+  { src: '/hangar-house/web_DSC_0310.jpg', thumb: '/hangar-house/thumbs/DSC_0310_thumb.jpg', alt: 'Interior detail and workspace' },
+  { src: '/hangar-house/web_DSC_0311.jpg', thumb: '/hangar-house/thumbs/DSC_0311_thumb.jpg', alt: 'Living area detail' },
+  { src: '/hangar-house/web_DSC_0312.jpg', thumb: '/hangar-house/thumbs/DSC_0312_thumb.jpg', alt: 'Interior detail' },
+  { src: '/hangar-house/web_DSC_0313.jpg', thumb: '/hangar-house/thumbs/DSC_0313_thumb.jpg', alt: 'Interior room detail' },
 ]
 
 export default function HangarHousePage() {
@@ -45,14 +64,14 @@ export default function HangarHousePage() {
 
         {/* Hero */}
         <section
-          className="relative bg-cover bg-center flex items-end justify-start text-white py-20 px-6 pt-40 md:pt-48 pb-16"
-          style={{ backgroundImage: `url(/hangar-house/web_DSC_0315.jpg)` }}
+          className="relative bg-cover bg-center flex items-end justify-start text-white py-20 px-4 sm:px-6 pt-36 md:pt-48 pb-12 md:pb-16"
+          style={{ backgroundImage: `url(/hangar-house/web_DSC_0315.jpg)`, minHeight: '70vh' }}
         >
           <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 max-w-3xl">
-            <p className="text-airpark-red text-sm font-bold tracking-widest uppercase mb-2">Stay at 18V</p>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-3">The Hangar House</h1>
-            <p className="text-lg text-gray-200 mb-6">Platte Valley Airpark · Fort Lupton, CO · 40 min north of Denver</p>
+          <div className="relative z-10 max-w-3xl w-full">
+            <p className="text-airpark-red text-xs sm:text-sm font-bold tracking-widest uppercase mb-2">Stay at 18V</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-tight mb-3">The Hangar House</h1>
+            <p className="text-base sm:text-lg text-gray-200 mb-6">Platte Valley Airpark · Fort Lupton, CO · 40 min north of Denver</p>
             <a
               href="https://airbnb.com/h/18vhangarhouse"
               target="_blank"
@@ -67,11 +86,11 @@ export default function HangarHousePage() {
         {/* Quick stats bar */}
         <section className="bg-dark-charcoal py-6">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white text-sm">
-              <div><span className="block text-airpark-red font-bold text-xl">1,704 sq ft</span>Ranch-style home</div>
-              <div><span className="block text-airpark-red font-bold text-xl">Sleeps 4</span>2 bed · 2.5 bath</div>
-              <div><span className="block text-airpark-red font-bold text-xl">On the Field</span>Direct runway access</div>
-              <div><span className="block text-airpark-red font-bold text-xl">Pets Welcome</span>Dogs on leash</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
+              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">1,704 sq ft</span><span className="text-xs sm:text-sm">Ranch-style home</span></div>
+              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">Sleeps 4</span><span className="text-xs sm:text-sm">2 bed · 2.5 bath</span></div>
+              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">On the Field</span><span className="text-xs sm:text-sm">Direct runway access</span></div>
+              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">Pets Welcome</span><span className="text-xs sm:text-sm">Dogs on leash</span></div>
             </div>
           </div>
         </section>
@@ -89,7 +108,7 @@ export default function HangarHousePage() {
                 Two bedrooms sleep up to 4 guests: one king bed and one bunk bed with two twins. 2.5 baths. A large kitchen with two ovens is ready for serious cooking or a big crew breakfast before a morning flight. Washer/dryer on site. Two TVs, Roku, DVD player, and WiFi keep everyone entertained on the ground.
               </p>
               <p>
-                Cold Colorado nights? Light up the fireplace. Warm days? A moveable AC unit keeps things comfortable. Got work to do between flights? There&apos;s a dedicated desk with monitor — a proper workstation, not just a laptop on the kitchen table.
+                Cold Colorado nights? Light up the fireplace. Warm days? A moveable AC unit keeps things comfortable. Got work to do between flights? There&apos;s a dedicated desk with monitor. A proper workstation, not just a laptop on the kitchen table.
               </p>
             </div>
           </div>
@@ -114,7 +133,7 @@ export default function HangarHousePage() {
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="text-3xl mb-3">🛬</div>
                 <h3 className="font-serif font-bold text-dark-charcoal mb-1">Direct Runway Access</h3>
-                <p className="text-gray-600 text-sm">4,100 ft paved main runway and a 2,500 ft grass strip — right out the door. Perfect for taildraggers and backcountry-ready aircraft.</p>
+                <p className="text-gray-600 text-sm">4,100 ft paved main runway and a 2,500 ft grass strip, right out the door. Perfect for taildraggers and backcountry-ready aircraft.</p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="text-3xl mb-3">⛽</div>
@@ -162,11 +181,11 @@ export default function HangarHousePage() {
           <div className="container mx-auto max-w-6xl">
             <p className="text-sm font-bold tracking-widest uppercase text-airpark-red mb-3 text-center">Photos</p>
             <h2 className="text-3xl font-serif font-bold text-dark-charcoal mb-10 text-center">Take a look around</h2>
-            <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
+            <div className="columns-2 md:columns-3 lg:columns-4" style={{ columnGap: '0.75rem' }}>
               {photos.map((photo, i) => (
                 <div
                   key={photo.src}
-                  className="break-inside-avoid cursor-pointer overflow-hidden rounded-lg"
+                  className="break-inside-avoid cursor-pointer overflow-hidden rounded-lg mb-3"
                   onClick={() => openLightbox(i)}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -205,24 +224,30 @@ export default function HangarHousePage() {
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-2"
           onClick={closeLightbox}
         >
+          {/* Close */}
           <button
-            className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-300 z-10"
+            className="absolute top-3 right-3 text-white text-2xl font-bold bg-black/40 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/70 z-10"
             onClick={closeLightbox}
+            aria-label="Close"
           >
             ✕
           </button>
+          {/* Prev */}
           <button
-            className="absolute left-4 text-white text-4xl font-bold hover:text-gray-300 z-10 px-2"
+            className="absolute left-2 sm:left-4 text-white text-4xl font-bold bg-black/40 rounded-full w-11 h-11 flex items-center justify-center hover:bg-black/70 z-10"
             onClick={(e) => { e.stopPropagation(); prevPhoto(); }}
+            aria-label="Previous photo"
           >
             ‹
           </button>
+          {/* Next */}
           <button
-            className="absolute right-4 text-white text-4xl font-bold hover:text-gray-300 z-10 px-2"
+            className="absolute right-2 sm:right-4 text-white text-4xl font-bold bg-black/40 rounded-full w-11 h-11 flex items-center justify-center hover:bg-black/70 z-10"
             onClick={(e) => { e.stopPropagation(); nextPhoto(); }}
+            aria-label="Next photo"
           >
             ›
           </button>
@@ -230,10 +255,10 @@ export default function HangarHousePage() {
           <img
             src={photos[lightboxIndex].src}
             alt={photos[lightboxIndex].alt}
-            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+            className="max-h-[88vh] max-w-[88vw] object-contain rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
-          <p className="absolute bottom-4 text-gray-400 text-sm">
+          <p className="absolute bottom-3 text-gray-400 text-xs sm:text-sm">
             {lightboxIndex + 1} / {photos.length}
           </p>
         </div>
