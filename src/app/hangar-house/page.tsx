@@ -88,7 +88,7 @@ export default function HangarHousePage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
               <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">1,704 sq ft</span><span className="text-xs sm:text-sm">Ranch-style home</span></div>
-              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">Sleeps 4</span><span className="text-xs sm:text-sm">2 bed · 2.5 bath</span></div>
+              <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">Sleeps 5</span><span className="text-xs sm:text-sm">2 bed · 2.5 bath</span></div>
               <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">On the Field</span><span className="text-xs sm:text-sm">Direct runway access</span></div>
               <div className="py-1"><span className="block text-airpark-red font-bold text-lg sm:text-xl leading-snug">Pets Welcome</span><span className="text-xs sm:text-sm">Dogs on leash</span></div>
             </div>
@@ -105,7 +105,7 @@ export default function HangarHousePage() {
                 The Hangar House is a fully refurbished 1,704 sq ft ranch-style home built in 1942, full of character, sitting right at Platte Valley Airpark (18V) on Colorado&apos;s Front Range. Whether you&apos;re a pilot flying in for the weekend or a family looking for something truly different, this is your base camp.
               </p>
               <p>
-                Two bedrooms sleep up to 4 guests: one king bed and one bunk bed with two twins. 2.5 baths. A large kitchen with two ovens is ready for serious cooking or a big crew breakfast before a morning flight. Washer/dryer on site. Two TVs, Roku, DVD player, and WiFi keep everyone entertained on the ground.
+                Two bedrooms sleep up to 4 guests: one king bed and one bunk bed with two twins. The living room couch can accommodate a 5th guest if needed. 2.5 baths. A large kitchen with two ovens is ready for serious cooking or a big crew breakfast before a morning flight. Washer/dryer on site. Two TVs, Roku, DVD player, and WiFi keep everyone entertained on the ground.
               </p>
               <p>
                 Cold Colorado nights? Light up the fireplace. Warm days? A moveable AC unit keeps things comfortable. Got work to do between flights? There&apos;s a dedicated desk with monitor. A proper workstation, not just a laptop on the kitchen table.
@@ -152,7 +152,7 @@ export default function HangarHousePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-gray-700">
               {[
                 '1,704 sq ft · Ranch style · Built 1942, fully refurbished',
-                'Sleeps 4: 1 King bed + Bunk bed (2 twins)',
+                'Sleeps up to 5: 1 King bed + Bunk bed (2 twins) + living room couch',
                 '2.5 bathrooms',
                 'Large kitchen with 2 ovens',
                 'Washer / Dryer',
