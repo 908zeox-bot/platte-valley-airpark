@@ -1,3 +1,6 @@
+'use client'
+
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -35,6 +38,27 @@ interface FooterProps {
 }
 
 const Footer = ({ site }: FooterProps) => {
+  const [honeypot, setHoneypot] = useState('')
+  const formLoadTime = useRef<number>(0)
+
+  useEffect(() => {
+    formLoadTime.current = Date.now()
+  }, [])
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Timing check: reject submissions under 3 seconds (bot behavior)
+    if (Date.now() - formLoadTime.current < 3000) {
+      e.preventDefault()
+      return
+    }
+    // Honeypot check: bots fill hidden fields; humans never see this input
+    if (honeypot) {
+      e.preventDefault()
+      return
+    }
+    // All checks pass — allow natural form submission to Mailchimp
+  }
+
   return (
     <footer id="contact" className="bg-dark-charcoal text-white py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -74,10 +98,30 @@ const Footer = ({ site }: FooterProps) => {
             method="post"
             target="_self"
             noValidate
+            onSubmit={handleSubmit}
             className="mb-4"
           >
             {/* Redirect to /thanks so GA4 conversion event fires */}
             <input type="hidden" name="REDIRECT" value="https://www.plattevalleyairpark.com/thanks" />
+            {/* Honeypot field — hidden from humans via CSS positioning; bots fill it in */}
+            <input
+              type="text"
+              name="website"
+              autoComplete="off"
+              tabIndex={-1}
+              aria-hidden="true"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+              style={{
+                position: 'absolute',
+                left: '-9999px',
+                width: '1px',
+                height: '1px',
+                overflow: 'hidden',
+                opacity: 0,
+                pointerEvents: 'none',
+              }}
+            />
             <div className="flex gap-2">
               <input
                 type="email"
@@ -93,7 +137,7 @@ const Footer = ({ site }: FooterProps) => {
                 Sign Up
               </button>
             </div>
-            {/* Anti-bot honeypot */}
+            {/* Mailchimp required anti-bot field — do not remove */}
             <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
               <input type="text" name="b_a1e8b622805331a4d6ccabc5b_278d3a6390" tabIndex={-1} defaultValue="" />
             </div>
