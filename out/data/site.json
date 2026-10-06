@@ -1,0 +1,27 @@
+{
+  "name": "Platte Valley Airpark",
+  "identifier": "18V",
+  "tagline": "Colorado's Friendliest GA Airport",
+  "address": "7507 County Road 39, Fort Lupton, CO 80621",
+  "city": "Fort Lupton, CO",
+  "coordinates": "40°6.2'N / 104°42.1'W",
+  "ctaf": "122.9",
+  "patternAltitude": "5,500 ft MSL",
+  "fuel": {
+    "type": "100LL",
+    "price": "$6.65",
+    "unit": "gal",
+    "hours": "24/7",
+    "payment": "credit card"
+  },
+  "runways": [
+    { "id": "15/33", "length": "4,100 ft", "surface": "paved", "lighted": false },
+    { "id": "9/27", "length": "2,500 ft", "surface": "grass", "tailwheel": true }
+  ],
+  "basedAircraft": "100+",
+  "landingFee": false,
+  "email": "erin@plattevalleyairpark.com",
+  "facebook": "https://www.facebook.com/profile.php?id=1078047562053650",
+  "instagram": "https://www.instagram.com/fly18v",
+  "linkedin": "https://www.linkedin.com/company/platte-valley-airpark"
+}
