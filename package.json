@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cp -r codex-redesign/site/. out/ && cp dashboard.html out/dashboard.html && mkdir -p out/data && cp -r data/. out/data/",
+    "build": "cp -r public/. out/ && cp -r codex-redesign/site/. out/ && cp dashboard.html out/dashboard.html && mkdir -p out/data && cp -r data/. out/data/",
     "start": "next start"
   },
   "dependencies": {

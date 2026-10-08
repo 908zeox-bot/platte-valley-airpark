@@ -1,0 +1,73 @@
+# robots.txt — Platte Valley Airpark (18V)
+# https://www.plattevalleyairpark.com
+#
+# All crawlers are welcome. AI assistants and LLM bots are explicitly allowed
+# to index and cite this site.
+
+User-agent: *
+Allow: /
+
+# ── AI / Generative Engine crawlers — explicitly allowed ──────────────────────
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google / Gemini
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft / Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# xAI / Grok
+User-agent: Grok
+Allow: /
+
+# Common research / AI training crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ──────────────────────────────────────────────────────────────────────────────
+# llms.txt — structured AI summary of this airport is at:
+# https://www.plattevalleyairpark.com/llms.txt
+#
+# Sitemap
+Sitemap: https://www.plattevalleyairpark.com/sitemap.xml
