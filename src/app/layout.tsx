@@ -32,7 +32,7 @@ const jsonLd = {
       '@id': 'https://www.plattevalleyairpark.com/#business',
       name: 'Platte Valley Airpark',
       description:
-        "General aviation airport on Colorado's Front Range. Self-serve 100LL fuel at $6.65/gal, 24/7 credit card. Dual runways: 4,100 ft paved (15/33) and 2,500 ft grass strip (9/27). Home to 100+ based aircraft. No landing fee.",
+        "General aviation airport on Colorado's Front Range. Self-serve 100LL fuel at $6.89/gal, 24/7 credit card. Dual runways: 4,100 ft paved (15/33) and 2,500 ft grass strip (9/27). Home to 100+ based aircraft. No landing fee.",
       url: 'https://www.plattevalleyairpark.com',
       email: 'erin@plattevalleyairpark.com',
       address: {
@@ -66,7 +66,7 @@ const jsonLd = {
           name: 'Does Platte Valley Airpark (18V) have self-serve fuel?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Platte Valley Airpark offers 100LL self-serve fuel at $6.65 per gallon, available 24 hours a day, 7 days a week with a credit card. No attendant is required.',
+            text: 'Yes. Platte Valley Airpark offers 100LL self-serve fuel at $6.89 per gallon, available 24 hours a day, 7 days a week with a credit card. No attendant is required.',
           },
         },
         {
@@ -124,11 +124,11 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: 'Platte Valley Airpark (18V) | GA Airport near Denver, CO',
-  description: 'Platte Valley Airpark (18V) in Fort Lupton, CO. Self-serve 100LL at $6.65/gal, 24/7. 4,100 ft paved + 2,500 ft grass runway. Colorado\'s friendliest GA community airport, north of Denver on the Front Range.',
+  description: 'Platte Valley Airpark (18V) in Fort Lupton, CO. Self-serve 100LL at $6.89/gal, 24/7. 4,100 ft paved + 2,500 ft grass runway. Colorado\'s friendliest GA community airport, north of Denver on the Front Range.',
   keywords: '18V, Platte Valley Airpark, Fort Lupton airport, GA airport Denver, 100LL fuel Colorado, general aviation Front Range',
   openGraph: {
     title: 'Platte Valley Airpark (18V) | GA Airport near Denver, CO',
-    description: 'Self-serve 100LL at $6.65/gal, 24/7. 4,100 ft paved + 2,500 ft grass strip. Community airport north of Denver on Colorado\'s Front Range.',
+    description: 'Self-serve 100LL at $6.89/gal, 24/7. 4,100 ft paved + 2,500 ft grass strip. Community airport north of Denver on Colorado\'s Front Range.',
     url: 'https://www.plattevalleyairpark.com',
     siteName: 'Platte Valley Airpark',
     images: [{ url: 'https://www.plattevalleyairpark.com/images/66.jpg' }],
@@ -138,7 +138,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Platte Valley Airpark (18V) | GA Airport near Denver, CO',
-    description: 'Self-serve 100LL at $6.65/gal, 24/7. 4,100 ft paved + 2,500 ft grass strip. Community airport north of Denver on Colorado\'s Front Range.',
+    description: 'Self-serve 100LL at $6.89/gal, 24/7. 4,100 ft paved + 2,500 ft grass strip. Community airport north of Denver on Colorado\'s Front Range.',
     images: ['https://www.plattevalleyairpark.com/images/66.jpg'],
   },
 }

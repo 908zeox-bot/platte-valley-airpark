@@ -32,7 +32,7 @@ const faqs = [
       },
       {
         q: 'What is the current 100LL fuel price at 18V?',
-        a: '$6.65 per gallon as of 2026. Self-serve, 24/7, credit card. Consistently lower than nearby towered airports (KBJC, KAPA, KGXY). Check plattevalleyairpark.com for the latest price.',
+        a: '$6.89 per gallon as of 2026. Self-serve, 24/7, credit card. Consistently lower than nearby towered airports (KBJC, KAPA, KGXY). Check plattevalleyairpark.com for the latest price.',
       },
       {
         q: 'Is there a landing fee at Platte Valley Airpark?',
@@ -194,7 +194,7 @@ export default function FAQPage() {
         <section className="bg-airpark-red text-white py-4 px-4">
           <div className="container mx-auto max-w-4xl">
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-1 text-sm font-medium text-center">
-              <span>⛽ 100LL · $6.65/gal · 24/7 credit card</span>
+              <span>⛽ 100LL · $6.89/gal · 24/7 credit card</span>
               <span>📻 CTAF 122.9</span>
               <span>🛬 4,100 ft paved + 2,500 ft grass</span>
               <span>📍 Fort Lupton, CO · 18V</span>
