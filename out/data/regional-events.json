@@ -2,7 +2,7 @@
   {
     "id": "boulder-airport-day-2026",
     "name": "Boulder Airport Day",
-    "airport": "KBDU — Boulder Municipal",
+    "airport": "KBDU \u2014 Boulder Municipal",
     "date": "2026-06-06",
     "dateDisplay": "Saturday, June 6, 2026",
     "time": "8:00 AM",
@@ -13,18 +13,18 @@
   {
     "id": "centennial-blood-drive-2026",
     "name": "Blood Drive",
-    "airport": "KAPA — Centennial Airport",
+    "airport": "KAPA \u2014 Centennial Airport",
     "date": "2026-06-12",
     "dateDisplay": "Friday, June 12, 2026",
-    "time": "10:00 AM – 2:00 PM",
+    "time": "10:00 AM \u2013 2:00 PM",
     "event_type": "Community Event",
     "website": "https://www.centennialairport.com/2026-06-12-centennial-airport-blood-drive",
-    "notes": "Give back to the community — blood drive at Centennial Airport."
+    "notes": "Give back to the community \u2014 blood drive at Centennial Airport."
   },
   {
     "id": "eaa1627-young-eagles-june-2026",
     "name": "Young Eagles Rally + Pancake Breakfast",
-    "airport": "KBDU — Boulder Municipal",
+    "airport": "KBDU \u2014 Boulder Municipal",
     "date": "2026-06-13",
     "dateDisplay": "Saturday, June 13, 2026",
     "time": "8:00 AM",
@@ -35,18 +35,18 @@
   {
     "id": "longmont-fly-in-2026",
     "name": "3rd Annual Longmont Fly-In",
-    "airport": "KLMO — Longmont/Vance Brand",
+    "airport": "KLMO \u2014 Longmont/Vance Brand",
     "date": "2026-06-13",
     "dateDisplay": "Saturday, June 13, 2026",
     "time": "",
     "event_type": "Fly-In",
-    "website": "https://www.visitlongmont.org/event/3rd-annual-longmont-fly-in/30556/",
+    "website": "",
     "notes": "Third annual community fly-in at Longmont/Vance Brand Airport."
   },
   {
     "id": "wings-spacepalooza-2026",
     "name": "Air n' Space-A-Palooza 2026",
-    "airport": "Wings Over the Rockies Air & Space Museum — Denver",
+    "airport": "Wings Over the Rockies Air & Space Museum \u2014 Denver",
     "date": "2026-06-20",
     "dateDisplay": "Saturday, June 20, 2026",
     "time": "",
@@ -57,7 +57,7 @@
   {
     "id": "short-wing-piper-convention-2026",
     "name": "Short Wing Piper Club Annual Convention",
-    "airport": "KGXY — Greeley-Weld County",
+    "airport": "KGXY \u2014 Greeley-Weld County",
     "date": "2026-06-22",
     "dateDisplay": "Week of June 22, 2026",
     "time": "",
@@ -68,7 +68,7 @@
   {
     "id": "erie-balloon-festival-2026",
     "name": "Erie Balloon Festival",
-    "airport": "KEIK — Erie Municipal",
+    "airport": "KEIK \u2014 Erie Municipal",
     "date": "2026-07-10",
     "dateDisplay": "July 2026",
     "time": "",
@@ -79,9 +79,9 @@
   {
     "id": "mile-high-150-expo-2026",
     "name": "Mile High 150 Expo",
-    "airport": "KBJC — Rocky Mountain Metropolitan",
+    "airport": "KBJC \u2014 Rocky Mountain Metropolitan",
     "date": "2026-07-31",
-    "dateDisplay": "Friday–Saturday, July 31 – August 1, 2026",
+    "dateDisplay": "Friday\u2013Saturday, July 31 \u2013 August 1, 2026",
     "time": "",
     "event_type": "Expo",
     "website": "https://milehigh150expo.com",
@@ -90,10 +90,10 @@
   {
     "id": "morgan-adams-concours-2026",
     "name": "23rd Annual Morgan Adams Concours d'Elegance",
-    "airport": "KAPA — Centennial Airport",
+    "airport": "KAPA \u2014 Centennial Airport",
     "date": "2026-08-22",
     "dateDisplay": "Saturday, August 22, 2026",
-    "time": "6:00 PM – 10:00 PM",
+    "time": "6:00 PM \u2013 10:00 PM",
     "event_type": "Community Event",
     "website": "https://www.morganadamsconcours.org/event-details/",
     "notes": "An elegant evening event at Centennial Airport benefiting Morgan Adams Foundation."
