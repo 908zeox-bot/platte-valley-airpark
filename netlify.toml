@@ -3,6 +3,12 @@
   publish = "out"
 
 [[redirects]]
+  from = "https://www.plattevalleyairpark.com/*"
+  to = "https://plattevalleyairpark.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pancake_breakfast_fly_in.html"
   to = "/pancake_breakfast_fly_in.html"
   status = 200
