@@ -9,7 +9,7 @@ Platte Valley Airpark is a community general aviation airport with over 60 years
 - CTAF: 122.9
 - Pattern Altitude: 5,500 ft MSL
 - Field Elevation: 4,934 ft MSL
-- Fuel: 100LL self-serve, $6.65/gal, 24/7 credit card (no attendant)
+- Fuel: 100LL self-serve, $6.89/gal, 24/7 credit card (no attendant)
 - Runways: 4,100 ft paved (Runway 15/33) + 2,500 ft grass strip (Runway 9/27 — taildragger and backcountry training)
 - Based aircraft: 100+
 - Landing fee: None
@@ -42,7 +42,7 @@ Unique aviation-themed overnight accommodation located on the airport property. 
 ## Common Questions
 
 Q: Does 18V have self-serve fuel?
-A: Yes — 100LL self-serve at $6.65/gal, available 24/7 with a credit card. No attendant required.
+A: Yes — 100LL self-serve at $6.89/gal, available 24/7 with a credit card. No attendant required.
 
 Q: What is the CTAF at Platte Valley Airpark?
 A: 122.9 MHz. Platte Valley Airpark (18V) is an uncontrolled airport — no tower. Announce on 122.9.
