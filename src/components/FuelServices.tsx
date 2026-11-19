@@ -70,7 +70,7 @@ const FuelServices = ({ site }: FuelServicesProps) => {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-8">Fuel & Services</h2>
 
-        {/* Temporary field notice for Nov 9–19, 2026. Remove after maintenance is complete. */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
               <div className="text-5xl text-airpark-red mb-4">{service.icon}</div>
