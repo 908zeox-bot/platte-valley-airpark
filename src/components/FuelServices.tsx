@@ -70,6 +70,23 @@ const FuelServices = ({ site }: FuelServicesProps) => {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-serif font-bold text-dark-charcoal mb-8">Fuel & Services</h2>
 
+        <aside
+          aria-labelledby="runway-open-notice"
+          className="mb-12 text-left rounded-lg bg-green-50 border border-green-200 overflow-hidden"
+        >
+          <div className="px-6 py-6 sm:px-8 border-l-4 border-green-700">
+            <h3
+              id="runway-open-notice"
+              className="text-2xl md:text-3xl font-serif font-bold text-green-900 mb-3"
+            >
+              Runway 15/33 open
+            </h3>
+            <p className="text-green-950 max-w-3xl mb-0">
+              Runway crack seal maintenance is complete, and the runway and taxiways are open. Self-serve 100LL, 24/7, no attendant needed.
+            </p>
+          </div>
+        </aside>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">

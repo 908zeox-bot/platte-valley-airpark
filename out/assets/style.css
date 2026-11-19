@@ -4,17 +4,8 @@
 @media(max-width:950px){.arrival-grid{gap:45px}.cards.four{grid-template-columns:1fr 1fr}.manager{gap:35px}.community-bottom{gap:40px}.gallery-grid{columns:2}.hero h1{font-size:clamp(3.3rem,6vw,5rem)}}@media(max-width:640px){.house-hero{min-height:480px}.house-hero .hero-grid{padding:60px 0}.house-hero h1{font-size:3.8rem}.arrival-grid,.community-bottom,.manager,.archive-grid,.reports-grid{grid-template-columns:1fr;gap:30px}.manager>img{width:170px;height:195px}.manager h2{font-size:2.8rem}.stay-stats{gap:30px}.arrival-aside{padding:0}.amenities{grid-template-columns:1fr;gap:0}.cards.four{gap:30px}.cards.four .card h3{font-size:1.1rem}.gallery-grid{column-gap:12px}.gallery-item{margin-bottom:15px}.gallery-item figcaption{font-size:.75rem}.event-feature{grid-template-columns:1fr;padding:25px;gap:25px}.date-block{width:130px;padding:15px}.date-block strong{font-size:1.8rem}.event-feature h3{font-size:1.5rem}.lightbox{padding:10px;width:98vw;max-width:98vw}.lightbox-bottom{flex-wrap:wrap;gap:8px}.lightbox-bottom p{order:3;flex-basis:100%;font-size:.78rem}.lightbox-image{height:calc(100% - 170px)}.filters{gap:7px}.filters button{padding:8px 12px;font-size:.8rem}.house-mosaic{order:2}.page-intro{padding:44px 0}.reading h2{font-size:2.5rem}.community-bottom h3{font-size:1.2rem}}
 
 
-/* Temporary runway/taxiway maintenance notice, Nov 9–19, 2026. */
-.ops-alert{background:#fff6f4;border-top:5px solid var(--red);border-bottom:1px solid #f0d2ce;padding:42px 0 34px}
-.ops-alert .eyebrow{margin-bottom:.55rem}
-.ops-alert h2{font-size:clamp(2.15rem,3.2vw,3.25rem);margin-bottom:12px;max-width:16em}
-.ops-alert .lede{max-width:740px;color:var(--ink);margin-bottom:26px}
-.ops-alert-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px 48px}
-.ops-alert h3{font-family:var(--serif);font-weight:400;font-size:1.65rem;line-height:1.2;margin:0 0 12px}
-.ops-alert ul{margin:0;padding-left:1.15rem}
-.ops-alert li{margin:0 0 8px}
-.ops-alert li::marker{color:var(--red)}
-.ops-alert .note{margin:26px 0 8px;max-width:760px}
-.ops-alert .contact{margin:0;font-weight:600}
-.ops-alert .contact a{color:var(--red);font-weight:700;text-decoration:underline;text-underline-offset:3px}
-@media(max-width:640px){.ops-alert{padding:32px 0 26px}.ops-alert-grid{grid-template-columns:1fr;gap:22px}.ops-alert h2{font-size:2.15rem}}
+/* Runway open notice. Calm status, not an alert. */
+.field-open{background:#f3f8f4;border:1px solid #c9e0d0;border-left:5px solid #2f7d4a;padding:22px 28px 6px;margin:0 0 48px}
+.field-open h2{font-size:clamp(1.75rem,2.4vw,2.2rem);line-height:1.15;color:#1d5c38;margin-bottom:8px}
+.field-open p{max-width:46rem;color:#243f32;margin-bottom:16px}
+@media(max-width:640px){.field-open{padding:18px 18px 4px;margin-bottom:32px}.field-open h2{font-size:1.7rem}}
